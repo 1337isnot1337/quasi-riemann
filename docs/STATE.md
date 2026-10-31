@@ -73,9 +73,13 @@ same contact. See the source lock for exact heads and rational bounds.
 11. A candidate coupled Euler derivative has exact Mellin multiplier x+w-1.
     It removes the exposed diagonal scalar pole while multiplying the original
     principal signal by x. Its four profile terms are explicit, and Lean proves
-    arbitrary-power tail bounds for the new logarithmic Gaussian term. The full
-    physical integration, low estimates and coherent row-sum saving remain unproved. It changes no
-    conductor exponent by itself. See `research/coupled-mellin-annihilator.md`.
+    arbitrary-power tail bounds for the new logarithmic Gaussian term. The
+    atomic chain rule is Lean checked as well. A written profile argument
+    justifies physical differentiation and retains the original paper's balanced
+    and compensated low exponents. The refined selected low estimate and
+    coherent row-sum saving remain unproved. It changes no conductor exponent by
+    itself. See `research/coupled-mellin-annihilator.md` and
+    `research/derivative-low-stability.md`.
 
 12. An optimistic low-side audit of the separate shared-label cubic probe
     shows that two generic cubic sieve bounds followed by Cauchy leave exponent
@@ -109,7 +113,16 @@ same contact. See the source lock for exact heads and rational bounds.
     fails its coefficient and row-orientation conditions. See
     `research/cubic-signed-budget.md` and `research/cubic-aspect-contrast.md`.
 
-16. A one-variable Jacobi detector replaces the Gauss source by ordinary
+16. A written elementary estimate bounds the full physical cube-ratio sector
+    of the cubic probe at Z^(79/300) in the fixed 0.84 geometry. It retains
+    every completion and source/label overlap through a uniform imprimitive
+    Gauss bound. The margin below the reserved direct target is 299/10000.
+    The direct problem can therefore be restricted to the complementary
+    physical ratios. This is a bound for a sector, not for the whole probe;
+    the high principal frequency product is a different condition. See
+    `research/cubic-principal-ratio-sector.md`.
+
+17. A one-variable Jacobi detector replaces the Gauss source by ordinary
     character coefficients, over all good ideals. Its full physical sum has
     arbitrary-power decay for X=Z^a, a<1/2, by ordinary lattice Poisson.
     Its zero Fourier frequency retains 1/L(x,eta), with an explicitly nonzero
@@ -118,7 +131,7 @@ same contact. See the source lock for exact heads and rational bounds.
     nonzero-frequency sum by Z^(399/10000) at X=Z^(2/5) would give 0.84;
     that estimate is open. See `research/jacobi-detector.md`.
 
-17. Using a sextic Jacobi character instead makes the output Kloosterman
+18. Using a sextic Jacobi character instead makes the output Kloosterman
     character cubic. On squarefree sources its dressed coefficient is exactly
     mu(c)*eta(c)*gamma_4(c). The all-prime-power signal correction converges
     and is nonzero for Re(x)>3/4, with local numerator bound 107/252.
@@ -156,12 +169,17 @@ angular variant matches a coefficient-specific cubic mean while changing the
 frequency-pole geometry. Its global signal and full frequency sums need proof;
 the radial low-budget note rules out the simpler generic Cauchy route in the
 short-second-dual regime.
+For the radial 0.84 direct target, the physical cube-ratio sector is now below
+budget by absolute values. The unresolved signed estimate is its complementary
+physical-ratio sum, with the original profiles, target and masks retained.
 
-The Jacobi operator is a separate alternative with a proved direct-side
-rapid-decay argument. Its remaining input is the complete sextic Kloosterman
-trace average (H) in `research/jacobi-detector.md`, at squared frequencies
-and varying moduli. A bound for a fixed squarefree modulus or only a cubic
-twist does not meet that contract. Every prime power remains in the source.
+The preferred Jacobi variant has a proved direct-side rapid-decay argument
+and an exact centered cubic Kloosterman kernel on squarefree sources. Its
+remaining input is the full mean-zero trace average (OPEN6o) in
+`research/sextic-jacobi-detector.md`, at squared frequencies and varying
+moduli. The complete finite frequency mean is removed with arbitrary-power
+error. The current fixed-modulus short-window theorem does not meet the
+remaining contract, and every prime power stays in the source.
 
 A narrower analytic target is now the coefficient-sensitive regular primitive
 Kubota pairing for the actual Möbius/plain convolution. The fixed primitive pole

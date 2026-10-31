@@ -114,6 +114,13 @@ chi_c(m) and conjugate(chi_s(m)). These exact discrepancies rule out the
 literal substitution into that centered theorem. They do not exclude a new
 transform or a stronger theorem with this different coefficient class.
 
+The [physical cube-ratio sector](cubic-principal-ratio-sector.md) can now be
+bounded by absolute values, including all completions and overlaps, at
+Z^(79/300) in the 0.84 geometry. This is below the reserved direct target
+by exponent 299/10000. Thus the remaining contrast estimate can be restricted
+to the noncube physical ratios. This partition is different from the high
+principal frequency product that supplies the reciprocal signal.
+
 `scripts/verify_mellin_annihilator.py` checks the local iterated residue and the
 finite-difference algebra exactly. It does not check the imported high
 continuation or the unproved direct estimate.

@@ -24,8 +24,13 @@
   "signal_zero_set": [
     "0"
   ],
-  "physical_probe_integration_checked": false,
-  "low_estimate_checked": false,
+  "physical_probe_integration_lean_checked": false,
+  "baseline_written_low_proof": "research/derivative-low-stability.md",
+  "baseline_low_exponents": [
+    "1/4",
+    "3/16"
+  ],
+  "refined_selected_low_estimate_checked": false,
   "coherent_row_sum_checked": false,
   "angular_cubic_probe": {
     "scope": "angular compatibility and Mellin algebra only; no global identity or estimate",

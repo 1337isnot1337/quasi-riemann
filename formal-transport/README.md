@@ -31,9 +31,12 @@ The three geometry declarations, three transport statements and three inherited
 analytic inputs in `Audit.lean` report only `propext`, `Classical.choice` and `Quot.sound`.
 
 `GaussianLog.lean` separately proves an arbitrary-power bound for the exact
-Gaussian profile multiplied by log(y)/2. Its three declarations also report
-only the standard axioms. This supports the candidate coupled derivative;
-it does not verify that probe's full derivative identity or low estimate.
+Gaussian profile multiplied by log(y)/2, its chain rule, and the complete
+four-term identity for a single physical summand. Its five declarations report
+only the standard axioms. This supports the candidate coupled derivative.
+The full physical identity and original low estimates have a separate
+[written profile proof](../research/derivative-low-stability.md), outside the
+Lean replay; the refined selected low estimate remains open.
 
 ## Reproduction
 

@@ -5,7 +5,7 @@
   "environment": "aea7ad38ebebc547968c7ea50dafc45430ee6a802ee39d7e160f99bd4bf6d045",
   "patch_sha256": "0722acc4a8385777189018b9b61654ccdbe629c73fe4605b7319255292c86f8f",
   "geometry_sha256": "b2a7a0a755308b284dda4d545ce4709421ab1d3ac9a4f770a6e61c149964baeb",
-  "gaussian_log_sha256": "e8ce8b23ebef01dc16779c893305b8c031607a2ab33e71ad49425245add0ba60",
+  "gaussian_log_sha256": "781debeae5c83629afae27f9b95587a1df99c524eba70d2ecba67afa2485d74d",
   "gaussian_log_checked": true,
   "source_compiled_this_run": [],
   "source_reused_modules": [

@@ -1,8 +1,9 @@
 # A coupled multiplier removes the diagonal pole
 
 Status: an exact candidate-probe identity. It does not improve the return
-exponent, bound a coherent row sum, or establish nonvanishing. The physical
-probe and its low estimate have not been reassembled for this modification.
+exponent, bound a coherent row sum, or establish nonvanishing. The written
+[physical identity and baseline low estimates](derivative-low-stability.md)
+are now reassembled; the refined selected return is not.
 
 The source is OpenAI's [pinned high Mellin identity](https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex),
 `eq:probe-poisson-identity` and `eq:compensated-poisson-identity`. Its scale factor is
@@ -85,22 +86,25 @@ It also proves the corresponding norm bound for the exact upstream complex
 Gaussian Mellin profile, with its universal normalization constant retained.
 The proof completes the square with u=log(y)/2-a and uses
 `|u|*exp(-u^2)<=1`. Thus G_log has arbitrary power decay at both ends.
-All three declarations use only propext, Classical.choice and Quot.sound.
+The file also proves the real Gaussian chain rule and the four-term atomic
+identity under common logarithmic scale dilation. All five declarations use
+only propext, Classical.choice and Quot.sound.
 The scoped [replay](../formal-transport/README.md) checks them separately from
-the transport statements. This profile result is not a formal derivative or
-low estimate for the full physical probe.
+the transport statements. The infinite-sum identity and low estimates for the
+full physical probe have written proofs, rather than Lean formalizations.
 
 ## Required integration checks
 
-Euler derivatives replace the physical profiles by fixed derivatives and add
-a polynomial Mellin weight. These have the expected support and decay classes,
-but that observation is not a completed low-bound proof. In particular:
+The [profile-stability proof](derivative-low-stability.md) justifies the full
+physical differentiation with fixed slot data and proves the original paper's
+balanced and compensated low exponents for all four terms. It uses the paper's
+general profile seminorm estimates, including the full joint marked profile.
+The remaining checks are:
 
-- Verify the displayed signed combination within the actual selected physical probe,
-  with one common excluded set and the slot scales held fixed as above.
-- Re-establish the low estimate and the nonzero signal normalization. Existing
-  positivity arguments for individual profiles cannot simply be reused for a
-  signed derivative without proof.
+- Reassemble this modification within the refined selected physical return,
+  preserving its common excluded set and independent slot scales.
+- Extend the baseline profile argument to that refined low estimate and verify
+  its full signal normalization.
 - Control the coherent row sum and every other crossed polar divisor. Rowwise
   Euler continuation does not justify summing or moving its row series.
 - Exhibit an exponent saving beyond the inherited model barrier. A fixed

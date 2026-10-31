@@ -1,3 +1,5 @@
 'Transport087.abs_mul_gaussian_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
 'Transport087.log_half_gaussian_power_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'Transport087.gaussianMellinProfile_log_power_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Transport087.realGaussian_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Transport087.coupled_gaussian_atom' depends on axioms: [propext, Classical.choice, Quot.sound]

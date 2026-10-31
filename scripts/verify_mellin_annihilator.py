@@ -68,8 +68,10 @@ def main():
         'diagonal_value': '0',
         'principal_signal_value': 'x',
         'signal_zero_set': ['0'],
-        'physical_probe_integration_checked': False,
-        'low_estimate_checked': False,
+        'physical_probe_integration_lean_checked': False,
+        'baseline_written_low_proof': 'research/derivative-low-stability.md',
+        'baseline_low_exponents': ['1/4', '3/16'],
+        'refined_selected_low_estimate_checked': False,
         'coherent_row_sum_checked': False,
         'angular_cubic_probe': {
             'scope': 'angular compatibility and Mellin algebra only; no global identity or estimate',

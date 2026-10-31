@@ -65,7 +65,7 @@ The [Jacobi detector](../research/jacobi-detector.md) uses the prime Jacobi
 evaluation from OpenAI's September 30 TeX at commit `fd4aeeb2`, and explicitly
 credits span_of_dilates's Paper 40 v5 for the observation that Jacobi sums
 already carry a Mobius sign. Papers 13 v1 and 15 v1 are comparison sources;
-neither estimates the required sextic trace average across all moduli.
+neither estimates the required complete trace average across all moduli.
 These four exact downloads are hash pinned in `external_files` and checked
 by `make sources`. The finite-field Kummer calculation is derived in the
 note and checked by exact cyclotomic arithmetic, without importing a
@@ -76,3 +76,9 @@ The newer cubic norm comparisons credit bramble_trace's Papers 70 v1 and
 external portion of `sources.lock.json`. The latter retains its stated
 external zero-free hypothesis. Our separate-mean optimization grants missing
 twist uniformities and proves no new analytic mean or zero-free theorem.
+The same external lock pins the OpenAI paper's exact fd4aeeb TeX source used
+for the derivative-profile stability argument and its original low estimates.
+The shared-label probe definition is pinned at this repository's separate
+297a7ef checkpoint. The full physical cube-ratio estimate uses its one-Poisson
+normalization, elementary tame Gauss lifts and ideal counting; it imports no
+new moment theorem. Its source text is included in the external hash lock.

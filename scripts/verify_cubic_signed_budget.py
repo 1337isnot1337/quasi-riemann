@@ -46,6 +46,26 @@ def main():
     assert selected_theta == q(11, 12)
     assert selected_theta-q(21, 25) == q(23, 300)
 
+    # Universal tame cubic Gauss bound, including principal unit masks.
+    gauss_cases = 0
+    for norm in [7, 13, 19, 25, 31]:
+        for modulus_valuation in range(1, 9):
+            for frequency_valuation in range(modulus_valuation+2):
+                bound_sq = norm**(modulus_valuation+min(modulus_valuation,
+                                                       frequency_valuation))
+                primitive_sq = (norm**(2*modulus_valuation-1)
+                                if frequency_valuation == modulus_valuation-1 else 0)
+                principal_sq = ((norm**modulus_valuation-norm**(modulus_valuation-1))**2
+                                if frequency_valuation >= modulus_valuation else
+                                norm**(2*modulus_valuation-2)
+                                if frequency_valuation == modulus_valuation-1 else 0)
+                assert primitive_sq <= bound_sq and principal_sq <= bound_sq
+                gauss_cases += 2
+    cube_power = q(7, 6)-(a+b)/6-2*a2/3
+    cube_selected = s.simplify(cube_power.subs(selected))
+    assert cube_selected == q(79, 300)
+    assert q(8797, 30000)-cube_selected == q(299, 10000)
+
     # Literal phase matching with one common cubic row power is impossible.
     assert not any(k % 3 == 1 and k % 3 == 2 for k in range(3))
     receipt = {
@@ -70,6 +90,14 @@ def main():
         'selected_084_geometry_signed_saving': str(q(23, 300)),
         'selected_084_geometry_saving_with_reserve': str(q(23, 300)+q(1, 10000)),
         'literal_centered_source_orientation_match': False,
+        'physical_cube_ratio_sector': {
+            'scope': 'written full-sector bound, all completions and overlaps; not Lean formalized',
+            'gauss_prime_power_fixtures': gauss_cases,
+            'general_power': str(cube_power),
+            'selected_084_power': str(cube_selected),
+            'margin_below_reserved_direct_target': str(q(299, 10000)),
+            'noncube_complement_bound_proved': False,
+        },
         'full_probe_direct_estimate_proved': False,
     }
     path = Path(__file__).resolve().parents[1]/'results/cubic-signed-budget.json'
