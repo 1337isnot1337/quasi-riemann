@@ -92,6 +92,14 @@ same contact. See the source lock for exact heads and rational bounds.
     the global angular identity, signal and full frequency estimates are not.
     See `research/angular-cubic-probe.md`.
 
+14. A second fixed-product aspect difference of the radial cubic probe has
+    multiplier `(kappa^(t2-t1)-1)^2`. It removes both logarithmic signal powers
+    but retains a nonzero constant reciprocal signal. The local iterated residue
+    is certified. The complete contrast direct bound at exponent 8797/30000
+    would give the separate 0.84 reduction; that bound and its identification
+    with any published centered source estimate are unproved. See
+    `research/cubic-aspect-contrast.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.

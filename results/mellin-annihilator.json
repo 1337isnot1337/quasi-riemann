@@ -47,5 +47,25 @@
     "candidate_scale_power_on_pole": "Z^(x-1/2)*sqrt(X1/X2)",
     "full_frequency_sum_checked": false
   },
+  "cubic_aspect_contrast": {
+    "scope": "principal local residue and fixed-product finite-difference algebra",
+    "probe_coefficients": [
+      1,
+      -2,
+      1
+    ],
+    "scale_copies": [
+      "(X1,X2)",
+      "(kappa*X1,X2/kappa)",
+      "(kappa^2*X1,X2/kappa^2)"
+    ],
+    "mellin_multiplier": "(kappa^(t2-t1)-1)^2",
+    "local_iterated_residue": "H0*d**2/18",
+    "quadratic_signal_second_difference": "2*d**2",
+    "signal_factor_relative_to_unscaled_top_log_coefficient": "2*log(kappa)^2",
+    "conditional_theta_target": "21/25",
+    "unproved_full_contrast_direct_target": "8797/30000",
+    "source_to_centered_estimate_map_checked": false
+  },
   "new_exponent_saving_proved": false
 }
