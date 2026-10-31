@@ -27,8 +27,8 @@ nine-file patch above; no upstream checkout is modified by this repository.
 The recorded replay passes the high-transport target over 3,078 modules, of
 which 2,923 match the signed cache. All remaining modules were compiled locally;
 `results/transport-087-lean.json` distinguishes fresh and reused local products.
-The three geometry declarations and three transport statements in `Audit.lean`
-report only `propext`, `Classical.choice` and `Quot.sound`.
+The three geometry declarations, three transport statements and three inherited
+analytic inputs in `Audit.lean` report only `propext`, `Classical.choice` and `Quot.sound`.
 
 ## Reproduction
 

@@ -23,6 +23,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Targeted comparison with recent analytic sources](research/literature-intake.md)
 - [Exact conditional return target at 0.87](research/conditional-087.md)
 - [Lean transport fork admitting the 0.87 geometry](formal-transport/README.md)
+- [A coupled derivative for the exposed diagonal pole](research/coupled-mellin-annihilator.md)
 - [Source and credit map](docs/SOURCES.md)
 
 The research target is a structural jump beyond all preexisting candidates.

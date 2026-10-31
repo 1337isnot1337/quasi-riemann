@@ -176,6 +176,18 @@
     {
       "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/Transport/TransportParameters.lean",
       "sha256": "2aeed8e430219c2a166273f68f9f6eb1d8b00d4976ab15748c77fc0e4e01a9b5"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/Primitive.lean",
+      "sha256": "52db732079f4feea01a3a76c3ff67820cba04439e6cc037d6e43bcc270b9b399"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/DyadicReflection.lean",
+      "sha256": "f529bf7886fb8b95549364d5cb2828226554f7b65e989207904dda9830430915"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/ReciprocalGrowth.lean",
+      "sha256": "a3128686af0366d769b3de9344820f3bd2fae9f210669c59ebf10b5ee670eae7"
     }
   ]
 }

@@ -50,7 +50,7 @@ same contact. See the source lock for exact heads and rational bounds.
    geometric loss allowance. The generic high-transport assembly and the exact
    0.87 geometry compile in Lean 4.34.1 over a 3,078-module source closure.
    Of these, 2,923 matched the authenticated upstream cache; the remainder were
-   compiled locally. Six audited declarations use only propext, Classical.choice
+   compiled locally. Nine audited declarations use only propext, Classical.choice
    and Quot.sound. The assembly remains conditional on its finite numerator input;
    this does not supply the unproved count or a new nonvanishing theorem.
 
@@ -69,6 +69,12 @@ same contact. See the source lock for exact heads and rational bounds.
     exceeding the mixed target by 0.0618716019.... The external theorem has not
     been independently verified here; the full row space, growing labels and
     prime weights remain open. See `research/primitive-pole-pairing.md`.
+
+11. A candidate coupled Euler derivative has exact Mellin multiplier x+w-1.
+    It removes the exposed diagonal scalar pole while multiplying the original
+    principal signal by x. The multiplier is certified, but physical integration,
+    low estimates and a coherent row-sum saving remain unproved. It changes no
+    conductor exponent by itself. See `research/coupled-mellin-annihilator.md`.
 
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See

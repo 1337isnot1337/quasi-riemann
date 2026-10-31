@@ -26,6 +26,8 @@ modules reconstructed in the research notes are:
 | `PR98Improvement/Return/Tuning/Guards.lean` | Parametric source-face guards |
 | `BoundaryPhysical/GenericScalar.lean` | Physical numerator and kernel exponents |
 | `BoundaryPhysical/PhysicalDirect/PacketBound.lean` | Actual fourth-moment packet hypothesis |
+| Baseline `Hecke/Primitive.lean` and `Hecke/DyadicReflection.lean` | Primitive functional equation and its explicit quotient factor |
+| Baseline `Hecke/ReciprocalGrowth.lean` | Polynomial reciprocal growth above the inherited supremum |
 | Baseline `Hecke/Dyadic.lean` | Ordinary versus Möbius coefficient definitions |
 | Baseline `Hecke/DetectorFiberSpikes.lean` | Both spikes on one actual detector fibre |
 | Collet `Record1252270103Return/CountFromMoments.lean` | Inverse and ordinary moment count inputs |

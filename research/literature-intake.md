@@ -70,3 +70,7 @@ Mellin argument along a vertical line. An identically vanishing transform on
 that line would force the fixed profile to vanish. A height-dependent
 annihilator would require a new reconstruction, including the removed polar
 component. This observation only closes the simple fixed-profile shortcut.
+
+The [coupled Mellin derivative](coupled-mellin-annihilator.md) is a different
+candidate: it acts on independent physical scales and preserves the formal
+signal. Its low estimate and coherent-row integration remain unproved.

@@ -1,0 +1,25 @@
+{
+  "status": "exact candidate-probe Mellin identities; no improved bound",
+  "independent_physical_scales": [
+    "X",
+    "Y",
+    "Z"
+  ],
+  "scale_exponents": [
+    "1/2 - z",
+    "w - 1",
+    "x + z - 1"
+  ],
+  "operator": "X*dX + Y*dY + Z*dZ + 1/2",
+  "multiplier": "w + x - 1",
+  "external_prime_slot_scales_held_fixed": true,
+  "diagonal_value": "0",
+  "principal_signal_value": "x",
+  "signal_zero_set": [
+    "0"
+  ],
+  "physical_probe_integration_checked": false,
+  "low_estimate_checked": false,
+  "coherent_row_sum_checked": false,
+  "new_exponent_saving_proved": false
+}
