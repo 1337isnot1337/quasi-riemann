@@ -26,5 +26,13 @@
   "selected_084_geometry_signed_saving": "23/300",
   "selected_084_geometry_saving_with_reserve": "2303/30000",
   "literal_centered_source_orientation_match": false,
+  "physical_cube_ratio_sector": {
+    "scope": "written full-sector bound, all completions and overlaps; not Lean formalized",
+    "gauss_prime_power_fixtures": 520,
+    "general_power": "-a/6 - 2*a2/3 - b/6 + 7/6",
+    "selected_084_power": "79/300",
+    "margin_below_reserved_direct_target": "299/10000",
+    "noncube_complement_bound_proved": false
+  },
   "full_probe_direct_estimate_proved": false
 }

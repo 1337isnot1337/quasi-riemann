@@ -113,6 +113,15 @@ same contact. See the source lock for exact heads and rational bounds.
     fails its coefficient and row-orientation conditions. See
     `research/cubic-signed-budget.md` and `research/cubic-aspect-contrast.md`.
 
+16. A written elementary estimate bounds the full physical cube-ratio sector
+    of the cubic probe at Z^(79/300) in the fixed 0.84 geometry. It retains
+    every completion and source/label overlap through a uniform imprimitive
+    Gauss bound. The margin below the reserved direct target is 299/10000.
+    The direct problem can therefore be restricted to the complementary
+    physical ratios. This is a bound for a sector, not for the whole probe;
+    the high principal frequency product is a different condition. See
+    `research/cubic-principal-ratio-sector.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.
@@ -140,6 +149,9 @@ angular variant matches a coefficient-specific cubic mean while changing the
 frequency-pole geometry. Its global signal and full frequency sums need proof;
 the radial low-budget note rules out the simpler generic Cauchy route in the
 short-second-dual regime.
+For the radial 0.84 direct target, the physical cube-ratio sector is now below
+budget by absolute values. The unresolved signed estimate is its complementary
+physical-ratio sum, with the original profiles, target and masks retained.
 
 A narrower analytic target is now the coefficient-sensitive regular primitive
 Kubota pairing for the actual Möbius/plain convolution. The fixed primitive pole

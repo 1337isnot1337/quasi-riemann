@@ -209,6 +209,11 @@
       "path": "papers/openai-fd4aeeb-paper.tex",
       "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex",
       "sha256": "42a5ee0febca59fd1def55cfd6c6808c322ef4237d7726303ea52f711deac6a3"
+    },
+    {
+      "path": "papers/shared-label-297a7ef.md",
+      "url": "https://raw.githubusercontent.com/1337isnot1337/quasi-riemann/297a7efac59ea6f8f801b027d3f4f03872716a68/research/shared-label-cubic-identity.md",
+      "sha256": "8c788b3a4cef972b8b4c01a7df41c1d0862f7bd8e32fb0006cfe2e3bc27f0cd6"
     }
   ]
 }

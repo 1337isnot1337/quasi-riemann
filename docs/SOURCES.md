@@ -68,3 +68,7 @@ external zero-free hypothesis. Our separate-mean optimization grants missing
 twist uniformities and proves no new analytic mean or zero-free theorem.
 The same external lock pins the OpenAI paper's exact fd4aeeb TeX source used
 for the derivative-profile stability argument and its original low estimates.
+The shared-label probe definition is pinned at this repository's separate
+297a7ef checkpoint. The full physical cube-ratio estimate uses its one-Poisson
+normalization, elementary tame Gauss lifts and ideal counting; it imports no
+new moment theorem. Its source text is included in the external hash lock.
