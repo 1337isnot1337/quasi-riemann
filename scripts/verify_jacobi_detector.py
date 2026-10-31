@@ -40,6 +40,8 @@ def check_kummer(p, character, phi, centered=False):
     gquad = [(0, 0)]+[(phi(x), 0) for x in range(1, p)]
     prefactor = emul(character(-1 if centered else -pow(4, -1, p)),
                        (phi(-1), 0))
+    trace_total = [(0, 0)]*p
+    kloosterman_total = [(0, 0)]*p
     for h in range(p):
         jacobi = [(0, 0)]*p
         kloosterman = [(0, 0)]*p
@@ -59,6 +61,14 @@ def check_kummer(p, character, phi, centered=False):
         shift = 0 if centered else h*pow(2, -1, p) % p
         right = [emul(prefactor, right[(k-shift) % p]) for k in range(p)]
         cyclotomic_equal(left, right)
+        trace_total = [(a+c, b+d) for (a, b), (c, d) in zip(trace_total, jacobi)]
+        kloosterman_total = [(a+c, b+d) for (a, b), (c, d)
+                             in zip(kloosterman_total, kloosterman)]
+    expected = [(0, 0)]*p
+    if centered:
+        expected[0] = tuple(p*t for t in character(-1))
+    cyclotomic_equal(trace_total, expected)
+    cyclotomic_equal(kloosterman_total, convolution(gquad, gbar))
     return p
 
 
@@ -199,10 +209,13 @@ def main():
             'physical_polynomial': 'm^2-1',
             'source_compensator': 'alpha_bar(c)*epsilon(c)',
             'linear_additive_phase_absent': True,
+            'finite_frequency_mean_checks': 5,
+            'complete_trace_center': 'J6_c(h)-chi_c(-1)',
+            'written_removed_mean_bound': 'arbitrary-power decay for X=Z^a, 0<a<1',
             'squarefree_high_coefficient': 'mu(c)*eta(c)*gamma_4(c)',
             'nonzero_signal_domain': 'Re(x)>3/4',
             'local_numerator_lower_bound': str(margin6),
-            'unproved_complete_trace_bound': 'H6_eta(Z^(2/5),Z) << Z^(-1/10000)',
+            'unproved_complete_trace_bound': 'H6_centered_eta(Z^(2/5),Z) << Z^(-1/10000)',
             'conditional_zero_free_threshold': '4/5',
             'trace_bound_proved': False,
         },

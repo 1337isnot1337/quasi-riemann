@@ -389,10 +389,13 @@
     "physical_polynomial": "m^2-1",
     "source_compensator": "alpha_bar(c)*epsilon(c)",
     "linear_additive_phase_absent": true,
+    "finite_frequency_mean_checks": 5,
+    "complete_trace_center": "J6_c(h)-chi_c(-1)",
+    "written_removed_mean_bound": "arbitrary-power decay for X=Z^a, 0<a<1",
     "squarefree_high_coefficient": "mu(c)*eta(c)*gamma_4(c)",
     "nonzero_signal_domain": "Re(x)>3/4",
     "local_numerator_lower_bound": "107/252",
-    "unproved_complete_trace_bound": "H6_eta(Z^(2/5),Z) << Z^(-1/10000)",
+    "unproved_complete_trace_bound": "H6_centered_eta(Z^(2/5),Z) << Z^(-1/10000)",
     "conditional_zero_free_threshold": "4/5",
     "trace_bound_proved": false
   }

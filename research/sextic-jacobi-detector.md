@@ -180,6 +180,9 @@ At X=Z^(2/5), the remaining sufficient contract is
 |H6_eta(Z^(2/5),Z)| <<_(eta,S) Z^(-1/10000), Z>=2.      (OPEN6)
 ```
 
+Section 6 replaces this by an equivalent complete mean-zero trace contract,
+with an arbitrary-power error and with every prime power retained.
+
 The direct sum is already negligible. If (OPEN6) held, the exact Mellin
 identity would be
 
@@ -216,3 +219,81 @@ correlation above. The prescribed signed Kubota sources in Papers 54 and
 58 likewise require an actual transformation of the modular-inverse phase,
 fixed eta and all prime powers. None of those theorem-to-consumer maps is
 established here. That is the active analytic task.
+
+Even a favorable factorization h=u*v does not put the current parameters
+inside the fixed-modulus short-window theorem. Kloosterman scaling turns its
+arguments into u^2 and v^2/4. If Nu and Nv are balanced and Nh is of order
+Nc/X, those argument windows have norm scale N=Nc/X. The direct regime
+X<Nc^(1/2) forces N>Nc^(1/2), whereas Paper 15 requires N<=Nc^(1/2).
+Partitioning or a theorem for monomial arguments would need a new cost
+analysis; neither is a free invocation of that theorem.
+
+## 6. Remove the complete finite frequency mean
+
+There is one full mode that can be removed unconditionally, without changing
+the signal or the target estimate. Put delta(c)=chi_c(-1), a fixed ray
+character, and define
+
+```text
+J6_c^o(h)=J6_c(h)-delta(c),
+H6_eta^o=sqrt(X)*sum_c eta(c)*bar(alpha(c))*epsilon(c)/Nc^(3/2)*V(Nc/Z)
+                       *sum_(h!=0) J6_c^o(h)*U(X*Nh/Nc).
+```
+
+This is the actual finite Fourier mean: for every good c, including all
+prime powers, orthogonality gives
+
+```text
+(1/Nc)*sum_(h mod c) J6_c(h)=chi_c(-1)=delta(c).
+```
+
+The removed contribution is rapidly decreasing when X=Z^a, 0<a<1.
+To see this, put
+
+```text
+T_k(Z)=sum_c eta(c)*bar(alpha(c))*epsilon(c)*delta(c)/Nc^k*V(Nc/Z).
+```
+
+For each fixed k the finite coefficient is periodic, and its angular order
+is -1. The same lattice Poisson argument as for the direct sum, now with
+a fixed period, gives T_k(Z)=O_B(Z^(-B)) for every B. The Gaussian Poisson
+formula in h, using integral U=1, gives
+
+```text
+sum_(h!=0) U(X*Nh/Nc)=Nc/X-U(0)+O_A((Nc/X)^(-A)).
+```
+
+Consequently
+
+```text
+H6_eta-H6_eta^o
+ =X^(-1/2)*T_(1/2)(Z)-sqrt(X)*U(0)*T_(3/2)(Z)
+   +O_A(sqrt(X)*X^A*Z^(-A-1/2)).
+```
+
+The last estimate uses absolute ideal counting with the lognormal test;
+its Mellin moments converge at every real exponent. All three terms have
+arbitrary-power decay at X=Z^a, 0<a<1. Thus (OPEN6) is equivalent to
+
+```text
+|H6_eta^o(Z^(2/5),Z)| <<_(eta,S) Z^(-1/10000).           (OPEN6o)
+```
+
+On squarefree c the centered Kloosterman version is exactly
+
+```text
+bar(alpha(c))*epsilon(c)*J6_c^o(h)
+ =mu(c)*gamma_4(c)
+   *[S_(chi_c^2)(1,h^2/4;c)-gamma_3(c)*gamma_5(c)].
+```
+
+The bracket has complete h mean zero. Opening the Kloosterman sum and doing
+the complete quadratic sum in h gives its mean gamma_3*gamma_5 directly.
+The checker verifies these finite means together with the Kummer identities.
+
+This removes a complete finite-frequency mean. It is different from a
+Kubota residue or the polar correction of Paper 54; its proof does not
+identify the remaining trace with that paper's controlled output. No
+estimate for the residual mean-zero covariance is asserted. The new input
+needed for a bound is now specified by (OPEN6o), with the full all-modulus
+definition above, rather than by subtracting an unspecified bad component.

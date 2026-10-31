@@ -125,6 +125,8 @@ same contact. See the source lock for exact heads and rational bounds.
     The same direct-side decay holds. A complete nonzero-frequency bound
     Z^(-1/10000) at X=Z^(2/5) would give 0.8, but is unproved. The fixed-modulus
     cubic theorem does not establish this varying-modulus correlation.
+    Its exact complete frequency mean can be removed with arbitrary-power
+    error, retaining all prime powers; the remaining covariance is unproved.
     See `research/sextic-jacobi-detector.md`.
 
 The exact certificates and scoped Lean compilation are reproducible. No new
