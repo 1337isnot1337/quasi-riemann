@@ -28,6 +28,7 @@ modules reconstructed in the research notes are:
 | `BoundaryPhysical/PhysicalDirect/PacketBound.lean` | Actual fourth-moment packet hypothesis |
 | Baseline `Hecke/Primitive.lean` and `Hecke/DyadicReflection.lean` | Primitive functional equation and its explicit quotient factor |
 | Baseline `Hecke/ReciprocalGrowth.lean` | Polynomial reciprocal growth above the inherited supremum |
+| Baseline `Detector/GaussianMellin.lean` | Exact Gaussian profile, Mellin inversion and power bounds |
 | Baseline `Hecke/Dyadic.lean` | Ordinary versus Möbius coefficient definitions |
 | Baseline `Hecke/DetectorFiberSpikes.lean` | Both spikes on one actual detector fibre |
 | Collet `Record1252270103Return/CountFromMoments.lean` | Inverse and ordinary moment count inputs |

@@ -72,8 +72,9 @@ same contact. See the source lock for exact heads and rational bounds.
 
 11. A candidate coupled Euler derivative has exact Mellin multiplier x+w-1.
     It removes the exposed diagonal scalar pole while multiplying the original
-    principal signal by x. The multiplier is certified, but physical integration,
-    low estimates and a coherent row-sum saving remain unproved. It changes no
+    principal signal by x. Its four profile terms are explicit, and Lean proves
+    arbitrary-power tail bounds for the new logarithmic Gaussian term. The full
+    physical integration, low estimates and coherent row-sum saving remain unproved. It changes no
     conductor exponent by itself. See `research/coupled-mellin-annihilator.md`.
 
 12. An optimistic low-side audit of the separate shared-label cubic probe
@@ -91,7 +92,15 @@ same contact. See the source lock for exact heads and rational bounds.
     the global angular identity, signal and full frequency estimates are not.
     See `research/angular-cubic-probe.md`.
 
-14. The angular variant now has a written global Poisson identity on absolute
+14. A second fixed-product aspect difference of the radial cubic probe has
+    multiplier `(kappa^(t2-t1)-1)^2`. It removes both logarithmic signal powers
+    but retains a nonzero constant reciprocal signal. The local iterated residue
+    is certified. The complete contrast direct bound at exponent 8797/30000
+    would give the separate 0.84 reduction; that bound and its identification
+    with any published centered source estimate are unproved. See
+    `research/cubic-aspect-contrast.md`.
+
+15. The angular variant now has a written global Poisson identity on absolute
     lines, with unit multiplier omega^r and completion character alpha^3.
     On its principal scalar residue every good-prime numerator is bounded
     away from zero by 1647/7840 for Re(x)>5/6. A fixed scale-ratio family,
@@ -124,7 +133,8 @@ of Holder exponent is insufficient.
 
 The shared-label cubic construction is a separate structural route. The new
 angular variant matches a coefficient-specific cubic mean while changing the
-frequency-pole geometry. Its global signal and full frequency sums need proof;
+frequency-pole geometry. Its absolute-line identity is derived, but the full principal asymptotic
+and frequency estimates need proof;
 the radial low-budget note rules out the simpler generic Cauchy route in the
 short-second-dual regime.
 

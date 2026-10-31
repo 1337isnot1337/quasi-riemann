@@ -188,6 +188,10 @@
     {
       "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/ReciprocalGrowth.lean",
       "sha256": "a3128686af0366d769b3de9344820f3bd2fae9f210669c59ebf10b5ee670eae7"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean",
+      "sha256": "e0bad60df00aa41bfbc402a2bdcf1921ea6c260b133566f3ab5f56de903b4f90"
     }
   ]
 }

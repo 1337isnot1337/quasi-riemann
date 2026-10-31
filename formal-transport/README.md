@@ -30,6 +30,11 @@ which 2,923 match the signed cache. All remaining modules were compiled locally;
 The three geometry declarations, three transport statements and three inherited
 analytic inputs in `Audit.lean` report only `propext`, `Classical.choice` and `Quot.sound`.
 
+`GaussianLog.lean` separately proves an arbitrary-power bound for the exact
+Gaussian profile multiplied by log(y)/2. Its three declarations also report
+only the standard axioms. This supports the candidate coupled derivative;
+it does not verify that probe's full derivative identity or low estimate.
+
 ## Reproduction
 
 Use an isolated project directory. Python 3.11+, Node, Git, patch, OpenSSL and
@@ -89,7 +94,8 @@ python "$research/formal-transport/replay.py" --tracker "$tracker" \
 The replay validates the pristine collector output, reconstructs the published
 patch, rejects undocumented source changes, checks the compiler pin, hashes the
 actual library products, then builds the target's source dependency closure.
-It also checks `Geometry.lean` and prints its axiom dependencies. Logs and a
+It also checks `Geometry.lean` and `GaussianLog.lean` and prints their axiom
+dependencies. Logs and a
 scoped JSON receipt stay in the isolated project. Incremental outputs are reused
 only when their source/dependency key and all compiler-product hashes match.
 

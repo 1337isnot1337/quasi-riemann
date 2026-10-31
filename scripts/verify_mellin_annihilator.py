@@ -17,6 +17,7 @@ def main():
     exponents = [s.Rational(1, 2)-z, w-1, x+z-1]
     multiplier = x+w-1
     assert s.expand(sum(exponents)+s.Rational(1, 2)-multiplier) == 0
+    assert s.expand(-1+(1-z)+w+(x+z-1)-multiplier) == 0
     assert s.expand(multiplier.subs(w, 1-x)) == 0
     assert s.expand(multiplier.subs({w: 1, z: s.Rational(1, 6)})-x) == 0
     # Common dilation gives the sum of the three scale exponents plus a half.
@@ -43,11 +44,25 @@ def main():
                              +a2*(s.Rational(1, 2)-t2))
     assert s.expand(angular_scale-(x-s.Rational(1, 2)+(a1-a2)/2
                                     +(2*a2-1-a1)*free)) == 0
+    # A fixed-product second aspect difference of the cubic principal signal.
+    u, vv, d, L, L2 = s.symbols('u vv d L L2')
+    H0, H1, H2 = s.symbols('H0 H1 H2')
+    denom = 9*u*vv*(u+2*vv)*(2*u+vv)
+    analytic_jet = H0+H1*vv+H2*vv**2
+    contrast_jet = d**2*(vv-u)**2
+    residue = s.residue(s.residue(contrast_jet*analytic_jet/denom, u, 0), vv, 0)
+    assert s.simplify(residue-d**2*H0/18) == 0
+    q = (L-L2)**2
+    second_difference = s.expand(q.subs(L2, L2-2*d)-2*q.subs(L2, L2-d)+q)
+    assert second_difference == 2*d**2
+    assert s.Rational(22, 75)-s.Rational(8797, 30000) == s.Rational(1, 10000)
     receipt = {
         'status': 'exact candidate-probe Mellin identities; no improved bound',
         'independent_physical_scales': ['X', 'Y', 'Z'],
         'scale_exponents': list(map(str, exponents)),
         'operator': 'X*dX + Y*dY + Z*dZ + 1/2',
+        'physical_profile_terms': ['-W0*W1*G', '-r0*W0_prime*W1*G',
+                                   '-r1*W0*W1_prime*G', 'W0*W1*log(y)*G/2'],
         'multiplier': str(multiplier),
         'external_prime_slot_scales_held_fixed': True,
         'diagonal_value': '0',
@@ -66,6 +81,19 @@ def main():
             'coupled_scale_condition': 'X2^2=Z*X1',
             'candidate_scale_power_on_pole': 'Z^(x-1/2)*sqrt(X1/X2)',
             'full_frequency_sum_checked': False,
+        },
+        'cubic_aspect_contrast': {
+            'scope': 'principal local residue and fixed-product finite-difference algebra',
+            'probe_coefficients': [1, -2, 1],
+            'scale_copies': ['(X1,X2)', '(kappa*X1,X2/kappa)',
+                             '(kappa^2*X1,X2/kappa^2)'],
+            'mellin_multiplier': '(kappa^(t2-t1)-1)^2',
+            'local_iterated_residue': str(residue),
+            'quadratic_signal_second_difference': str(second_difference),
+            'signal_factor_relative_to_unscaled_top_log_coefficient': '2*log(kappa)^2',
+            'conditional_theta_target': '21/25',
+            'unproved_full_contrast_direct_target': '8797/30000',
+            'source_to_centered_estimate_map_checked': False,
         },
         'new_exponent_saving_proved': False,
     }
