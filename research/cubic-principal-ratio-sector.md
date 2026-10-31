@@ -152,6 +152,8 @@ overlap terms. The same finite-sum triangle applies to the aspect contrast.
 Thus the unresolved direct estimate can be restricted further to physical
 cubic cores larger than Z^(1/25). At good primes the primitive cubic
 conductor is rad(u), whose norm is at least sqrt(q_u); every remaining
-class consequently has inducing conductor larger than Z^(1/50), up to
-the fixed bad-prime data. This supplies a positive conductor margin, but
-no estimate for that remaining signed sum is proved here.
+geometric ratio class consequently has cubic Kummer inducing conductor
+larger than Z^(1/50), up to the fixed bad-prime data. To use a theorem on
+a further transformed row family, check any changes to this parameter
+caused by overlap extractions. This elementary bound supplies no such
+source-to-consumer map and no estimate for the remaining signed sum.
