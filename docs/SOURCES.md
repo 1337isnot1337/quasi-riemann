@@ -60,3 +60,9 @@ patch, fresh geometry admission and reproducible build driver are in
 cache is credited solely as an authenticated compilation cache, not as an
 independent proof checker. The checked transport implications retain their
 explicit finite numerator premise.
+
+The newer cubic norm comparisons credit bramble_trace's Papers 70 v1 and
+77 v1. Their exact downloaded Markdown hashes and versioned URLs are in the
+external portion of `sources.lock.json`. The latter retains its stated
+external zero-free hypothesis. Our separate-mean optimization grants missing
+twist uniformities and proves no new analytic mean or zero-free theorem.

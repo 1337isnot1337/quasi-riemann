@@ -100,6 +100,15 @@ same contact. See the source lock for exact heads and rational bounds.
     with any published centered source estimate are unproved. See
     `research/cubic-aspect-contrast.md`.
 
+15. Even granting the newer cubic Mobius/Gauss norm all required target and
+    second-frequency twists, separate Cauchy estimates have limiting threshold
+    49/54. The exact envelope argument quantifies a further signed saving
+    101/2700 for 0.87 or 91/1350 for 0.84. At the fixed 0.84 high geometry the
+    reserved saving is 2303/30000. These are model gaps; no such cancellation is
+    proved. The literal substitution into Paper 58's centered theorem also
+    fails its coefficient and row-orientation conditions. See
+    `research/cubic-signed-budget.md` and `research/cubic-aspect-contrast.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.

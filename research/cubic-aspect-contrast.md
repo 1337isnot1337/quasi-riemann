@@ -87,6 +87,33 @@ coefficient, orientations, profiles, labels and polar subtraction with this
 complete three-probe expression. No such source-to-consumer map is supplied
 here, and no published estimate is being claimed to prove the target.
 
+### The literal centered-source substitution fails
+
+Write chi for the cubic symbol and G=gamma_2. Already on the coprime,
+completion-free partial-transform branch, the two column phases are
+`mu(c)*conjugate(G(c))*chi_c(m)` and `G(s)*conjugate(chi_s(m))`, with
+additional common profiles, target twist and frequency factors. Their row
+orientations are opposite. The same-product centering of
+[Paper 58 v3, Section 10](https://rstation.ai/problems/riemann_hypothesis/papers/58/v3)
+instead keeps one common G(n) and one common cubic orientation on the whole
+convolution. Its two ordinary positions have a common height. Its inverse
+positions do not have this probe's Gauss phases.
+
+Even the Gauss phases alone do not join into its prescribed coefficient.
+For coprime c,s, cubic Gauss multiplication gives exactly
+
+```text
+conjugate(G(c*s)) = conjugate(G(c))*conjugate(G(s))*chi_c(s),
+mu(c)*conjugate(G(c))*G(s)
+ = mu(c)*conjugate(G(c*s))*G(s)^2*conjugate(chi_c(s)).
+```
+
+The residual G(s)^2 is a prescribed nonordinary Gauss coefficient, and the
+cross-character also remains. In addition, no single row power matches both
+chi_c(m) and conjugate(chi_s(m)). These exact discrepancies rule out the
+literal substitution into that centered theorem. They do not exclude a new
+transform or a stronger theorem with this different coefficient class.
+
 `scripts/verify_mellin_annihilator.py` checks the local iterated residue and the
 finite-difference algebra exactly. It does not check the imported high
 continuation or the unproved direct estimate.
