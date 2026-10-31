@@ -83,6 +83,14 @@ same contact. See the source lock for exact heads and rational bounds.
     joint argument. This is a model limit for that Cauchy route, not a lower
     bound for the physical probe. See `research/binary-cubic-low-budget.md`.
 
+13. An angular variant of the shared-label cubic probe has physical orders
+    (2,-4), source order 1 and label compensator order 2. Its partial Gauss
+    column matches the published j=2 cubic mean; the radial probe instead has
+    the excluded j=0 mode. Only the pole 2*t1+t2=1 remains untwisted, with
+    coupled scales X2^2=Z*X1. The order and scale identities are certified;
+    the global angular identity, signal and full frequency estimates are not.
+    See `research/angular-cubic-probe.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.
@@ -105,8 +113,10 @@ factorization estimate for the long reciprocal polynomial, with conductor,
 shifts, selected weights, uniformity, and loss budgets explicit. A generic change
 of Holder exponent is insufficient.
 
-The shared-label cubic construction is a separate structural route; the new
-low-budget note identifies the coefficient saving it would need in the
+The shared-label cubic construction is a separate structural route. The new
+angular variant matches a coefficient-specific cubic mean while changing the
+frequency-pole geometry. Its global signal and full frequency sums need proof;
+the radial low-budget note rules out the simpler generic Cauchy route in the
 short-second-dual regime.
 
 A narrower analytic target is now the coefficient-sensitive regular primitive

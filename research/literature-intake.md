@@ -41,6 +41,13 @@ proved or independently verified in this repository.
   energy model max(1, 1/2+2r/3), before its degree-constant cost. For
   1<=r<=3/2 its excess over the inherited (1+5r)/6 is exactly (2-r)/6>=1/12.
   Thus the stated gap alone is insufficient for the long inverse branch.
+- bramble_trace, [Paper 5, version 3](https://rstation.ai/problems/riemann_hypothesis/papers/5/v3),
+  Theorem 1, gives the specified cubic Gauss mean in angular modes j=2,-2.
+  The radial shared-label probe has mode j=0 and does not meet that contract.
+  The [angular-order candidate](angular-cubic-probe.md) matches j=2, at the cost
+  of replacing the four ordinary frequency poles by a single pole. Its full
+  signal and frequency sum have not been established. The paper's stronger
+  sextic mean concerns a different prescribed coefficient and character family.
 - bramble_trace, [Paper 8, version 1](https://rstation.ai/problems/riemann_hypothesis/papers/8/v1),
   Theorem 1, controls a fixed primitive sextic residue Type-I pairing with an
   unrestricted plain factor. Combining its displayed main term with inherited

@@ -25,6 +25,24 @@ def main():
     # The inverse reciprocal's signal factor is x; its only zero is outside
     # the proposed strip Re(x)>869/1000.
     assert s.solve(multiplier.subs(w, 1), x) == [0]
+    # Covered angular mode for the separate shared-label cubic construction.
+    k1, k2, ell = 2, -4, 1
+    assert k1 % 2 == k2 % 2 == 0 and (k1-k2) % 6 == 0
+    assert ell+k1+k2 == -1
+    angular_orders = [-3*k1, -3*k2, -(k1+2*k2), -(2*k1+k2)]
+    assert angular_orders == [-6, 12, 6, 0]
+    forms = [s.Matrix([[3, 0]]), s.Matrix([[0, 3]]),
+             s.Matrix([[1, 2]]), s.Matrix([[2, 1]])]
+    for i in range(4):
+        for j in range(i):
+            assert s.Matrix.vstack(forms[i], forms[j]).det() != 0
+    a1, a2, free = s.symbols('a1 a2 free')
+    t2 = 1-2*free
+    v = x-s.Rational(3, 2)+free+t2
+    angular_scale = s.expand(v+a1*(s.Rational(1, 2)-free)
+                             +a2*(s.Rational(1, 2)-t2))
+    assert s.expand(angular_scale-(x-s.Rational(1, 2)+(a1-a2)/2
+                                    +(2*a2-1-a1)*free)) == 0
     receipt = {
         'status': 'exact candidate-probe Mellin identities; no improved bound',
         'independent_physical_scales': ['X', 'Y', 'Z'],
@@ -38,6 +56,17 @@ def main():
         'physical_probe_integration_checked': False,
         'low_estimate_checked': False,
         'coherent_row_sum_checked': False,
+        'angular_cubic_probe': {
+            'scope': 'angular compatibility and Mellin algebra only; no global identity or estimate',
+            'physical_orders': [k1, k2], 'source_order': ell,
+            'label_compensator_order': -k1-k2,
+            'partial_cubic_mode_after_conjugation': k1,
+            'frequency_angular_orders': angular_orders,
+            'remaining_ordinary_frequency_pole': '2*t1+t2=1',
+            'coupled_scale_condition': 'X2^2=Z*X1',
+            'candidate_scale_power_on_pole': 'Z^(x-1/2)*sqrt(X1/X2)',
+            'full_frequency_sum_checked': False,
+        },
         'new_exponent_saving_proved': False,
     }
     path = Path(__file__).resolve().parents[1]/'results/mellin-annihilator.json'
