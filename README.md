@@ -20,13 +20,16 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Mixed detector/numerator moments and the missing inverse input](research/mixed-fibre.md)
 - [Support of a long Möbius inverse factor](research/inverse-dominant-support.md)
 - [A cubic probe with a shared ordinary selector](research/shared-label-cubic-identity.md)
+- [The cubic probe's unproved direct target for 0.84](research/cubic-direct-target-084.md)
 - [Targeted comparison with recent analytic sources](research/literature-intake.md)
 - [Exact conditional return target at 0.87](research/conditional-087.md)
 - [Source and credit map](docs/SOURCES.md)
 
 The research target is a structural jump beyond all preexisting candidates.
 `0.87` is an initial benchmark for proposed analytic improvements, not a claimed
-bound. Another decimal retuning of the inherited return is out of scope.
+bound. The changed cubic probe has a separate 0.84 target conditional on a
+complete, unproved direct estimate. Another decimal retuning of the inherited
+return is out of scope.
 
 ## Reproduce
 

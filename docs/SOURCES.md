@@ -38,6 +38,11 @@ modules reconstructed in the research notes are:
 | Baseline `GaussSum/CubicNormalization.lean` | Cubic Gauss cube and primary angular normalization |
 | Baseline `GaussSum/SexticNormalization.lean` | Actual ideal CRT and normalized Gauss identities |
 | Baseline `Arithmetic/IdealMobius.lean` | Multiplicative primary generators and angular phase |
+| Baseline `Hecke/ReciprocalGrowth.lean` | Uniform reciprocal bound above the global zero supremum |
+| Baseline `Hecke/LogarithmicActual.lean` | Euler logarithm and primitive reciprocal strip estimate |
+| Baseline `Hecke/Primitive.lean` | Primitive functional equation for conductor convexity |
+| Baseline `Hecke/StripActual.lean` | Strip growth and its functional-equation input |
+| Baseline `Hecke/ZeroSupremum.lean` | All-character zero supremum and uniform-margin principle |
 | `BoundaryPhysical/PhysicalDirect/Hybrid.lean` | Two-ordinary-factor source budget |
 | `BoundaryPhysical/PhysicalDirect/Geometry.lean` | Plain scale and shifted capacity |
 | `BoundaryPhysical/TransportGeometry.lean` | Coarse box and floor constraints |

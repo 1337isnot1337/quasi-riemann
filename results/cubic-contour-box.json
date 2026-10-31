@@ -1,0 +1,656 @@
+{
+  "status": "exact contour and exponent certificate; direct estimate unproved",
+  "theta_target": "21/25",
+  "parameters": {
+    "a1": "73/100",
+    "a2": "99/100",
+    "y": "73/100",
+    "h": "7/25"
+  },
+  "contour_box": {
+    "x": [
+      "21/25"
+    ],
+    "t1": [
+      "997/3000",
+      "2"
+    ],
+    "t2": [
+      "997/3000",
+      "2"
+    ],
+    "w": [
+      "501/1000",
+      "2"
+    ]
+  },
+  "x_upper_endpoint": "infinity; all decay coefficients of x nonnegative",
+  "unramified_numerator": [
+    {
+      "term": "D*W",
+      "decay": "w + x",
+      "minimum": "1341/1000"
+    },
+    {
+      "term": "A**3*D",
+      "decay": "3*t1 + x",
+      "minimum": "1837/1000"
+    },
+    {
+      "term": "B**3*D",
+      "decay": "3*t2 + x",
+      "minimum": "1837/1000"
+    },
+    {
+      "term": "R/Q**2",
+      "decay": "3*t1 + 3*t2 + 3*x - 3/2",
+      "minimum": "1507/500"
+    },
+    {
+      "term": "A**4*B**5",
+      "decay": "4*t1 + 5*t2",
+      "minimum": "2991/1000"
+    },
+    {
+      "term": "A**5*B**4",
+      "decay": "5*t1 + 4*t2",
+      "minimum": "2991/1000"
+    },
+    {
+      "term": "-A**3*W",
+      "decay": "3*t1 + w",
+      "minimum": "749/500"
+    },
+    {
+      "term": "-B**3*W",
+      "decay": "3*t2 + w",
+      "minimum": "749/500"
+    },
+    {
+      "term": "-A**2*B**4",
+      "decay": "2*t1 + 4*t2",
+      "minimum": "997/500"
+    },
+    {
+      "term": "-A**3*B**3",
+      "decay": "3*t1 + 3*t2",
+      "minimum": "997/500"
+    },
+    {
+      "term": "-A**4*B**2",
+      "decay": "4*t1 + 2*t2",
+      "minimum": "997/500"
+    },
+    {
+      "term": "-2*R/Q",
+      "decay": "3*t1 + 3*t2 + 3*x - 5/2",
+      "minimum": "1007/500"
+    },
+    {
+      "term": "A*B**2*D",
+      "decay": "t1 + 2*t2 + x",
+      "minimum": "1837/1000"
+    },
+    {
+      "term": "A*B**5*W",
+      "decay": "t1 + 5*t2 + w",
+      "minimum": "499/200"
+    },
+    {
+      "term": "A**2*B*D",
+      "decay": "2*t1 + t2 + x",
+      "minimum": "1837/1000"
+    },
+    {
+      "term": "A**5*B*W",
+      "decay": "5*t1 + t2 + w",
+      "minimum": "499/200"
+    },
+    {
+      "term": "A**3*B**6*D",
+      "decay": "3*t1 + 6*t2 + x",
+      "minimum": "3831/1000"
+    },
+    {
+      "term": "A**4*B**5*D",
+      "decay": "4*t1 + 5*t2 + x",
+      "minimum": "3831/1000"
+    },
+    {
+      "term": "A**5*B**4*D",
+      "decay": "5*t1 + 4*t2 + x",
+      "minimum": "3831/1000"
+    },
+    {
+      "term": "A**6*B**3*D",
+      "decay": "6*t1 + 3*t2 + x",
+      "minimum": "3831/1000"
+    },
+    {
+      "term": "A**3*R/Q",
+      "decay": "6*t1 + 3*t2 + 3*x - 5/2",
+      "minimum": "3011/1000"
+    },
+    {
+      "term": "B**3*R/Q",
+      "decay": "3*t1 + 6*t2 + 3*x - 5/2",
+      "minimum": "3011/1000"
+    },
+    {
+      "term": "A**2*B**4*W",
+      "decay": "2*t1 + 4*t2 + w",
+      "minimum": "499/200"
+    },
+    {
+      "term": "A**4*B**2*W",
+      "decay": "4*t1 + 2*t2 + w",
+      "minimum": "499/200"
+    },
+    {
+      "term": "A**6*B**6*W",
+      "decay": "6*t1 + 6*t2 + w",
+      "minimum": "4489/1000"
+    },
+    {
+      "term": "-A*B**5*D",
+      "decay": "t1 + 5*t2 + x",
+      "minimum": "1417/500"
+    },
+    {
+      "term": "-A*B**2*W",
+      "decay": "t1 + 2*t2 + w",
+      "minimum": "749/500"
+    },
+    {
+      "term": "-A**5*B*D",
+      "decay": "5*t1 + t2 + x",
+      "minimum": "1417/500"
+    },
+    {
+      "term": "-A**2*B*W",
+      "decay": "2*t1 + t2 + w",
+      "minimum": "749/500"
+    },
+    {
+      "term": "-A**2*B**4*D",
+      "decay": "2*t1 + 4*t2 + x",
+      "minimum": "1417/500"
+    },
+    {
+      "term": "-A**4*B**2*D",
+      "decay": "4*t1 + 2*t2 + x",
+      "minimum": "1417/500"
+    },
+    {
+      "term": "-A**6*B**6*D",
+      "decay": "6*t1 + 6*t2 + x",
+      "minimum": "1207/250"
+    },
+    {
+      "term": "-A**3*R/Q**2",
+      "decay": "6*t1 + 3*t2 + 3*x - 3/2",
+      "minimum": "4011/1000"
+    },
+    {
+      "term": "-B**3*R/Q**2",
+      "decay": "3*t1 + 6*t2 + 3*x - 3/2",
+      "minimum": "4011/1000"
+    },
+    {
+      "term": "-A**3*B**6*W",
+      "decay": "3*t1 + 6*t2 + w",
+      "minimum": "873/250"
+    },
+    {
+      "term": "-A**4*B**5*W",
+      "decay": "4*t1 + 5*t2 + w",
+      "minimum": "873/250"
+    },
+    {
+      "term": "-A**5*B**4*W",
+      "decay": "5*t1 + 4*t2 + w",
+      "minimum": "873/250"
+    },
+    {
+      "term": "-A**6*B**3*W",
+      "decay": "6*t1 + 3*t2 + w",
+      "minimum": "873/250"
+    },
+    {
+      "term": "-2*A**3*B**3*D",
+      "decay": "3*t1 + 3*t2 + x",
+      "minimum": "1417/500"
+    },
+    {
+      "term": "2*A**3*B**3*W",
+      "decay": "3*t1 + 3*t2 + w",
+      "minimum": "499/200"
+    },
+    {
+      "term": "A*R/(B*Q**2)",
+      "decay": "4*t1 + 2*t2 + 3*x - 3/2",
+      "minimum": "1507/500"
+    },
+    {
+      "term": "B*R/(A*Q**2)",
+      "decay": "2*t1 + 4*t2 + 3*x - 3/2",
+      "minimum": "1507/500"
+    },
+    {
+      "term": "A**2*B**4*D*W",
+      "decay": "2*t1 + 4*t2 + w + x",
+      "minimum": "667/200"
+    },
+    {
+      "term": "A**3*B**3*D*W",
+      "decay": "3*t1 + 3*t2 + w + x",
+      "minimum": "667/200"
+    },
+    {
+      "term": "A**4*B**2*D*W",
+      "decay": "4*t1 + 2*t2 + w + x",
+      "minimum": "667/200"
+    },
+    {
+      "term": "A**2*B**4*R/Q**2",
+      "decay": "5*t1 + 7*t2 + 3*x - 3/2",
+      "minimum": "626/125"
+    },
+    {
+      "term": "A**3*B**3*R/Q**2",
+      "decay": "6*t1 + 6*t2 + 3*x - 3/2",
+      "minimum": "626/125"
+    },
+    {
+      "term": "A**4*B**2*R/Q**2",
+      "decay": "7*t1 + 5*t2 + 3*x - 3/2",
+      "minimum": "626/125"
+    },
+    {
+      "term": "-A*B**2*D*W",
+      "decay": "t1 + 2*t2 + w + x",
+      "minimum": "1169/500"
+    },
+    {
+      "term": "-A*R/(B*Q)",
+      "decay": "4*t1 + 2*t2 + 3*x - 5/2",
+      "minimum": "1007/500"
+    },
+    {
+      "term": "-A**2*B*D*W",
+      "decay": "2*t1 + t2 + w + x",
+      "minimum": "1169/500"
+    },
+    {
+      "term": "-B*R/(A*Q)",
+      "decay": "2*t1 + 4*t2 + 3*x - 5/2",
+      "minimum": "1007/500"
+    },
+    {
+      "term": "-A**6*B**6*D*W",
+      "decay": "6*t1 + 6*t2 + w + x",
+      "minimum": "5329/1000"
+    },
+    {
+      "term": "-A**4*B**5*R/Q",
+      "decay": "7*t1 + 8*t2 + 3*x - 5/2",
+      "minimum": "1001/200"
+    },
+    {
+      "term": "-A**5*B**4*R/Q",
+      "decay": "8*t1 + 7*t2 + 3*x - 5/2",
+      "minimum": "1001/200"
+    },
+    {
+      "term": "-2*A*B**2*R/Q**2",
+      "decay": "4*t1 + 5*t2 + 3*x - 3/2",
+      "minimum": "4011/1000"
+    },
+    {
+      "term": "-2*A**2*B*R/Q**2",
+      "decay": "5*t1 + 4*t2 + 3*x - 3/2",
+      "minimum": "4011/1000"
+    },
+    {
+      "term": "2*A*B**2*R/Q",
+      "decay": "4*t1 + 5*t2 + 3*x - 5/2",
+      "minimum": "3011/1000"
+    },
+    {
+      "term": "2*A**2*B*R/Q",
+      "decay": "5*t1 + 4*t2 + 3*x - 5/2",
+      "minimum": "3011/1000"
+    },
+    {
+      "term": "A*B**2*D*Q*W",
+      "decay": "t1 + 2*t2 + w + x - 1",
+      "minimum": "669/500"
+    },
+    {
+      "term": "A**2*B*D*Q*W",
+      "decay": "2*t1 + t2 + w + x - 1",
+      "minimum": "669/500"
+    },
+    {
+      "term": "A**5*B**7*D*Q*W",
+      "decay": "5*t1 + 7*t2 + w + x - 1",
+      "minimum": "4329/1000"
+    },
+    {
+      "term": "A**7*B**5*D*Q*W",
+      "decay": "7*t1 + 5*t2 + w + x - 1",
+      "minimum": "4329/1000"
+    },
+    {
+      "term": "A**3*B**6*D*Q**2*W",
+      "decay": "3*t1 + 6*t2 + w + x - 2",
+      "minimum": "583/250"
+    },
+    {
+      "term": "A**6*B**3*D*Q**2*W",
+      "decay": "6*t1 + 3*t2 + w + x - 2",
+      "minimum": "583/250"
+    },
+    {
+      "term": "-A**3*B**6*D*Q*W",
+      "decay": "3*t1 + 6*t2 + w + x - 1",
+      "minimum": "833/250"
+    },
+    {
+      "term": "-A**6*B**3*D*Q*W",
+      "decay": "6*t1 + 3*t2 + w + x - 1",
+      "minimum": "833/250"
+    },
+    {
+      "term": "-A**2*B**4*D*Q**2*W",
+      "decay": "2*t1 + 4*t2 + w + x - 2",
+      "minimum": "267/200"
+    },
+    {
+      "term": "-A**3*B**3*D*Q**2*W",
+      "decay": "3*t1 + 3*t2 + w + x - 2",
+      "minimum": "267/200"
+    },
+    {
+      "term": "-A**4*B**2*D*Q**2*W",
+      "decay": "4*t1 + 2*t2 + w + x - 2",
+      "minimum": "267/200"
+    },
+    {
+      "term": "-A**5*B**7*D*Q**2*W",
+      "decay": "5*t1 + 7*t2 + w + x - 2",
+      "minimum": "3329/1000"
+    },
+    {
+      "term": "-A**6*B**6*D*Q**2*W",
+      "decay": "6*t1 + 6*t2 + w + x - 2",
+      "minimum": "3329/1000"
+    },
+    {
+      "term": "-A**7*B**5*D*Q**2*W",
+      "decay": "7*t1 + 5*t2 + w + x - 2",
+      "minimum": "3329/1000"
+    },
+    {
+      "term": "-2*A**4*B**5*D*Q*W",
+      "decay": "4*t1 + 5*t2 + w + x - 1",
+      "minimum": "833/250"
+    },
+    {
+      "term": "-2*A**5*B**4*D*Q*W",
+      "decay": "5*t1 + 4*t2 + w + x - 1",
+      "minimum": "833/250"
+    },
+    {
+      "term": "2*A**6*B**6*D*Q*W",
+      "decay": "6*t1 + 6*t2 + w + x - 1",
+      "minimum": "4329/1000"
+    },
+    {
+      "term": "2*A**4*B**5*D*Q**2*W",
+      "decay": "4*t1 + 5*t2 + w + x - 2",
+      "minimum": "583/250"
+    },
+    {
+      "term": "2*A**5*B**4*D*Q**2*W",
+      "decay": "5*t1 + 4*t2 + w + x - 2",
+      "minimum": "583/250"
+    }
+  ],
+  "minimum_decay": "267/200",
+  "angular_minimum": "507/500",
+  "ramified_relative_decay": {
+    "1": [
+      {
+        "term": "A",
+        "relative_decay": "0",
+        "minimum": "0"
+      },
+      {
+        "term": "B",
+        "relative_decay": "0",
+        "minimum": "0"
+      },
+      {
+        "term": "A**2*B**2",
+        "relative_decay": "1003/1000",
+        "minimum": "1003/1000"
+      },
+      {
+        "term": "A*R/Q**2",
+        "relative_decay": "3*x + 253/500",
+        "minimum": "1513/500"
+      },
+      {
+        "term": "B*R/Q**2",
+        "relative_decay": "3*x + 253/500",
+        "minimum": "1513/500"
+      },
+      {
+        "term": "-A*B**3*T",
+        "relative_decay": "w + x + 1003/1000",
+        "minimum": "293/125"
+      },
+      {
+        "term": "-A**3*B*T",
+        "relative_decay": "w + x + 1003/1000",
+        "minimum": "293/125"
+      },
+      {
+        "term": "-A**2*B**2*T",
+        "relative_decay": "w + x + 1003/1000",
+        "minimum": "293/125"
+      },
+      {
+        "term": "-2*A*R/Q",
+        "relative_decay": "3*x - 247/500",
+        "minimum": "1013/500"
+      },
+      {
+        "term": "-2*B*R/Q",
+        "relative_decay": "3*x - 247/500",
+        "minimum": "1013/500"
+      },
+      {
+        "term": "A*B**3*Q*T",
+        "relative_decay": "w + x + 3/1000",
+        "minimum": "168/125"
+      },
+      {
+        "term": "A**3*B*Q*T",
+        "relative_decay": "w + x + 3/1000",
+        "minimum": "168/125"
+      },
+      {
+        "term": "A**3*B**4*Q*T",
+        "relative_decay": "w + x + 503/500",
+        "minimum": "2347/1000"
+      },
+      {
+        "term": "A**4*B**3*Q*T",
+        "relative_decay": "w + x + 503/500",
+        "minimum": "2347/1000"
+      },
+      {
+        "term": "R/(A*B*Q**2)",
+        "relative_decay": "3*x - 497/1000",
+        "minimum": "2023/1000"
+      },
+      {
+        "term": "-B**2*R/(A*Q)",
+        "relative_decay": "3*x - 247/500",
+        "minimum": "1013/500"
+      },
+      {
+        "term": "-A**2*R/(B*Q)",
+        "relative_decay": "3*x - 247/500",
+        "minimum": "1013/500"
+      },
+      {
+        "term": "-A**2*B**2*Q**2*T",
+        "relative_decay": "w + x - 997/1000",
+        "minimum": "43/125"
+      },
+      {
+        "term": "-A**3*B**4*Q**2*T",
+        "relative_decay": "w + x + 3/500",
+        "minimum": "1347/1000"
+      },
+      {
+        "term": "-A**4*B**3*Q**2*T",
+        "relative_decay": "w + x + 3/500",
+        "minimum": "1347/1000"
+      },
+      {
+        "term": "2*A**2*B**2*Q*T",
+        "relative_decay": "w + x + 3/1000",
+        "minimum": "168/125"
+      }
+    ],
+    "2": [
+      {
+        "term": "A**2",
+        "relative_decay": "0",
+        "minimum": "0"
+      },
+      {
+        "term": "B**2",
+        "relative_decay": "0",
+        "minimum": "0"
+      },
+      {
+        "term": "A*B",
+        "relative_decay": "0",
+        "minimum": "0"
+      },
+      {
+        "term": "R/(A*Q**2)",
+        "relative_decay": "3*x - 497/1000",
+        "minimum": "2023/1000"
+      },
+      {
+        "term": "R/(B*Q**2)",
+        "relative_decay": "3*x - 497/1000",
+        "minimum": "2023/1000"
+      },
+      {
+        "term": "-A*B*T",
+        "relative_decay": "w + x",
+        "minimum": "1341/1000"
+      },
+      {
+        "term": "-R/(A*Q)",
+        "relative_decay": "3*x - 1497/1000",
+        "minimum": "1023/1000"
+      },
+      {
+        "term": "-A**2*R/Q",
+        "relative_decay": "3*x - 247/500",
+        "minimum": "1013/500"
+      },
+      {
+        "term": "-R/(B*Q)",
+        "relative_decay": "3*x - 1497/1000",
+        "minimum": "1023/1000"
+      },
+      {
+        "term": "-B**2*R/Q",
+        "relative_decay": "3*x - 247/500",
+        "minimum": "1013/500"
+      },
+      {
+        "term": "-A**2*B**3*T",
+        "relative_decay": "w + x + 1003/1000",
+        "minimum": "293/125"
+      },
+      {
+        "term": "-A**3*B**2*T",
+        "relative_decay": "w + x + 1003/1000",
+        "minimum": "293/125"
+      },
+      {
+        "term": "A*B*R/Q**2",
+        "relative_decay": "3*x + 253/500",
+        "minimum": "1513/500"
+      },
+      {
+        "term": "A*B**4*Q*T",
+        "relative_decay": "w + x + 3/1000",
+        "minimum": "168/125"
+      },
+      {
+        "term": "A**4*B*Q*T",
+        "relative_decay": "w + x + 3/1000",
+        "minimum": "168/125"
+      },
+      {
+        "term": "-A**2*B**3*Q**2*T",
+        "relative_decay": "w + x - 997/1000",
+        "minimum": "43/125"
+      },
+      {
+        "term": "-A**3*B**2*Q**2*T",
+        "relative_decay": "w + x - 997/1000",
+        "minimum": "43/125"
+      },
+      {
+        "term": "-A**4*B**4*Q**2*T",
+        "relative_decay": "w + x + 3/500",
+        "minimum": "1347/1000"
+      },
+      {
+        "term": "-2*A*B*R/Q",
+        "relative_decay": "3*x - 247/500",
+        "minimum": "1013/500"
+      },
+      {
+        "term": "2*A**2*B**3*Q*T",
+        "relative_decay": "w + x + 3/1000",
+        "minimum": "168/125"
+      },
+      {
+        "term": "2*A**3*B**2*Q*T",
+        "relative_decay": "w + x + 3/1000",
+        "minimum": "168/125"
+      }
+    ]
+  },
+  "x_buffer": "1/1000000",
+  "frequency_displacement": "1/1000",
+  "high_relative_exponent": "-32045621/300000000",
+  "high_saving_at_least": "1/10",
+  "frequency_error_margins": {
+    "first_left_integral": "259/1000000",
+    "skew_pole_residue": "31/250000",
+    "triple_pole_left_integral": "9/1000000"
+  },
+  "principal_power": "x-41/75",
+  "principal_log_degree": 2,
+  "direct_target_power": "8797/30000",
+  "direct_reserve": "1/10000",
+  "ideal_diagonal_Cauchy_threshold": "11/12",
+  "missing_correlation_saving": "23/300",
+  "direct_estimate_proved": false,
+  "new_zero_free_bound_proved": false,
+  "analytic_derivation_formalized": false
+}

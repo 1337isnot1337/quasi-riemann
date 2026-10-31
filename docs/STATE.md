@@ -56,11 +56,26 @@ same contact. See the source lock for exact heads and rational bounds.
    forces short completion and overlap indices. The direct bound, continued row
    estimate and final principal asymptotic remain open. See
    `research/shared-label-cubic-identity.md`; no zero-free theorem is claimed.
+9. The new cubic probe has a written conditional reduction to theta=21/25.
+   An explicit contour certificate gives a uniform row-error saving exceeding
+   1/10 with the full row count, and an iterated principal extraction retains
+   a nonzero quadratic logarithmic signal. The remaining input is the complete
+   direct bound `J_eta << Z^(8797/30000)` at the stated fixed scales. It is
+   unproved. No threshold of 0.84 is established; see
+   `research/cubic-direct-target-084.md` for the analytic derivation and scope.
 
-These are model results, arithmetic identities and proof-obligation analysis. No new L-function theorem
+These are model results, arithmetic identities and proof-obligation analysis.
+No new L-function theorem
 and no independent replay of the upstream Lean dependency closure are claimed.
 
 ## Active route
+
+The current structural lane is the shared-label cubic probe. Its remaining
+direct target for 0.84 is in `research/cubic-direct-target-084.md`. The row
+estimate uses the full count, and the principal signal is retained with two
+logarithmic powers. Work now targets the complete signed long-Mobius-Gauss /
+short-ordinary-Gauss correlation, including its polar component. The direct
+estimate is open. The inherited route below remains a separate reference.
 
 Trace the actual weighted packet estimate
 `sum |S_i|^4 |Q_i|^2 <= U^(1+epsilon)` and seek a stronger joint moment for the
