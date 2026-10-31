@@ -91,6 +91,15 @@ same contact. See the source lock for exact heads and rational bounds.
     the global angular identity, signal and full frequency estimates are not.
     See `research/angular-cubic-probe.md`.
 
+14. The angular variant now has a written global Poisson identity on absolute
+    lines, with unit multiplier omega^r and completion character alpha^3.
+    On its principal scalar residue every good-prime numerator is bounded
+    away from zero by 1647/7840 for Re(x)>5/6. A fixed scale-ratio family,
+    with rational ratios in [1,2], separates every possible target zero in
+    that half-plane by Mellin uniqueness. This does not expose that residue
+    in the full row sum or prove its direct estimate; both remain open.
+    See `research/angular-signal-family.md` and its exact certificate.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.

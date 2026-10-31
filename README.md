@@ -24,6 +24,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Exact conditional return target at 0.87](research/conditional-087.md)
 - [Lean transport fork admitting the 0.87 geometry](formal-transport/README.md)
 - [An angular cubic-probe candidate and its changed signal](research/angular-cubic-probe.md)
+- [Its global identity and a separating family of candidate residues](research/angular-signal-family.md)
 - [A coupled derivative for the exposed diagonal pole](research/coupled-mellin-annihilator.md)
 - [Source and credit map](docs/SOURCES.md)
 
