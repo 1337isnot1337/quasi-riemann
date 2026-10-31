@@ -76,6 +76,13 @@ same contact. See the source lock for exact heads and rational bounds.
     low estimates and a coherent row-sum saving remain unproved. It changes no
     conductor exponent by itself. See `research/coupled-mellin-annihilator.md`.
 
+12. An optimistic low-side audit of the separate shared-label cubic probe
+    shows that two generic cubic sieve bounds followed by Cauchy leave exponent
+    gap at least 1-theta in the short-second-dual regime. Thus theta=0.87 needs
+    at least 0.13 saving from its actual Gauss/Möbius coefficients or a different
+    joint argument. This is a model limit for that Cauchy route, not a lower
+    bound for the physical probe. See `research/binary-cubic-low-budget.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.
@@ -97,6 +104,10 @@ are in `research/conditional-087.md`. An alternative is a new off-diagonal or
 factorization estimate for the long reciprocal polynomial, with conductor,
 shifts, selected weights, uniformity, and loss budgets explicit. A generic change
 of Holder exponent is insufficient.
+
+The shared-label cubic construction is a separate structural route; the new
+low-budget note identifies the coefficient saving it would need in the
+short-second-dual regime.
 
 A narrower analytic target is now the coefficient-sensitive regular primitive
 Kubota pairing for the actual Möbius/plain convolution. The fixed primitive pole
