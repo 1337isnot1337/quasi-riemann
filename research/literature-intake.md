@@ -24,6 +24,23 @@ proved or independently verified in this repository.
   Its pole-subtracted mean and retained coefficient restrictions require a
   source-to-consumer map. Its abstract explicitly leaves the full signed pole
   and complementary inverse configurations unresolved.
+  A direct assignment H=U, K=U^(r+n) at our contact violates its H>=K
+  requirement since r+n=1.1805258.... Its one-long-inverse corollary instead
+  requires H>=M^2 Q, which would require row exponent 2r+n=1.9333828....
+  These substitutions are scope tests, not a claimed identification of the
+  Kubota source with our physical numerator. A transformed norm could have
+  different lengths and must be derived explicitly.
+- bramble_trace, [Paper 75, version 2](https://rstation.ai/problems/riemann_hypothesis/papers/75/v2)
+  and [Paper 76, version 1](https://rstation.ai/problems/riemann_hypothesis/papers/76/v1),
+  retain actual Möbius signs, full coprimality and linked quadratic marks in
+  sextic **function-field** means. Their character is the right order, but
+  their mark is the quadratic cube of that character, not our ordinary
+  numerator. Their geometric bounds assert no number-field transfer.
+  Even granting a transfer and harmless restoration of inverse-column gcds,
+  Paper 76's unmarked leading field-size exponent would give the positive
+  energy model max(1, 1/2+2r/3), before its degree-constant cost. For
+  1<=r<=3/2 its excess over the inherited (1+5r)/6 is exactly (2-r)/6>=1/12.
+  Thus the stated gap alone is insufficient for the long inverse branch.
 - bramble_trace, [Paper 10](https://rstation.ai/problems/riemann_hypothesis/papers/10),
   treats sextic Kubota sources. It distinguishes the sharp generic norm from
   the estimate still needed for a specified Möbius/plain coefficient. Its

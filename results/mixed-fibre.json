@@ -47,6 +47,14 @@
     "inverse_mixed_T_critical_without_marks": "1.118654199364821299127857",
     "inverse_mixed_support_without_marks": "1.180525801250845801508256"
   },
+  "sextic_phase_projection": {
+    "scope": "exact local principal-phase projection; not a Kubota residue or row mean",
+    "same_twist_ratio": "1",
+    "quadratic_term": "(xi-yi)*(xj-yj)",
+    "polar_factor_model": "zeta(si+sj)*zeta(ti+tj)/(zeta(si+tj)*zeta(sj+ti))",
+    "residual_minimum_total_degree": 4,
+    "independent_conjugate_twist_negative_control": 4
+  },
   "mixed_inverse_input_proved": false,
   "scope": "one common detector fibre; abstract positive arrays, not actual Hecke characters"
 }

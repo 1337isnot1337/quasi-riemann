@@ -54,6 +54,14 @@ same contact. See the source lock for exact heads and rational bounds.
    and Quot.sound. The assembly remains conditional on its finite numerator input;
    this does not supply the unproved count or a new nonvanishing theorem.
 
+9. The sextic principal-phase Euler projection of the full inverse/plain
+   ratio cancels at identical twists. With independent twists its leading term
+   is `(x1-y1)*(x2-y2)`, positive in the conjugate energy case. Removing four
+   explicit zeta factors leaves a degree-four residual. Thus even this simpler
+   Euler model retains a double pole at generic small fixed twist differences;
+   same-shift cancellation is not uniform cancellation of the actual mean.
+   The exact local identity is in `research/mixed-fibre.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.

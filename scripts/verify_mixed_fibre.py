@@ -70,6 +70,34 @@ def main():
                 "inverse_mixed_T_critical_without_marks": threshold.subs(z, 0),
                 "inverse_mixed_support_without_marks": packet_length+inv}
 
+    # Exact local principal-phase projection for the actual sextic order.
+    # The four variables retain separate twists; this is not a row-mean estimate.
+    xi, xj, yi, yj, scale = s.symbols('xi xj yi yj scale')
+    local_num = sum((-xi)**ei*(-xj)**ej*yi**i*yj**j
+                    for ei in range(2) for ej in range(2)
+                    for i in range(6) for j in range(6)
+                    if (ei-ej+i-j) % 6 == 0)
+    local_den = (1-yi**6)*(1-yj**6)
+    geometric = sum((yi*yj)**i for i in range(6))
+    shifted = sum((yi*yj)**i for i in range(5))
+    closed = ((1+xi*xj)*geometric-xi*(yj*shifted+yi**5)
+              -xj*(yi*shifted+yj**5))
+    assert s.expand(local_num-closed) == 0
+    assert s.expand(local_num.subs({xi: yi, xj: yj})-local_den) == 0
+    scaled = s.Poly(s.expand(local_num.subs(
+        {v: scale*v for v in [xi, xj, yi, yj]}, simultaneous=True)), scale)
+    quadratic = (xi-yi)*(xj-yj)
+    assert scaled.nth(0) == 1 and scaled.nth(1) == 0
+    assert s.expand(scaled.nth(2)-quadratic) == 0 and scaled.nth(3) == 0
+    # Remove precisely the four quadratic Euler factors; the residual starts at degree 4.
+    polar_removed_num = s.expand(local_num*(1-xi*xj)*(1-yi*yj))
+    polar_removed_den = s.expand(local_den*(1-xi*yj)*(1-xj*yi))
+    residual = s.Poly(s.expand((polar_removed_num-polar_removed_den).subs(
+        {v: scale*v for v in [xi, xj, yi, yj]}, simultaneous=True)), scale)
+    assert all(residual.nth(j) == 0 for j in range(4))
+    # Conjugate energy twists x=1, y=-1 give a nonzero quadratic term.
+    assert quadratic.subs({xi: 1, xj: 1, yi: -1, yj: -1}) == 4
+
     rational = fibre(Q(3, 7), Q(3, 7))
     radical = s.sqrt(1081)
     density = (61-radical)/66
@@ -85,6 +113,14 @@ def main():
         "rational_fibre": serial(rational),
         "inherited_contact_fibre": serial(contact),
         "inherited_contact_decimals": {k: str(s.N(v, 25)) for k, v in contact.items()},
+        "sextic_phase_projection": {
+            "scope": "exact local principal-phase projection; not a Kubota residue or row mean",
+            "same_twist_ratio": "1",
+            "quadratic_term": "(xi-yi)*(xj-yj)",
+            "polar_factor_model": "zeta(si+sj)*zeta(ti+tj)/(zeta(si+tj)*zeta(sj+ti))",
+            "residual_minimum_total_degree": 4,
+            "independent_conjugate_twist_negative_control": 4,
+        },
         "mixed_inverse_input_proved": False,
         "scope": "one common detector fibre; abstract positive arrays, not actual Hecke characters",
     }

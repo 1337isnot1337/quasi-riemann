@@ -152,3 +152,73 @@ The [targeted literature intake](literature-intake.md) compares recent published
 mixed estimates with this numeric contract. The long inverse factor's squarefree
 support gives the more specific [cube-extraction constraint](inverse-dominant-support.md)
 now under investigation.
+
+## What the independent twists do to the Euler projection
+
+There is a more explicit obstruction to the simple `mu * 1` shortcut. This
+calculation concerns the **local principal-phase projection** of an untruncated
+inverse/plain Euler product. It is not an identification of the full Kubota
+residue, and is not an estimate for the actual finite row mean.
+
+Let z range over the sixth roots of unity, with four independent local weights
+x1,x2,y1,y2. The projected local factor is
+
+```text
+F = average_z (1-x1*z)(1-x2/z) / ((1-y1*z)(1-y2/z)).
+```
+
+Put S6=sum_{j=0}^5 (y1*y2)^j and S5=sum_{j=0}^4 (y1*y2)^j. Expanding the two
+ordinary factors in geometric series and retaining exactly the congruence
+`e1-e2+j1-j2 = 0 mod 6` gives the exact rational identity
+
+```text
+F = [(1+x1*x2)*S6-x1*(y2*S5+y1^5)-x2*(y1*S5+y2^5)]
+    / [(1-y1^6)*(1-y2^6)].
+```
+
+At x1=y1 and x2=y2 this is identically 1. Its first nonconstant homogeneous
+term is
+
+```text
+x1*x2+y1*y2-x1*y2-x2*y1 = (x1-y1)*(x2-y2).
+```
+
+For conjugate energy weights, x2=conj(x1) and y2=conj(y1), it is |x1-y1|^2.
+The concrete conjugate weights x1=x2=1, y1=y2=-1 give coefficient 4 rather
+than zero. Multiplying F by
+
+```text
+(1-x1*x2)*(1-y1*y2) / ((1-x1*y2)*(1-x2*y1))
+```
+
+removes all terms of total degree below four except the constant 1. The replay
+checks the exact rational identity, equal-shift cancellation, homogeneous terms
+and this negative control.
+
+For the Euler model, set xj=N(P)^(-sj) and yj=N(P)^(-tj). Consequently its global
+product, initially for all four real parts above 1/2, factors as
+
+```text
+zeta_K(s1+s2)*zeta_K(t1+t2)
+/ [zeta_K(s1+t2)*zeta_K(s2+t1)] * H(s1,s2,t1,t2).
+```
+
+The residual Euler factors are 1+O(N(P)^(-4*sigma0)) uniformly when all four real
+parts are at least sigma0>1/4. This proves absolute convergence of H there.
+For conjugate energy shifts H is strictly positive on the real common
+abscissa: each local projected factor is an average of a nonnegative squared
+modulus and is positive, and the removed factors are also positive.
+
+In particular take s1=s+iw, s2=s-iw, t1=s+iv and t2=s-iv. The polar model is
+
+```text
+zeta_K(2s)^2 / [zeta_K(2s+i(w-v))*zeta_K(2s-i(w-v))] * H.
+```
+
+When w=v the entire original product is 1. For a sufficiently small fixed
+nonzero w-v, the two denominator factors are finite and nonzero near s=1/2
+by the Laurent expansion at the simple zeta pole. Since H is positive, a
+double pole remains. This proves that cancellation at identical shifts does
+not extend uniformly to independent twists even in the principal-phase Euler
+model. Moving from this model to an actual projected Gauss source, and from
+there to the physical numerator, still requires explicit arguments.
