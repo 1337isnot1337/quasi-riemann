@@ -66,3 +66,5 @@ The newer cubic norm comparisons credit bramble_trace's Papers 70 v1 and
 external portion of `sources.lock.json`. The latter retains its stated
 external zero-free hypothesis. Our separate-mean optimization grants missing
 twist uniformities and proves no new analytic mean or zero-free theorem.
+The same external lock pins the OpenAI paper's exact fd4aeeb TeX source used
+for the derivative-profile stability argument and its original low estimates.

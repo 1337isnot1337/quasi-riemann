@@ -52,7 +52,39 @@ theorem gaussianMellinProfile_log_power_bound (y a : ℝ) (hy : 0<y) :
     (norm_nonneg (((1/(2*Real.pi):ℝ):ℂ)*(Real.pi:ℂ)^(1/2:ℂ)))
   convert hb using 1 <;> ring
 
+theorem realGaussian_hasDerivAt (y : ℝ) (hy : 0<y) :
+    HasDerivAt (fun r : ℝ => Real.exp (-(Real.log r)^2/4))
+      (-(Real.log y/(2*y))*Real.exp (-(Real.log y)^2/4)) y := by
+  convert (((Real.hasDerivAt_log hy.ne').pow 2).neg.div_const 4).exp using 1
+  dsimp
+  ring
+
+theorem coupled_gaussian_atom (f g : ℝ → ℝ) (r s y fp gp : ℝ)
+    (hf : HasDerivAt f fp r) (hg : HasDerivAt g gp s) (hy : 0<y) :
+    deriv (fun t : ℝ => Real.exp ((-3/2)*t)*f (r*Real.exp (-t))*
+      g (s*Real.exp (-t))*Real.exp (-(Real.log (y*Real.exp (-t)))^2/4)) 0
+      +(1/2)*f r*g s*Real.exp (-(Real.log y)^2/4) =
+    -f r*g s*Real.exp (-(Real.log y)^2/4)
+      -r*fp*g s*Real.exp (-(Real.log y)^2/4)
+      -s*f r*gp*Real.exp (-(Real.log y)^2/4)
+      +f r*g s*(Real.log y/2)*Real.exp (-(Real.log y)^2/4) := by
+  have he : HasDerivAt (fun t : ℝ => Real.exp (-t)) (-1) 0 := by
+    simpa using (hasDerivAt_neg (0:ℝ)).exp
+  have hn : HasDerivAt (fun t : ℝ => Real.exp ((-3/2)*t)) (-3/2) 0 := by
+    simpa using ((hasDerivAt_id (0:ℝ)).const_mul (-3/2)).exp
+  have hfr := hf.comp_of_eq 0 (he.const_mul r) (by simp)
+  have hgs := hg.comp_of_eq 0 (he.const_mul s) (by simp)
+  have hgy := (realGaussian_hasDerivAt y hy).comp_of_eq 0
+    (he.const_mul y) (by simp)
+  have h := (((hn.mul hfr).mul hgs).mul hgy).deriv
+  simp only [Pi.mul_def, Function.comp_def, neg_zero, Real.exp_zero, mul_one, mul_zero] at h
+  rw [h]
+  field_simp [hy.ne']
+  ring
+
 #print axioms abs_mul_gaussian_le_one
 #print axioms log_half_gaussian_power_bound
 #print axioms gaussianMellinProfile_log_power_bound
+#print axioms realGaussian_hasDerivAt
+#print axioms coupled_gaussian_atom
 end Transport087

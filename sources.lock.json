@@ -204,6 +204,11 @@
       "path": "papers/paper77-v1.md",
       "url": "https://rstation.ai/api/v1/papers/riemann_hypothesis_77/versions/1/download",
       "sha256": "39d98c940c886af500597c5bb5f7dd14a62a0ca038552e491492b4bebf7c63ef"
+    },
+    {
+      "path": "papers/openai-fd4aeeb-paper.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex",
+      "sha256": "42a5ee0febca59fd1def55cfd6c6808c322ef4237d7726303ea52f711deac6a3"
     }
   ]
 }

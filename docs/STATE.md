@@ -73,9 +73,13 @@ same contact. See the source lock for exact heads and rational bounds.
 11. A candidate coupled Euler derivative has exact Mellin multiplier x+w-1.
     It removes the exposed diagonal scalar pole while multiplying the original
     principal signal by x. Its four profile terms are explicit, and Lean proves
-    arbitrary-power tail bounds for the new logarithmic Gaussian term. The full
-    physical integration, low estimates and coherent row-sum saving remain unproved. It changes no
-    conductor exponent by itself. See `research/coupled-mellin-annihilator.md`.
+    arbitrary-power tail bounds for the new logarithmic Gaussian term. The
+    atomic chain rule is Lean checked as well. A written profile argument
+    justifies physical differentiation and retains the original paper's balanced
+    and compensated low exponents. The refined selected low estimate and
+    coherent row-sum saving remain unproved. It changes no conductor exponent by
+    itself. See `research/coupled-mellin-annihilator.md` and
+    `research/derivative-low-stability.md`.
 
 12. An optimistic low-side audit of the separate shared-label cubic probe
     shows that two generic cubic sieve bounds followed by Cauchy leave exponent

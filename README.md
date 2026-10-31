@@ -27,6 +27,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [The signed-correlation gap after newer cubic Gauss norm estimates](research/cubic-signed-budget.md)
 - [An angular cubic-probe candidate and its changed signal](research/angular-cubic-probe.md)
 - [A coupled derivative for the exposed diagonal pole](research/coupled-mellin-annihilator.md)
+- [Physical differentiation and stability of the baseline low estimates](research/derivative-low-stability.md)
 - [Source and credit map](docs/SOURCES.md)
 
 The research target is a structural jump beyond all preexisting candidates.
