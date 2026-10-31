@@ -3,6 +3,8 @@
 This note gives a written derivation of an exact global representation for a
 changed probe. Its local kernel and unit packet have exact symbolic checks;
 its Poisson normalization also has a separate numerical finite-Fourier check.
+The latter includes direct sums at two actual primary Eisenstein primes of
+norms 7 and 13, in all 16 source/label overlap configurations.
 It proves no estimate for the signed row sum and no new zero-free half-plane.
 The analytic derivation is not formalized in Lean.
 

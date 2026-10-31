@@ -5,7 +5,8 @@ This is a diagnostic, not an exact proof or a zero-free bound certificate.
 """
 import cmath
 from functools import lru_cache
-from math import pi, sqrt
+from itertools import product
+from math import pi, prod, sqrt
 
 
 Q = 7
@@ -23,6 +24,80 @@ def gauss(power, orientation, valuation):
     return sum((chi[a % Q]**orientation if orientation else int(a % Q != 0))
                * cmath.exp(2j*pi*((a*frequency) % modulus)/modulus)
                for a in range(modulus))
+
+
+def check_eisenstein_crt():
+    """Direct sums in O/(c*s), including c/s overlaps at norms 7 and 13."""
+    omega = cmath.exp(2j*pi/3)
+    # (primary generator coordinates, norm, image of omega in the quotient)
+    primes = [(-2, -3, 7, 4), (1, -3, 13, 9)]
+
+    def multiply(z, w):
+        a, b = z
+        c, d = w
+        return a*c-b*d, a*d+b*c-b*d
+
+    def norm(z):
+        a, b = z
+        return a*a-a*b+b*b
+
+    def generator(mask):
+        z = (1, 0)
+        for i, p in enumerate(primes):
+            if mask >> i & 1:
+                z = multiply(z, p[:2])
+        return z
+
+    def cubic(i, value):
+        _, _, q, root = primes[i]
+        if value % q == 0:
+            return 0j
+        residue = pow(value % q, (q-1)//3, q)
+        return omega**next(k for k in range(3) if pow(root, k, q) == residue)
+
+    @lru_cache(None)
+    def normalized_gauss(mask, orientation):
+        if not mask:
+            return 1+0j
+        z = generator(mask)
+        n, b = norm(z), z[1]
+        return sum(prod(cubic(i, a)**orientation for i in range(2) if mask >> i & 1)
+                   *cmath.exp(-2j*pi*((b*a) % n)/n) for a in range(n))/sqrt(n)
+
+    def actual_gauss(c, s, h):
+        z = multiply(generator(c), generator(s))
+        n, (a, b) = norm(z), z
+        frequency = (-b*h[0]+a*h[1]) % n
+        total = 0j
+        for value in range(n):
+            char = 1+0j
+            for i in range(2):
+                if (c | s) >> i & 1:
+                    v = cubic(i, value)
+                    if v == 0:
+                        char = 0j
+                        break
+                    char *= v**(((c >> i & 1)-(s >> i & 1)) % 3)
+            total += char*cmath.exp(2j*pi*((frequency*value) % n)/n)
+        return total
+
+    errors = []
+    for c, s in product(range(4), repeat=2):
+        z = generator(c)
+        alpha = (z[0]+z[1]*omega)/sqrt(norm(z))
+        d = generator(c & s)
+        actual = (normalized_gauss(c, 1)*normalized_gauss(s, 2)**(-2)
+                  *alpha.conjugate()*actual_gauss(c, s, d)
+                  *actual_gauss(c, s, multiply(d, d)))
+        expected = (-1)**((c & ~s).bit_count())
+        for i, p in enumerate(primes):
+            if (c ^ s) >> i & 1:
+                expected *= p[2]
+            elif (c & s) >> i & 1:
+                expected *= p[2]**2*(p[2]-1)
+        errors.append(abs(actual/expected-1))
+    assert max(errors) < 1e-10
+    print(f"Actual Eisenstein CRT diagnostic: 16 cases; maximum relative error {max(errors):.3g} < 1e-10.")
 
 
 def main():
@@ -64,6 +139,7 @@ def main():
     error = max(abs(a-b) for a, b in zip(direct, expected))
     assert error < 1e-10, error
     print(f"Direct local Fourier diagnostic: 3 row sectors; maximum error {error:.3g} < 1e-10.")
+    check_eisenstein_crt()
 
 
 if __name__ == "__main__":
