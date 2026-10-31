@@ -1,0 +1,52 @@
+{
+  "status": "exact fixed-fibre exponent obstruction and mixed-input accounting; no L-function theorem",
+  "mixed_plain_minus_fourth": "(plain_count-R)/4",
+  "continuum_energy_identity": "R+2*a(l1)+2*a(l2)+2*q*z = 1+(2*q/lam)*(l1+l2+lam*z-B)",
+  "rational_fibre": {
+    "delta": "3/7",
+    "n": "3/7",
+    "t": "26/23",
+    "r": "52/69",
+    "m": "26/69",
+    "R": "201/322",
+    "q": "3/14",
+    "packet_amplitude": "389/4508",
+    "plain_amplitude": "13/161",
+    "inverse_amplitude": "26/161",
+    "packet_sum": "3203/4508",
+    "inverse_mixed_T_critical_without_marks": "1262/1127",
+    "inverse_mixed_support_without_marks": "571/483"
+  },
+  "inherited_contact_fibre": {
+    "delta": "61/66 - sqrt(1081)/66",
+    "n": "-1081/855 + 44*sqrt(1081)/855",
+    "t": "1/30 + sqrt(1081)/30",
+    "r": "1/45 + sqrt(1081)/45",
+    "m": "1/90 + sqrt(1081)/90",
+    "R": "281/396 - sqrt(1081)/396",
+    "q": "61/132 - sqrt(1081)/132",
+    "packet_amplitude": "-8213/15048 + 289*sqrt(1081)/15048",
+    "plain_amplitude": "-17/198 + sqrt(1081)/198",
+    "inverse_amplitude": "-17/99 + sqrt(1081)/99",
+    "packet_sum": "2465/15048 + 251*sqrt(1081)/15048",
+    "inverse_mixed_T_critical_without_marks": "-2729/3762 + 211*sqrt(1081)/3762",
+    "inverse_mixed_support_without_marks": "-118/95 + 7*sqrt(1081)/95"
+  },
+  "inherited_contact_decimals": {
+    "delta": "0.4260823568856485905989517",
+    "n": "0.4276688135720192899422738",
+    "t": "1.129285481518239767348973",
+    "r": "0.7528569876788265115659819",
+    "m": "0.3764284938394132557829909",
+    "R": "0.6265692817031636539887142",
+    "q": "0.2130411784428242952994759",
+    "packet_amplitude": "0.08565291897681677185776145",
+    "plain_amplitude": "0.08019476992700602535590497",
+    "inverse_amplitude": "0.1603895398540120507118099",
+    "packet_sum": "0.7122222006799804258464756",
+    "inverse_mixed_T_critical_without_marks": "1.118654199364821299127857",
+    "inverse_mixed_support_without_marks": "1.180525801250845801508256"
+  },
+  "mixed_inverse_input_proved": false,
+  "scope": "one common detector fibre; abstract positive arrays, not actual Hecke characters"
+}

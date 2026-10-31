@@ -26,6 +26,10 @@ modules reconstructed in the research notes are:
 | `PR98Improvement/Return/Tuning/Guards.lean` | Parametric source-face guards |
 | `BoundaryPhysical/GenericScalar.lean` | Physical numerator and kernel exponents |
 | `BoundaryPhysical/PhysicalDirect/PacketBound.lean` | Actual fourth-moment packet hypothesis |
+| Baseline `Hecke/Dyadic.lean` | Ordinary versus Möbius coefficient definitions |
+| Baseline `Hecke/DetectorFiberSpikes.lean` | Both spikes on one actual detector fibre |
+| Collet `Record1252270103Return/CountFromMoments.lean` | Inverse and ordinary moment count inputs |
+| Collet `Cycle25/Energy/Physical/CertifiedZero.lean` | Empty-slot ordinary pair moment for long lengths |
 | `BoundaryPhysical/PhysicalDirect/Hybrid.lean` | Two-ordinary-factor source budget |
 | `BoundaryPhysical/PhysicalDirect/Geometry.lean` | Plain scale and shifted capacity |
 | `BoundaryPhysical/TransportGeometry.lean` | Coarse box and floor constraints |

@@ -17,6 +17,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Current state and next proof obligation](docs/STATE.md)
 - [Exact return-model obstruction](research/return-model-barrier.md)
 - [Higher-moment route and its actual support cost](research/moment-lift.md)
+- [Mixed detector/numerator moments and the missing inverse input](research/mixed-fibre.md)
 - [Exact conditional return target at 0.87](research/conditional-087.md)
 - [Source and credit map](docs/SOURCES.md)
 
@@ -39,6 +40,10 @@ make sources PYTHON=.venv/bin/python
 It does not build the upstream Lean proof or verify a new zero-free region.
 The 0.87 certificate assumes an explicitly unproved stronger count, and covers
 the whole exponent-model domain by exact rational Bernstein bounds.
+The mixed-fibre replay proves that the ideal two-ordinary-factor source still
+saturates when detector and numerator are coupled. It quantifies a different,
+unproved mixed estimate involving the Möbius inverse detector. It also clarifies
+that the numerator itself has ordinary character coefficients.
 `make sources` downloads only pinned public source files into ignored `.sources/`
 and checks their SHA-256 hashes. No entire upstream tree is vendored.
 

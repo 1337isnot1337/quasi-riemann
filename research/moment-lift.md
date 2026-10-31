@@ -13,7 +13,7 @@ dilation bin and every admissible coefficient choice,
 sum_i |S_i|^4 |Q_i|^2 <= Cmoment U^(1+epsilon).
 ```
 
-Here S_i is the ordinary reciprocal-polynomial packet, Q_i is the selected
+Here S_i is the ordinary polynomial packet of the inverse character, Q_i is the selected
 marked-prime product, and the same rows satisfy a cardinality bound U^R.
 The selected lower bound is |Q_i| >= U^(q C), with q=delta*p and capacity C
 measured in U units. Ignore epsilon and constant losses for the model below.
@@ -93,7 +93,7 @@ its purpose is to rule out deduction from the stated black-box data alone.
 ## Remaining structural approaches
 
 A useful new theorem must exploit information absent from that extremizer:
-actual reciprocal coefficients, shared zero selection, incompatible heavy-row
+actual ordinary numerator and Möbius inverse-detector coefficients, shared zero selection, incompatible heavy-row
 events, or off-diagonal arithmetic cancellation. Plausible targets are:
 
 1. A joint count/moment inequality on zero-selected rows, improving the product
@@ -108,3 +108,8 @@ The exact conditional return certificate in `research/conditional-087.md`
 quantifies a sufficient new row-count input. It is a target for these approaches,
 not evidence that the new count is true. A complete result would also need the
 analytic reconstruction, uniformity and positive loss budget checked.
+
+The fixed-fibre analysis in [mixed-fibre.md](mixed-fibre.md) distinguishes the
+two coefficient types and tests joint ordinary moments. Those moments still
+saturate at the inherited crossing; a mixed inverse/numerator estimate is a
+separate, explicitly quantified analytic target.

@@ -108,6 +108,22 @@
     {
       "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/PR98Improvement/Return/CountDecode.lean",
       "sha256": "6c8febe40e4ce066d35b3bf27ddb041adc41fdf64605364cf2ad3c5833d51579"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/Dyadic.lean",
+      "sha256": "0bfa11cf2b186b0a8ca14bea3a058c57fb0490e9da8ab64948a6c806f9e091b9"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/DetectorFiberSpikes.lean",
+      "sha256": "02223ed40d5493cde5e1b5fb70d7f80ce92ecece7dcdd35099cfc1c37f580e81"
+    },
+    {
+      "path": "submissions/2026-10-21-hailey-collet-1252270103/src/Submissions/hailey_collet_1252270103/Record1252270103Return/CountFromMoments.lean",
+      "sha256": "df6c20445037fa669df272febeb0fbe25ba6e653d7749489ef6663e4093b0305"
+    },
+    {
+      "path": "submissions/2026-10-21-hailey-collet-1252270103/src/Submissions/hailey_collet_1252270103/Cycle25/Energy/Physical/CertifiedZero.lean",
+      "sha256": "7d82917e626b01bf4e60e2e84aad1c1dea2ac9a4e10e3dcbf1f5834331d1eabc"
     }
   ]
 }
