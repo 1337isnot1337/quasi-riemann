@@ -137,5 +137,263 @@
   "unproved_complete_nonzero_frequency_bound": "H_eta << Z^(399/10000)",
   "conditional_zero_free_threshold": "21/25",
   "nonzero_frequency_bound_proved": false,
-  "improved_L_function_bound_proved": false
+  "improved_L_function_bound_proved": false,
+  "sextic_jacobi_variant": {
+    "finite_residue_field_checks": [
+      {
+        "norm": 7,
+        "exponent": 1,
+        "jacobi": [
+          3,
+          2
+        ]
+      },
+      {
+        "norm": 7,
+        "exponent": 2,
+        "jacobi": [
+          3,
+          2
+        ]
+      },
+      {
+        "norm": 7,
+        "exponent": 3,
+        "jacobi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "norm": 7,
+        "exponent": 4,
+        "jacobi": [
+          1,
+          -2
+        ]
+      },
+      {
+        "norm": 7,
+        "exponent": 5,
+        "jacobi": [
+          1,
+          -2
+        ]
+      },
+      {
+        "norm": 7,
+        "exponent": 6,
+        "jacobi": [
+          5,
+          0
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 1,
+        "jacobi": [
+          1,
+          4
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 2,
+        "jacobi": [
+          1,
+          4
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 3,
+        "jacobi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 4,
+        "jacobi": [
+          -3,
+          -4
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 5,
+        "jacobi": [
+          -3,
+          -4
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 6,
+        "jacobi": [
+          11,
+          0
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 1,
+        "jacobi": [
+          -5,
+          -2
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 2,
+        "jacobi": [
+          -5,
+          -2
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 3,
+        "jacobi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 4,
+        "jacobi": [
+          -3,
+          2
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 5,
+        "jacobi": [
+          -3,
+          2
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 6,
+        "jacobi": [
+          17,
+          0
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 1,
+        "jacobi": [
+          -1,
+          -6
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 2,
+        "jacobi": [
+          -1,
+          -6
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 3,
+        "jacobi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 4,
+        "jacobi": [
+          5,
+          6
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 5,
+        "jacobi": [
+          5,
+          6
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 6,
+        "jacobi": [
+          29,
+          0
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 1,
+        "jacobi": [
+          3,
+          -4
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 2,
+        "jacobi": [
+          3,
+          -4
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 3,
+        "jacobi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 4,
+        "jacobi": [
+          7,
+          4
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 5,
+        "jacobi": [
+          7,
+          4
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 6,
+        "jacobi": [
+          35,
+          0
+        ]
+      }
+    ],
+    "exact_kummer_trace_checks": 107,
+    "exact_source_Gauss_phase_checks": 5,
+    "Kloosterman_twist_order": 3,
+    "formal_euler_coefficients_checked": 13,
+    "completion_factor": "L^S(6*x-3,eta^6*alpha_bar^6)",
+    "physical_polynomial": "m^2-1",
+    "source_compensator": "alpha_bar(c)*epsilon(c)",
+    "linear_additive_phase_absent": true,
+    "squarefree_high_coefficient": "mu(c)*eta(c)*gamma_4(c)",
+    "nonzero_signal_domain": "Re(x)>3/4",
+    "local_numerator_lower_bound": "107/252",
+    "unproved_complete_trace_bound": "H6_eta(Z^(2/5),Z) << Z^(-1/10000)",
+    "conditional_zero_free_threshold": "4/5",
+    "trace_bound_proved": false
+  }
 }
