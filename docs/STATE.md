@@ -121,6 +121,10 @@ same contact. See the source lock for exact heads and rational bounds.
     physical ratios. This is a bound for a sector, not for the whole probe;
     the high principal frequency product is a different condition. See
     `research/cubic-principal-ratio-sector.md`.
+    The same counting argument now covers every physical cubic core of norm
+    at most Z^(1/25), at total power 29/100+epsilon. Its margin below the
+    reserved target is 97/30000. The remaining inducing conductors exceed
+    Z^(1/50), with fixed bad-prime data retained.
 
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
@@ -149,9 +153,10 @@ angular variant matches a coefficient-specific cubic mean while changing the
 frequency-pole geometry. Its global signal and full frequency sums need proof;
 the radial low-budget note rules out the simpler generic Cauchy route in the
 short-second-dual regime.
-For the radial 0.84 direct target, the physical cube-ratio sector is now below
-budget by absolute values. The unresolved signed estimate is its complementary
-physical-ratio sum, with the original profiles, target and masks retained.
+For the radial 0.84 direct target, all physical cubic cores through Z^(1/25)
+are below budget by absolute values. The unresolved signed estimate is the
+remaining sum, with inducing conductors above Z^(1/50) and the original
+profiles, target and masks retained.
 
 A narrower analytic target is now the coefficient-sensitive regular primitive
 Kubota pairing for the actual Möbius/plain convolution. The fixed primitive pole

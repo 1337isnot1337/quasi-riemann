@@ -25,7 +25,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Lean transport fork admitting the 0.87 geometry](formal-transport/README.md)
 - [A fixed-product cubic contrast that preserves the reciprocal signal](research/cubic-aspect-contrast.md)
 - [The signed-correlation gap after newer cubic Gauss norm estimates](research/cubic-signed-budget.md)
-- [A full cube-ratio sector below the cubic 0.84 target](research/cubic-principal-ratio-sector.md)
+- [Small physical cubic cores below the 0.84 direct target](research/cubic-principal-ratio-sector.md)
 - [An angular cubic-probe candidate and its changed signal](research/angular-cubic-probe.md)
 - [A coupled derivative for the exposed diagonal pole](research/coupled-mellin-annihilator.md)
 - [Physical differentiation and stability of the baseline low estimates](research/derivative-low-stability.md)

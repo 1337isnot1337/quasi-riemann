@@ -120,6 +120,8 @@ Z^(79/300) in the 0.84 geometry. This is below the reserved direct target
 by exponent 299/10000. Thus the remaining contrast estimate can be restricted
 to the noncube physical ratios. This partition is different from the high
 principal frequency product that supplies the reciprocal signal.
+The stronger small-core estimate covers norms through Z^(1/25) at total
+power 29/100+epsilon, leaving inducing conductors above Z^(1/50).
 
 `scripts/verify_mellin_annihilator.py` checks the local iterated residue and the
 finite-difference algebra exactly. It does not check the imported high

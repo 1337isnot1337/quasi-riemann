@@ -65,6 +65,15 @@ def main():
     cube_selected = s.simplify(cube_power.subs(selected))
     assert cube_selected == q(79, 300)
     assert q(8797, 30000)-cube_selected == q(299, 10000)
+    allocations = {j: [[jm, jh] for jm in range(3) for jh in range(3)
+                       if (jm-jh) % 3 == j] for j in [1, 2]}
+    for j, pairs in allocations.items():
+        assert len(pairs) == 3
+        assert all(jm+2*jh >= j for jm, jh in pairs)
+    small_core_cutoff = q(1, 25)
+    small_core_power = cube_selected+q(2, 3)*small_core_cutoff
+    assert small_core_power == q(29, 100)
+    assert q(8797, 30000)-small_core_power == q(97, 30000)
 
     # Literal phase matching with one common cubic row power is impossible.
     assert not any(k % 3 == 1 and k % 3 == 2 for k in range(3))
@@ -96,6 +105,11 @@ def main():
             'general_power': str(cube_power),
             'selected_084_power': str(cube_selected),
             'margin_below_reserved_direct_target': str(q(299, 10000)),
+            'local_nontrivial_core_allocations': {str(j): pairs for j, pairs in allocations.items()},
+            'small_core_cutoff_power': str(small_core_cutoff),
+            'small_core_sector_power': str(small_core_power),
+            'small_core_margin_below_target': str(q(97, 30000)),
+            'remaining_good_conductor_lower_power': str(small_core_cutoff/2),
             'noncube_complement_bound_proved': False,
         },
         'full_probe_direct_estimate_proved': False,

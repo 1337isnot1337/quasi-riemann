@@ -1,6 +1,6 @@
-# The physical cube-ratio sector is below the 0.84 target
+# Small physical cubic cores are below the 0.84 target
 
-Status: a written elementary bound for a full sector of the radial cubic
+Status: written elementary bounds for full sectors of the radial cubic
 probe, using its exact one-Poisson identity and standard ideal counting.
 Completion indices and source/label overlaps are included. It does not bound
 the complementary sector or prove a new zero-free region. The analytic proof
@@ -111,3 +111,47 @@ still need to be retained.
 This physical partition uses m/h after one Poisson step. The high reciprocal
 signal instead uses the cube class of h1*h2 after two Poisson steps. The two
 conditions differ; bounding the former sector does not remove that signal.
+
+## A positive-power range of small cores can also be removed
+
+Let u=u1*u2^2 be the cube-free ideal of the Kummer class of m/h outside S.
+Here u1,u2 are squarefree and coprime. Fix this class and write the cube-free
+parts of m,h with valuations jm,jh in {0,1,2}. At a prime of u, the permitted
+pairs and their counting weights are
+
+```text
+v_p(u)=1: (jm,jh)=(1,0),(2,1),(0,2),
+          q^(-1/3), q^(-4/3), q^(-4/3);
+v_p(u)=2: (jm,jh)=(2,0),(0,1),(1,2),
+          q^(-2/3), q^(-2/3), q^(-5/3).
+```
+
+These weights follow by extracting the fixed factors m0,h0 from m,h:
+the weighted count gains `q_m0^(-1/3)*q_h0^(-2/3)`. In particular the
+sqrt(q_h0) in the Gauss bound has been included. At the other primes the
+cube-free parts agree and are counted by the common core as before.
+Summing the three local allocations bounds the fixed-class count by
+
+```text
+3^omega(u) * q_u^(-1/3) * M^(1/3)*H^(7/6).
+```
+
+The remaining c,n,s sums are identical. Ideal divisor bounds and counting
+therefore give, for R>=1 and every epsilon>0,
+
+```text
+|J_(q_u<=R)| <<_epsilon
+  Z^(7/6)*(X1*Y)^(-1/6)*X2^(-2/3) * R^(2/3+epsilon).
+```
+
+At the 0.84 scales take R=Z^(1/25). The exponent is then
+`79/300+2/75=29/100`, below 8797/30000 by exactly 97/30000 before
+arbitrarily small losses. This estimate again keeps all completion and
+overlap terms. The same finite-sum triangle applies to the aspect contrast.
+
+Thus the unresolved direct estimate can be restricted further to physical
+cubic cores larger than Z^(1/25). At good primes the primitive cubic
+conductor is rad(u), whose norm is at least sqrt(q_u); every remaining
+class consequently has inducing conductor larger than Z^(1/50), up to
+the fixed bad-prime data. This supplies a positive conductor margin, but
+no estimate for that remaining signed sum is proved here.

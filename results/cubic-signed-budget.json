@@ -32,6 +32,40 @@
     "general_power": "-a/6 - 2*a2/3 - b/6 + 7/6",
     "selected_084_power": "79/300",
     "margin_below_reserved_direct_target": "299/10000",
+    "local_nontrivial_core_allocations": {
+      "1": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "2": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    "small_core_cutoff_power": "1/25",
+    "small_core_sector_power": "29/100",
+    "small_core_margin_below_target": "97/30000",
+    "remaining_good_conductor_lower_power": "1/50",
     "noncube_complement_bound_proved": false
   },
   "full_probe_direct_estimate_proved": false
