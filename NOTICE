@@ -1,0 +1,12 @@
+Quasi-Riemann bound research
+Copyright 2026 1337isnot1337 and contributors
+
+New research and code in this repository are licensed under Apache-2.0.
+The source map cites work by OpenAI, Hailey Collet, Sil, ArviFoxy, Joseph Bebel,
+Jacob Sussman, and other contributors credited by the upstream tracker.
+GTimG/QuasiRiemannTracker provides the verification and admission infrastructure.
+
+The algebraic formulas studied here are reconstructed from the pinned sources
+listed in sources.lock.json. Upstream Lean sources are not redistributed in this
+repository. Fetching them preserves their original copyright/license notices.
+No affiliation with, or endorsement by, the upstream authors is implied.

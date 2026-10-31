@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-31",
+  "repository": "GTimG/QuasiRiemannTracker",
+  "commit": "fc2f46afbfda62351055d3c12fcacd4f6916cc63",
+  "leaderboard_url": "https://bigospeedrun.com/other/quasi-riemann",
+  "leading_admitted_bound": "8733819666133/10000000000000",
+  "open_candidate_bounds": {
+    "100": "8733819666132079/10000000000000000",
+    "101": "5458637291332547/6250000000000000",
+    "102": "87338196661320751993/100000000000000000000"
+  },
+  "pull_requests": [
+    {
+      "number": 99,
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/pull/99",
+      "head": "9e17ac75d786905195f5f87aa8e15496c8a9bfc0",
+      "state_at_snapshot": "closed",
+      "merged_at": "2026-10-30T12:44:37Z",
+      "title": "Improve to 0.8733819666133"
+    },
+    {
+      "number": 100,
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/pull/100",
+      "head": "19d939bbbde5391686878977881a4dbca33c377c",
+      "state_at_snapshot": "open",
+      "merged_at": null,
+      "title": "Improve to 0.8733819666132079"
+    },
+    {
+      "number": 101,
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/pull/101",
+      "head": "20a4c9a5afb5e6c63f9320ccdf765912fb1f29f1",
+      "state_at_snapshot": "open",
+      "merged_at": null,
+      "title": "Improve to 0.87338196661320752"
+    },
+    {
+      "number": 102,
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/pull/102",
+      "head": "e428d589d785f8d877d839e04e77783929ad9008",
+      "state_at_snapshot": "open",
+      "merged_at": null,
+      "title": "All-moduli Dirichlet nonvanishing at 0.87338196661320751993"
+    }
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "972a9677d7e5563c96f65b84748a8503d1e613069832d9344f3a505f625e0931"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "734d298351be098cc8f4f4fe6fbc1e2542c53e93d3f469d3c674fe7d80976436"
+    },
+    {
+      "path": "verifier/pins.json",
+      "sha256": "e29c58a68a00e53348765fbb7a3a3fd111786535e6ce0410545e88c728e4c727"
+    },
+    {
+      "path": "verifier/upstream-challenge.lean",
+      "sha256": "8fb13ad977bca104591fcbc6ef01a58496e7385053c9b1445f95749afc0eff54"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/metadata.json",
+      "sha256": "f0448ad3a9dabf78185be1e9a2e2ad4be418c4cdc773761bb92bab89f15e416d"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/PR98Improvement/Return/Constants.lean",
+      "sha256": "4cecc3610e49697929c9fd16daedd788e31abf40a65f2e1c8045ede0696944bc"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/PR98Improvement/Return/Formulas.lean",
+      "sha256": "c245b8c137bd2d1baa235fbf2d1b44fe0714a3ee4b9e98a85f756d16450aaf72"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/PR98Improvement/Return/Tuning/Guards.lean",
+      "sha256": "a1d48d3451064c33436097bfa79c325f3b4ae8b8ff0045381da7ee01388bcda2"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/PR98Improvement/Return/Tuning/Windows.lean",
+      "sha256": "9ee26729a947a3c1b9e98a56d843bac5ccf8be535cc0b0385355b6a9fbf879dd"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/GenericScalar.lean",
+      "sha256": "ec00918eac0c4c2f020f41de84ba0c58351076ef7d474bfade3994021bd97e13"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/PhysicalDirect/PacketBound.lean",
+      "sha256": "b723aa81de2b881d0237584f844d3307002cddf77091a1d3e8266f21b39de826"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/PhysicalDirect/Hybrid.lean",
+      "sha256": "6012078bf9bf3614d074a5d2381427d29dd78ed0469531bfb72ba6dd6a2e03b8"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/PhysicalDirect/Geometry.lean",
+      "sha256": "ad10905307edc012cec8a1d4a5c6ede195baed07355fc8d50ccf9c826ca578f1"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/TransportGeometry.lean",
+      "sha256": "82333871e0edaaf2cba5211fc377be49a3fdf78837f4af225db205288d9beeb9"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/PhysicalDirect/PublicCount.lean",
+      "sha256": "1d50c1ddad9b53bf390a0beaa5afabfbf3a932418d8e7a04a2357bfec58168c0"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/PR98Improvement/Return/CountDecode.lean",
+      "sha256": "6c8febe40e4ce066d35b3bf27ddb041adc41fdf64605364cf2ad3c5833d51579"
+    }
+  ]
+}

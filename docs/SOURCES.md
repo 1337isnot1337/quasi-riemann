@@ -1,0 +1,38 @@
+# Sources and credit
+
+The authoritative external objects at this checkpoint are:
+
+- [Big O Speedrun quasi-Riemann page](https://bigospeedrun.com/other/quasi-riemann):
+  the requested leaderboard and its distinction between claimed and human-verified results.
+- [GTimG/QuasiRiemannTracker](https://github.com/GTimG/QuasiRiemannTracker):
+  all-moduli Dirichlet target, exact proof sources, admission records and licenses.
+- [Joseph Bebel's PR #99](https://github.com/GTimG/QuasiRiemannTracker/pull/99):
+  reserve-parametric fourth-power seed, selected energy above one half, two finite
+  source lines and the five-window physical return. This is the pinned leading
+  admitted construction, with predecessors credited in its notices.
+- [PR #100](https://github.com/GTimG/QuasiRiemannTracker/pull/100),
+  [PR #101](https://github.com/GTimG/QuasiRiemannTracker/pull/101), and
+  [PR #102](https://github.com/GTimG/QuasiRiemannTracker/pull/102):
+  preexisting open refinements toward the same limiting contact. Their numbers
+  and contact expression are prior work and are not claimed as new here.
+
+Exact source pins and file hashes are in `sources.lock.json`. The principal
+modules reconstructed in the research notes are:
+
+| Module suffix in PR #99 | Role |
+| --- | --- |
+| `PR98Improvement/Return/Formulas.lean` | Counts, admissions, row exponents |
+| `PR98Improvement/Return/Constants.lean` | Geometry and capacities |
+| `PR98Improvement/Return/Tuning/Guards.lean` | Parametric source-face guards |
+| `BoundaryPhysical/GenericScalar.lean` | Physical numerator and kernel exponents |
+| `BoundaryPhysical/PhysicalDirect/PacketBound.lean` | Actual fourth-moment packet hypothesis |
+| `BoundaryPhysical/PhysicalDirect/Hybrid.lean` | Two-ordinary-factor source budget |
+| `BoundaryPhysical/PhysicalDirect/Geometry.lean` | Plain scale and shifted capacity |
+| `BoundaryPhysical/TransportGeometry.lean` | Coarse box and floor constraints |
+
+The current proof builds on OpenAI, Hailey Collet, Sil, ArviFoxy, Joseph Bebel,
+Jacob Sussman and other credited upstream contributors. This repository's new
+contribution is the explicit source-general cap-dominance identity, the contour
+cancellation and universal-h saddle obstruction in this model, and an auditable
+analysis of the missing higher-moment input. The contact value itself predates
+this repository. No priority claim beyond these reconstructed arguments is made.

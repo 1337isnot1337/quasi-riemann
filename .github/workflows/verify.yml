@@ -1,0 +1,23 @@
+name: Exact research certificates
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Install pinned symbolic dependency
+        run: |
+          python3 -m venv .venv
+          .venv/bin/pip install -r requirements.txt
+      - name: Verify exact model certificates
+        run: make verify PYTHON=.venv/bin/python
+      - name: Check pinned public source hashes
+        run: make sources PYTHON=.venv/bin/python

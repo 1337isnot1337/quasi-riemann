@@ -1,0 +1,179 @@
+{
+  "status": "CONDITIONAL exponent-model certificate; no improved L-function bound",
+  "theta": "87/100",
+  "h": "391/500",
+  "ell": "14/75",
+  "x": "607/1500",
+  "y": "613/1500",
+  "reserve": "1/10000",
+  "unproved_count_contract": "R_new <= 1-delta + (2/5)*V*delta*(1-p)^2/J_ideal",
+  "domain": "0<=delta<=3/4, 0<=p<=1/2; conductor intervals [0,y] and [y,h]",
+  "geometry_checked": true,
+  "floor_slack": "399999999999999999933/1000000000000000000000000",
+  "inherited_BoundsN_applicable": false,
+  "analytic_reconstruction_checked": false,
+  "certificates": {
+    "ideal_count_denominator": {
+      "degree": [
+        1,
+        2
+      ],
+      "leaves": [
+        {
+          "box": [
+            "0",
+            "3/4",
+            "0",
+            "1/2"
+          ],
+          "lower": "1/2"
+        }
+      ],
+      "minimum_bernstein_lower": "1/2"
+    },
+    "old_count_denominator": {
+      "degree": [
+        1,
+        2
+      ],
+      "leaves": [
+        {
+          "box": [
+            "0",
+            "3/4",
+            "0",
+            "1/2"
+          ],
+          "lower": "2003/2664"
+        }
+      ],
+      "minimum_bernstein_lower": "2003/2664"
+    },
+    "old_zero": {
+      "degree": [
+        2,
+        3
+      ],
+      "leaves": [
+        {
+          "box": [
+            "0",
+            "3/4",
+            "0",
+            "1/2"
+          ],
+          "lower": "1/4"
+        }
+      ],
+      "minimum_bernstein_lower": "1/4"
+    },
+    "old_join": {
+      "degree": [
+        2,
+        3
+      ],
+      "leaves": [
+        {
+          "box": [
+            "0",
+            "3/4",
+            "0",
+            "1/2"
+          ],
+          "lower": "60655847/1478520000"
+        }
+      ],
+      "minimum_bernstein_lower": "60655847/1478520000"
+    },
+    "new_join": {
+      "degree": [
+        2,
+        3
+      ],
+      "leaves": [
+        {
+          "box": [
+            "0",
+            "3/4",
+            "0",
+            "1/2"
+          ],
+          "lower": "1839643/56832000"
+        }
+      ],
+      "minimum_bernstein_lower": "1839643/56832000"
+    },
+    "new_top_CONDITIONAL": {
+      "degree": [
+        2,
+        3
+      ],
+      "leaves": [
+        {
+          "box": [
+            "0",
+            "3/8",
+            "0",
+            "1/4"
+          ],
+          "lower": "105573/5120000"
+        },
+        {
+          "box": [
+            "3/8",
+            "3/4",
+            "0",
+            "1/4"
+          ],
+          "lower": "477861/20480000"
+        },
+        {
+          "box": [
+            "0",
+            "3/8",
+            "1/4",
+            "1/2"
+          ],
+          "lower": "389/128000"
+        },
+        {
+          "box": [
+            "3/8",
+            "9/16",
+            "1/4",
+            "3/8"
+          ],
+          "lower": "133239/13107200"
+        },
+        {
+          "box": [
+            "9/16",
+            "3/4",
+            "1/4",
+            "3/8"
+          ],
+          "lower": "1527969/131072000"
+        },
+        {
+          "box": [
+            "3/8",
+            "9/16",
+            "3/8",
+            "1/2"
+          ],
+          "lower": "2501/2560000"
+        },
+        {
+          "box": [
+            "9/16",
+            "3/4",
+            "3/8",
+            "1/2"
+          ],
+          "lower": "1359/1280000"
+        }
+      ],
+      "minimum_bernstein_lower": "2501/2560000"
+    }
+  }
+}
