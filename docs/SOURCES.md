@@ -30,6 +30,11 @@ modules reconstructed in the research notes are:
 | Baseline `Hecke/DetectorFiberSpikes.lean` | Both spikes on one actual detector fibre |
 | Collet `Record1252270103Return/CountFromMoments.lean` | Inverse and ordinary moment count inputs |
 | Collet `Cycle25/Energy/Physical/CertifiedZero.lean` | Empty-slot ordinary pair moment for long lengths |
+| Baseline `Eisenstein/CompactEnergyFamilies.lean` | Sextic local row character definition |
+| Baseline `PrimeRows/Character.lean` | Actual numerator row and prime coefficients |
+| Baseline `Hecke/InverseAmplificationFamily.lean` | Sixth-power row replication and its deletion mask |
+| Baseline `Hecke/InverseAmplificationBudget.lean` | Origin of the no-slot 5/6 slope |
+| Baseline `Hecke/InverseAmplificationEndpoint.lean` | Raw moment to amplified inverse mean |
 | `BoundaryPhysical/PhysicalDirect/Hybrid.lean` | Two-ordinary-factor source budget |
 | `BoundaryPhysical/PhysicalDirect/Geometry.lean` | Plain scale and shifted capacity |
 | `BoundaryPhysical/TransportGeometry.lean` | Coarse box and floor constraints |

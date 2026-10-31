@@ -20,7 +20,7 @@ provides, on a common witness fibre and ignoring positive losses,
 ```text
 |I_i| >= U^(delta*r/2),     I: Möbius inverse detector,
 |P_i| >= U^(delta*m/2),     P: ordinary detector,
-r+m approximately t,      q=delta*p.
+r+m >= t up to losses,    q=delta*p.
 ```
 
 The real parts and frequencies in these polynomials come from the zero witness.
@@ -147,3 +147,8 @@ must either preserve that reconstruction and its shifts, or prove a mixed
 arithmetic estimate directly. Profile, conductor, height, amplitude-bin and
 mesh uniformity remain required, as do positive loss budgets and a global
 return certificate before any threshold can be claimed.
+
+The [targeted literature intake](literature-intake.md) compares recent published
+mixed estimates with this numeric contract. The long inverse factor's squarefree
+support gives the more specific [cube-extraction constraint](inverse-dominant-support.md)
+now under investigation.

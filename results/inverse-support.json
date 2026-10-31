@@ -1,0 +1,266 @@
+{
+  "status": "ideal-valuation support lemma and finite checks; no moment estimate",
+  "lemma": "d squarefree and d*e=a*b^k with a k-free imply b^(k-1) divides e",
+  "norm_consequence": "N(a)^(k-1)*N(e) >= N(d)^(k-1)",
+  "all_size_proof": [
+    {
+      "order": 2,
+      "inverse_valuation": 0,
+      "ordinary_residue": 0,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 2,
+      "inverse_valuation": 0,
+      "ordinary_residue": 1,
+      "ordinary_minus_root_power": "t+1"
+    },
+    {
+      "order": 2,
+      "inverse_valuation": 1,
+      "ordinary_residue": 0,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 2,
+      "inverse_valuation": 1,
+      "ordinary_residue": 1,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 3,
+      "inverse_valuation": 0,
+      "ordinary_residue": 0,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 3,
+      "inverse_valuation": 0,
+      "ordinary_residue": 1,
+      "ordinary_minus_root_power": "t+1"
+    },
+    {
+      "order": 3,
+      "inverse_valuation": 0,
+      "ordinary_residue": 2,
+      "ordinary_minus_root_power": "t+2"
+    },
+    {
+      "order": 3,
+      "inverse_valuation": 1,
+      "ordinary_residue": 0,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 3,
+      "inverse_valuation": 1,
+      "ordinary_residue": 1,
+      "ordinary_minus_root_power": "t+1"
+    },
+    {
+      "order": 3,
+      "inverse_valuation": 1,
+      "ordinary_residue": 2,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 4,
+      "inverse_valuation": 0,
+      "ordinary_residue": 0,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 4,
+      "inverse_valuation": 0,
+      "ordinary_residue": 1,
+      "ordinary_minus_root_power": "t+1"
+    },
+    {
+      "order": 4,
+      "inverse_valuation": 0,
+      "ordinary_residue": 2,
+      "ordinary_minus_root_power": "t+2"
+    },
+    {
+      "order": 4,
+      "inverse_valuation": 0,
+      "ordinary_residue": 3,
+      "ordinary_minus_root_power": "t+3"
+    },
+    {
+      "order": 4,
+      "inverse_valuation": 1,
+      "ordinary_residue": 0,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 4,
+      "inverse_valuation": 1,
+      "ordinary_residue": 1,
+      "ordinary_minus_root_power": "t+1"
+    },
+    {
+      "order": 4,
+      "inverse_valuation": 1,
+      "ordinary_residue": 2,
+      "ordinary_minus_root_power": "t+2"
+    },
+    {
+      "order": 4,
+      "inverse_valuation": 1,
+      "ordinary_residue": 3,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 5,
+      "inverse_valuation": 0,
+      "ordinary_residue": 0,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 5,
+      "inverse_valuation": 0,
+      "ordinary_residue": 1,
+      "ordinary_minus_root_power": "t+1"
+    },
+    {
+      "order": 5,
+      "inverse_valuation": 0,
+      "ordinary_residue": 2,
+      "ordinary_minus_root_power": "t+2"
+    },
+    {
+      "order": 5,
+      "inverse_valuation": 0,
+      "ordinary_residue": 3,
+      "ordinary_minus_root_power": "t+3"
+    },
+    {
+      "order": 5,
+      "inverse_valuation": 0,
+      "ordinary_residue": 4,
+      "ordinary_minus_root_power": "t+4"
+    },
+    {
+      "order": 5,
+      "inverse_valuation": 1,
+      "ordinary_residue": 0,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 5,
+      "inverse_valuation": 1,
+      "ordinary_residue": 1,
+      "ordinary_minus_root_power": "t+1"
+    },
+    {
+      "order": 5,
+      "inverse_valuation": 1,
+      "ordinary_residue": 2,
+      "ordinary_minus_root_power": "t+2"
+    },
+    {
+      "order": 5,
+      "inverse_valuation": 1,
+      "ordinary_residue": 3,
+      "ordinary_minus_root_power": "t+3"
+    },
+    {
+      "order": 5,
+      "inverse_valuation": 1,
+      "ordinary_residue": 4,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 0,
+      "ordinary_residue": 0,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 0,
+      "ordinary_residue": 1,
+      "ordinary_minus_root_power": "t+1"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 0,
+      "ordinary_residue": 2,
+      "ordinary_minus_root_power": "t+2"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 0,
+      "ordinary_residue": 3,
+      "ordinary_minus_root_power": "t+3"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 0,
+      "ordinary_residue": 4,
+      "ordinary_minus_root_power": "t+4"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 0,
+      "ordinary_residue": 5,
+      "ordinary_minus_root_power": "t+5"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 1,
+      "ordinary_residue": 0,
+      "ordinary_minus_root_power": "t+0"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 1,
+      "ordinary_residue": 1,
+      "ordinary_minus_root_power": "t+1"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 1,
+      "ordinary_residue": 2,
+      "ordinary_minus_root_power": "t+2"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 1,
+      "ordinary_residue": 3,
+      "ordinary_minus_root_power": "t+3"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 1,
+      "ordinary_residue": 4,
+      "ordinary_minus_root_power": "t+4"
+    },
+    {
+      "order": 6,
+      "inverse_valuation": 1,
+      "ordinary_residue": 5,
+      "ordinary_minus_root_power": "t+0"
+    }
+  ],
+  "finite_labelled_prime_norms": [
+    7,
+    7,
+    13
+  ],
+  "finite_cases": 63800,
+  "pure_power_cases": 934,
+  "finite_cases_by_order": {
+    "2": 2744,
+    "3": 5832,
+    "4": 10648,
+    "5": 17576,
+    "6": 27000
+  },
+  "negative_controls": [
+    "inverse valuation 2",
+    "distinct equal-norm prime ideals"
+  ],
+  "analytic_mixed_energy_proved": false
+}

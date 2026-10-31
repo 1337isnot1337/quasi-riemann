@@ -11,7 +11,8 @@ The calculations replay with `scripts/verify_barrier.py`.
 ## 1. Optimistic source class and cap dominance
 
 Let 0 <= delta <= 3/4, 0 <= p <= 1/2, V = 5/6 - delta. Consider every face
-with B <= 1 and Lambda >= 2. For its uncapped branch define
+with 0<B<=1, Lambda>1 and Lambda>=2B. This includes inherited faces whose
+Lambda is below 2 because their B is also smaller. For an uncapped branch define
 
 ```text
 D = 3-p-4p/Lambda,  A = 2-4p/Lambda,
@@ -37,20 +38,30 @@ The exact identity is
 (Nc J - N Jc) Dc Lambda = 4 delta p V (1-p) G.
 ```
 
-All denominators are positive: V >= 1/12, Dc >= 5/2, D >= 3-3p,
-A >= 2-2p, hence J,Jc > 0. Therefore every admitted capped count is at least
+All denominators are positive: V >= 1/12, Dc >= 5/2, D >= 3-5p >= 1/2,
+and A >= 2-4p >= 0, hence J,Jc > 0. Therefore every admitted capped count is at least
 the corresponding uncapped count. Other admission guards can only restrict
 the available branches further.
 
-Next,
+For the narrower class Lambda>=2, the original monotonicity proof is
 
 ```text
 dR/dB = -2 p V delta(1-p)/(Lambda J) <= 0,
 (dR/dLambda)|B=1 = 2 delta p V^2(1-p)^2/(Lambda^2 J^2) >= 0.
 ```
 
-Thus the optimistic uncapped B=1, Lambda=2 branch is at least as strong as
-every uncapped or admitted capped branch in this face class. For the old count
+For the full stated class, put w=Lambda/B>=2. Use subscripts b and 1 for
+the face pairs (B,Bw) and (1,w). Their selected U is the same and
+
+```text
+N_b J_1 - N_1 J_b
+ = 4 V delta p (1-p)(1-2p/w)(V+delta(1-p))(1-B)/(Bw) >= 0.
+```
+
+The B=1 face dominates along each normalized ray. The previous derivative
+in Lambda then reduces w>=2 to w=2. Thus the optimistic uncapped B=1,
+Lambda=2 branch is at least as strong as every uncapped or admitted capped
+count in this larger face class. For the old count
 with kappa >= 1/3, direct subtraction also gives
 
 ```text
@@ -78,6 +89,17 @@ At d=h the terms containing a cancel identically. This is an algebraic
 invariance: even assuming every Mellin line were analytically available,
 moving it cannot fix the obstructing endpoint. It does not assert such
 availability in the actual analytic proof.
+
+The capacity is optimistic for the enlarged face class as well. At d>=y,
+if the numerator of `C_B,Lambda=(2y-(2-B)d)/Lambda` is nonnegative,
+
+```text
+C_B,Lambda <= C_B,2B = d/2+(y-d)/B <= y-d/2.
+```
+
+The last difference from the B=1 capacity is `(1-B)(y-d)/B<=0`.
+If the numerator is negative, zero clipping still lies below the ideal capacity
+when d<=2y, as at the obstructing top conductor.
 
 ## 3. A witness independent of h
 

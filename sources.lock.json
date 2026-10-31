@@ -124,6 +124,26 @@
     {
       "path": "submissions/2026-10-21-hailey-collet-1252270103/src/Submissions/hailey_collet_1252270103/Cycle25/Energy/Physical/CertifiedZero.lean",
       "sha256": "7d82917e626b01bf4e60e2e84aad1c1dea2ac9a4e10e3dcbf1f5834331d1eabc"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Eisenstein/CompactEnergyFamilies.lean",
+      "sha256": "3266f365e12951349c6af10c01d9a129a7f522b41db383f2bd4afd3d0668231f"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/PrimeRows/Character.lean",
+      "sha256": "46a803440ca32ac55b8c28f71dcd1f4ddfa288182abaaed88e19a37b24fb8787"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/InverseAmplificationFamily.lean",
+      "sha256": "8d637df16e68576d7892829cba5c8dbb809e60f32a9d22936d3d729471c056b5"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/InverseAmplificationBudget.lean",
+      "sha256": "f6b2e4ffc477ff3145c3be9a560b1ba91ca7fd73683ac6212f0017f3ac4d1433"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/InverseAmplificationEndpoint.lean",
+      "sha256": "223e9aad6c7f68506b8786d138c4ffcae11c8c5366b45c03d99274b68f7966fb"
     }
   ]
 }

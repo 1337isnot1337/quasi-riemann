@@ -42,6 +42,14 @@ def main():
           2 * delta * p * V**2 * (1 - p)**2 / (L**2 * Ju.subs(B, 1)**2),
           "Lambda monotonicity at B=1")
 
+    # Include inherited faces with Lambda<2 but Lambda/B>=2.
+    w = s.Symbol("w", positive=True)
+    _, Jb, Nb, _ = counts(B, B*w)
+    _, Jone, None_, _ = counts(s.Integer(1), w)
+    equal(Nb*Jone-None_*Jb,
+          4*V*delta*p*(1-p)*(1-2*p/w)*(V+delta*(1-p))*(1-B)/(B*w),
+          "normalized-face dominance")
+
     _, J, N, _ = counts(s.Integer(1), s.Integer(2))
     oldD = 3 - p - 2 * p / (3 * kappa)
     oldC = 2 * (1 - p) * (1 - p / (3 * kappa))
@@ -55,6 +63,8 @@ def main():
     y = h - 2 * ell
     # Optimistic affine physical capacity: ignoring clipping only helps.
     cap = (2 * y - d) / 2
+    equal((2*y-(2-B)*d)/(2*B)-cap, (1-B)*(y-d)/B,
+          "normalized physical-capacity dominance")
     E = (Q(1, 2) + (a - Q(1, 6)) * h - y / 2 - ell / 2
          + (Q(1, 4) - a) * d + delta / 2
          + delta * p * (ell - cap / 2) + Q(3, 4) * d * N / J)
@@ -96,7 +106,8 @@ def main():
         "h_contact": str(hs),
         "plain_length_decimal": str(s.N(plain, 25)),
         "sixth_three_factor_length_decimal": str(s.N(3*plain, 25)),
-        "identity_checks": 10,
+        "identity_checks": 12,
+        "source_face_scope": "0<B<=1, Lambda>1, Lambda>=2B; positive admitted denominators",
         "independent_polynomial_quotient_check": True,
         "upstream_lean_rebuilt": False,
     }, indent=2))

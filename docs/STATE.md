@@ -17,7 +17,7 @@ same contact. See the source lock for exact heads and rational bounds.
 
 1. The inherited top-conductor exponent is independent of the Mellin contour
    real part when d = h. Changing that contour alone cannot cross its contact.
-2. For any face B <= 1 and Lambda >= 2, an admitted capped branch cannot improve
+2. For any face 0<B<=1, Lambda>1 and Lambda>=2B, an admitted capped branch cannot improve
    the corresponding uncapped branch. The latter is dominated by the optimistic
    face B = 1, Lambda = 2. An exact identity proves this, with explicit signs.
 3. At p = 1/2 and delta = (61 - sqrt(1081))/66, the optimistic uncapped return
@@ -39,6 +39,11 @@ same contact. See the source lock for exact heads and rational bounds.
    inverse/numerator energy would improve the contact if its unmarked exponent
    is below 1.11865419936482..., at total raw support 1.18052580125085....
    The new mixed energy is unproved. See `research/mixed-fibre.md`.
+7. The actual inverse detector has squarefree ideal support. For any k>=2,
+   writing its product with an ordinary ideal as a*b^k forces b^(k-1) to
+   divide the ordinary ideal. At the contact the sixth-power-free core has
+   exponent at least 0.6673232250.... This support fact is proved; a resulting
+   analytic energy saving is not. See `research/inverse-dominant-support.md`.
 
 These are model results and proof-obligation analysis. No new L-function theorem
 and no independent replay of the upstream Lean dependency closure are claimed.
@@ -63,6 +68,12 @@ The immediate alternative is to examine the detector's complete inverse/plain
 scale reconstruction before taking absolute values. A single dyadic mixed
 ordinary product cannot help; a mixed inverse product would need arithmetic
 cancellation, and its two shifts cannot be silently identified.
+
+The actual row homomorphism is sextic. Recent cubic mixed-moment papers are
+comparison sources and need a family reduction before use. The coefficient
+support audit now retains the long squarefree inverse position under sixth-power
+extraction. A new fixed profile with one vanishing Mellin moment does not remove
+the polar term uniformly under independent norm twists.
 
 ## Parked routes
 
