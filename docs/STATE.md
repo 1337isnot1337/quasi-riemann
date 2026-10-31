@@ -100,6 +100,15 @@ same contact. See the source lock for exact heads and rational bounds.
     with any published centered source estimate are unproved. See
     `research/cubic-aspect-contrast.md`.
 
+15. A one-variable Jacobi detector replaces the Gauss source by ordinary
+    character coefficients, over all good ideals. Its full physical sum has
+    arbitrary-power decay for X=Z^a, a<1/2, by ordinary lattice Poisson.
+    Its zero Fourier frequency retains 1/L(x,eta), with an explicitly nonzero
+    coefficient for Re(x)>5/6. The remaining trace is a sextic Kloosterman
+    trace, as checked in 107 exact finite-field cases. Bounding its complete
+    nonzero-frequency sum by Z^(399/10000) at X=Z^(2/5) would give 0.84;
+    that estimate is open. See `research/jacobi-detector.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.

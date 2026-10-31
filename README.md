@@ -25,6 +25,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Lean transport fork admitting the 0.87 geometry](formal-transport/README.md)
 - [A fixed-product cubic contrast that preserves the reciprocal signal](research/cubic-aspect-contrast.md)
 - [An angular cubic-probe candidate and its changed signal](research/angular-cubic-probe.md)
+- [A Jacobi detector with a proved direct bound and an open trace estimate](research/jacobi-detector.md)
 - [A coupled derivative for the exposed diagonal pole](research/coupled-mellin-annihilator.md)
 - [Source and credit map](docs/SOURCES.md)
 

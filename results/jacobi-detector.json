@@ -1,0 +1,141 @@
+{
+  "status": "Jacobi detector identities and conditional target; no new bound",
+  "finite_prime_power_checks": [
+    {
+      "norm": 7,
+      "power": 1,
+      "jacobi": [
+        -1,
+        -3
+      ]
+    },
+    {
+      "norm": 7,
+      "power": 2,
+      "jacobi": [
+        14,
+        21
+      ]
+    },
+    {
+      "norm": 7,
+      "power": 3,
+      "jacobi": [
+        245,
+        0
+      ]
+    },
+    {
+      "norm": 13,
+      "power": 1,
+      "jacobi": [
+        -4,
+        -3
+      ]
+    },
+    {
+      "norm": 13,
+      "power": 2,
+      "jacobi": [
+        -13,
+        39
+      ]
+    },
+    {
+      "norm": 13,
+      "power": 3,
+      "jacobi": [
+        1859,
+        0
+      ]
+    },
+    {
+      "norm": 19,
+      "power": 1,
+      "jacobi": [
+        2,
+        -3
+      ]
+    },
+    {
+      "norm": 19,
+      "power": 2,
+      "jacobi": [
+        95,
+        57
+      ]
+    },
+    {
+      "norm": 19,
+      "power": 3,
+      "jacobi": [
+        6137,
+        0
+      ]
+    },
+    {
+      "norm": 31,
+      "power": 1,
+      "jacobi": [
+        -1,
+        -6
+      ]
+    },
+    {
+      "norm": 31,
+      "power": 2,
+      "jacobi": [
+        155,
+        186
+      ]
+    },
+    {
+      "norm": 31,
+      "power": 3,
+      "jacobi": [
+        27869,
+        0
+      ]
+    },
+    {
+      "norm": 37,
+      "power": 1,
+      "jacobi": [
+        -7,
+        -3
+      ]
+    },
+    {
+      "norm": 37,
+      "power": 2,
+      "jacobi": [
+        -148,
+        111
+      ]
+    },
+    {
+      "norm": 37,
+      "power": 3,
+      "jacobi": [
+        47915,
+        0
+      ]
+    }
+  ],
+  "exact_kummer_trace_checks": 107,
+  "trace_twist_order": 6,
+  "formal_euler_coefficients_checked": 13,
+  "zero_frequency_series": "L^S(3*x-3/2,eta^3*alpha_bar^3)*K_eta(x)/L^S(x,eta)",
+  "local_numerator": "1-D-E-2*q*R",
+  "local_numerator_nonzero_lower_bound": "151/245",
+  "correction_absolute_domain": "Re(x)>3/4",
+  "nonzero_signal_domain": "Re(x)>5/6",
+  "ordinary_source_direct_bound_written": true,
+  "direct_bound": "I_eta <<_A sqrt(X*Z)*(X^2/Z)^A + X^(-1/2)*V(1/Z)",
+  "direct_bound_uses_eta_finite_and_angular_order_minus_one": true,
+  "target_X": "Z^(2/5)",
+  "unproved_complete_nonzero_frequency_bound": "H_eta << Z^(399/10000)",
+  "conditional_zero_free_threshold": "21/25",
+  "nonzero_frequency_bound_proved": false,
+  "improved_L_function_bound_proved": false
+}
