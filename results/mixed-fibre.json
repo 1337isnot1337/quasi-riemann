@@ -55,6 +55,21 @@
     "residual_minimum_total_degree": 4,
     "independent_conjugate_twist_negative_control": 4
   },
+  "primitive_pole_pairing": {
+    "external_input": "bramble_trace paper 8 v1 Theorem 1; not independently verified here",
+    "additional_input": "inherited zero-free Re(s)>7/8 for fixed ray characters",
+    "scope": "one fixed primitive sextic Gauss-row pole pairing, common smooth profiles",
+    "pole_main_squared_exponent": "-1711/3420 + 149*sqrt(1081)/3420",
+    "pole_error_squared_exponent": "13*sqrt(1081)/2565 + 1993/2565",
+    "general_contour_pairing_squared_exponent": "-118/95 + 7*sqrt(1081)/95",
+    "contour_excess_above_mixed_target": "-9719/18810 + 331*sqrt(1081)/18810"
+  },
+  "primitive_pole_pairing_decimals": {
+    "pole_main_squared_exponent": "0.9321362872475239064473417",
+    "pole_error_squared_exponent": "0.9436340498214867482518906",
+    "general_contour_pairing_squared_exponent": "1.180525801250845801508256",
+    "contour_excess_above_mixed_target": "0.06187160188602450238039873"
+  },
   "mixed_inverse_input_proved": false,
   "scope": "one common detector fibre; abstract positive arrays, not actual Hecke characters"
 }

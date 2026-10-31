@@ -62,6 +62,14 @@ same contact. See the source lock for exact heads and rational bounds.
    same-shift cancellation is not uniform cancellation of the actual mean.
    The exact local identity is in `research/mixed-fibre.md`.
 
+10. Using the published primitive sextic residue Type-I input, inherited 7/8
+    nonvanishing saves on its actual Möbius main term. The two squared fixed
+    pole-pairing exponents at the contact are 0.9321362872... and 0.9436340498...,
+    both below 1. The general contour pairing still costs 1.1805258013...,
+    exceeding the mixed target by 0.0618716019.... The external theorem has not
+    been independently verified here; the full row space, growing labels and
+    prime weights remain open. See `research/primitive-pole-pairing.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.
@@ -84,10 +92,12 @@ factorization estimate for the long reciprocal polynomial, with conductor,
 shifts, selected weights, uniformity, and loss budgets explicit. A generic change
 of Holder exponent is insufficient.
 
-The immediate alternative is to examine the detector's complete inverse/plain
-scale reconstruction before taking absolute values. A single dyadic mixed
-ordinary product cannot help; a mixed inverse product would need arithmetic
-cancellation, and its two shifts cannot be silently identified.
+A narrower analytic target is now the coefficient-sensitive regular primitive
+Kubota pairing for the actual Möbius/plain convolution. The fixed primitive pole
+pairing is below the unit contact budget using the imported Type-I theorem;
+its continuous remainder and the complementary Gauss row space are not.
+The pole calculation does not provide growing-label or selected-weight
+uniformity, so those remain part of any source-to-physical-return argument.
 
 The actual row homomorphism is sextic. Recent cubic mixed-moment papers are
 comparison sources and need a family reduction before use. The coefficient

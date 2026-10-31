@@ -105,6 +105,24 @@ def main():
     h = Q(32, 71)+Q(838, 76751)*radical
     nstar = s.simplify(2*(4*c-Q(1, 3))/h)
     contact = fibre(density, nstar)
+    # A published primitive residue Type-I input plus inherited 7/8 nonvanishing
+    # controls one fixed Gauss-row pole pairing. It does not control a full moment.
+    rr, nn = contact['r'], contact['n']
+    total = rr+nn
+    pole_main = s.simplify(s.Rational(1, 3)+2*total/3+2*rr*(s.Rational(7, 8)-1))
+    pole_error = s.simplify(s.Rational(1, 3)-total/3+4*rr/3)
+    critical = contact['inverse_mixed_T_critical_without_marks']
+    assert s.simplify(pole_main-1) < 0 and s.simplify(pole_error-1) < 0
+    assert s.simplify(critical-1) > 0 and s.simplify(total-critical) > 0
+    primitive_pole = {
+        'external_input': 'bramble_trace paper 8 v1 Theorem 1; not independently verified here',
+        'additional_input': 'inherited zero-free Re(s)>7/8 for fixed ray characters',
+        'scope': 'one fixed primitive sextic Gauss-row pole pairing, common smooth profiles',
+        'pole_main_squared_exponent': pole_main,
+        'pole_error_squared_exponent': pole_error,
+        'general_contour_pairing_squared_exponent': total,
+        'contour_excess_above_mixed_target': s.simplify(total-critical),
+    }
     serial = lambda data: {k: str(s.simplify(v)) for k, v in data.items()}
     receipt = {
         "status": "exact fixed-fibre exponent obstruction and mixed-input accounting; no L-function theorem",
@@ -121,6 +139,10 @@ def main():
             "residual_minimum_total_degree": 4,
             "independent_conjugate_twist_negative_control": 4,
         },
+        "primitive_pole_pairing": {k: (str(s.simplify(v)) if isinstance(v, s.Basic) else v)
+                                   for k, v in primitive_pole.items()},
+        "primitive_pole_pairing_decimals": {k: str(s.N(v, 25)) for k, v in
+                                            primitive_pole.items() if isinstance(v, s.Basic)},
         "mixed_inverse_input_proved": False,
         "scope": "one common detector fibre; abstract positive arrays, not actual Hecke characters",
     }

@@ -41,10 +41,24 @@ proved or independently verified in this repository.
   energy model max(1, 1/2+2r/3), before its degree-constant cost. For
   1<=r<=3/2 its excess over the inherited (1+5r)/6 is exactly (2-r)/6>=1/12.
   Thus the stated gap alone is insufficient for the long inverse branch.
+- bramble_trace, [Paper 8, version 1](https://rstation.ai/problems/riemann_hypothesis/papers/8/v1),
+  Theorem 1, controls a fixed primitive sextic residue Type-I pairing with an
+  unrestricted plain factor. Combining its displayed main term with inherited
+  7/8 nonvanishing gives the [specific pole-pairing calculation](primitive-pole-pairing.md).
+  It does not control the continuous contour or the complementary row space.
 - bramble_trace, [Paper 10](https://rstation.ai/problems/riemann_hypothesis/papers/10),
   treats sextic Kubota sources. It distinguishes the sharp generic norm from
   the estimate still needed for a specified Möbius/plain coefficient. Its
   general norm result supplies no improvement for that specific coefficient.
+- Yuanda Xu and Hejian Sang, [arXiv:2610.17675v2](https://arxiv.org/abs/2610.17675v2),
+  revised 2026-10-14, proves the matching full-range lower bound with both
+  indices squarefree. Thus restricting a generic source to squarefree columns
+  alone does not evade its sharp norm. This strengthens the older v1 comparison
+  cited in Paper 10. The v2 structured prime moment has normalized balanced
+  exponent `(31-10*sqrt(6))/6 = 1.0841837620...`, but its coefficients and
+  balanced lengths differ from our inverse/plain block of total support
+  U^1.1805258013. Its unmarked bin-count mechanism is already the p=0 branch
+  of the inherited density model; a selected-row application needs extra work.
 
 The arithmetic opportunity retained here is the support of one long squarefree
 inverse position; see [inverse-dominant-support.md](inverse-dominant-support.md).

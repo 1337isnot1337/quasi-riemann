@@ -153,6 +153,11 @@ mixed estimates with this numeric contract. The long inverse factor's squarefree
 support gives the more specific [cube-extraction constraint](inverse-dominant-support.md)
 now under investigation.
 
+The [fixed primitive pole calculation](primitive-pole-pairing.md) uses an
+external sextic residue theorem and retains the actual Möbius coefficient.
+Its pole pairing lies below the unit contact budget, while the regular
+pairing and complementary row space remain unproved at the needed strength.
+
 ## What the independent twists do to the Euler projection
 
 There is a more explicit obstruction to the simple `mu * 1` shortcut. This
