@@ -38,10 +38,11 @@
     {
       "number": 102,
       "url": "https://github.com/GTimG/QuasiRiemannTracker/pull/102",
-      "head": "e428d589d785f8d877d839e04e77783929ad9008",
+      "head": "ad7b7edd47bee2fdff34165da5cc14cc0331db2c",
       "state_at_snapshot": "open",
       "merged_at": null,
-      "title": "All-moduli Dirichlet nonvanishing at 0.87338196661320751993"
+      "title": "All-moduli Dirichlet nonvanishing at 0.87338196661320751993",
+      "previous_head": "e428d589d785f8d877d839e04e77783929ad9008"
     }
   ],
   "files": [
@@ -144,6 +145,18 @@
     {
       "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/InverseAmplificationEndpoint.lean",
       "sha256": "223e9aad6c7f68506b8786d138c4ffcae11c8c5366b45c03d99274b68f7966fb"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/GaussSum/CubicNormalization.lean",
+      "sha256": "c6bccbf90a0892c17daf7d677fe5e44abd8d56277261863c30ec0ae2f99e665f"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/GaussSum/SexticNormalization.lean",
+      "sha256": "188af867db7719174ca36916f0137997f97e927f4e7dcd4b5eb6bf3a5b885a69"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Arithmetic/IdealMobius.lean",
+      "sha256": "5f7ba66e917686ff696da0aa01b7250226721f68b7d01d90fe79da976260bdab"
     }
   ]
 }

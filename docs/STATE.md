@@ -44,8 +44,20 @@ same contact. See the source lock for exact heads and rational bounds.
    divide the ordinary ideal. At the contact the sixth-power-free core has
    exponent at least 0.6673232250.... This support fact is proved; a resulting
    analytic energy saving is not. See `research/inverse-dominant-support.md`.
+8. A proposed two-transform cubic probe has an exact good-prime kernel retaining
+   every cube-completion valuation and Ramanujan boundary. Its candidate target
+   reciprocal survives locally above 5/6. The same scalar poles occur for other
+   fixed rows, so the unmarked kernel does not isolate the principal row.
+   A shared squarefree cubic label with an inverse squared Gauss compensator
+   restores a good-prime ordinary selector on the same cubic row. Its CRT
+   phases cancel for all valuations, including source/label overlaps. The global
+   Poisson identity now has a written derivation, with exact local and unit checks.
+   Its frequencies are divisible by `n^2*gcd(c,s)`, so a long second average
+   forces short completion and overlap indices. The direct bound, continued row
+   estimate and final principal asymptotic remain open. See
+   `research/shared-label-cubic-identity.md`; no zero-free theorem is claimed.
 
-These are model results and proof-obligation analysis. No new L-function theorem
+These are model results, arithmetic identities and proof-obligation analysis. No new L-function theorem
 and no independent replay of the upstream Lean dependency closure are claimed.
 
 ## Active route

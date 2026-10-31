@@ -19,6 +19,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Higher-moment route and its actual support cost](research/moment-lift.md)
 - [Mixed detector/numerator moments and the missing inverse input](research/mixed-fibre.md)
 - [Support of a long Möbius inverse factor](research/inverse-dominant-support.md)
+- [A cubic probe with a shared ordinary selector](research/shared-label-cubic-identity.md)
 - [Targeted comparison with recent analytic sources](research/literature-intake.md)
 - [Exact conditional return target at 0.87](research/conditional-087.md)
 - [Source and credit map](docs/SOURCES.md)
@@ -46,6 +47,10 @@ The mixed-fibre replay proves that the ideal two-ordinary-factor source still
 saturates when detector and numerator are coupled. It quantifies a different,
 unproved mixed estimate involving the Möbius inverse detector. It also clarifies
 that the numerator itself has ordinary character coefficients.
+The changed cubic probe has exact local and unit checks and a written global
+Poisson identity. Its direct estimate and final zero-free argument remain open.
+`make diagnostics` separately checks its normalization by direct finite Fourier
+sums; that numerical check is not a proof of the analytic identity.
 `make sources` downloads only pinned public source files into ignored `.sources/`
 and checks their SHA-256 hashes. No entire upstream tree is vendored.
 

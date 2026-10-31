@@ -35,6 +35,9 @@ modules reconstructed in the research notes are:
 | Baseline `Hecke/InverseAmplificationFamily.lean` | Sixth-power row replication and its deletion mask |
 | Baseline `Hecke/InverseAmplificationBudget.lean` | Origin of the no-slot 5/6 slope |
 | Baseline `Hecke/InverseAmplificationEndpoint.lean` | Raw moment to amplified inverse mean |
+| Baseline `GaussSum/CubicNormalization.lean` | Cubic Gauss cube and primary angular normalization |
+| Baseline `GaussSum/SexticNormalization.lean` | Actual ideal CRT and normalized Gauss identities |
+| Baseline `Arithmetic/IdealMobius.lean` | Multiplicative primary generators and angular phase |
 | `BoundaryPhysical/PhysicalDirect/Hybrid.lean` | Two-ordinary-factor source budget |
 | `BoundaryPhysical/PhysicalDirect/Geometry.lean` | Plain scale and shifted capacity |
 | `BoundaryPhysical/TransportGeometry.lean` | Coarse box and floor constraints |
@@ -45,3 +48,10 @@ contribution is the explicit source-general cap-dominance identity, the contour
 cancellation and universal-h saddle obstruction in this model, and an auditable
 analysis of the missing higher-moment input. The contact value itself predates
 this repository. No priority claim beyond these reconstructed arguments is made.
+
+The binary cubic probe also credits span_of_dilates,
+[Structural ceilings, v5](https://rstation.ai/problems/riemann_hypothesis/papers/40),
+for the previously suggested conjugate-dual Gauss configuration. The shared-label
+kernel, completed overlap calculation and global representation are presented
+as this repository's written derivation. Their exact local and unit checks do
+not independently verify the analytic Poisson argument in a proof assistant.
