@@ -38,15 +38,15 @@ Take
 ```text
 theta=87/100, c=13/100, h=391/500,
 ell=14/75, x=607/1500, y=613/1500,
-kappa=37/50, numerator cap=3/40, reserve=1/10000.
+kappa=37/50, conductor switch=7/10, numerator cap=3/40, reserve=1/10000.
 ```
 
 These satisfy the basic signal geometry, including ell<x<y<1/2,
 2x-y-ell>0, and the negative tuple exponent. The central floor-source exponent
 has more than the stated reserve at d=h+10^(-22).
 
-Use the inherited old count on d in [0,y], with capacity d/(6kappa).
-On d in [y,h], use the proposed improved count and capacity
+Use the inherited old count on d in [0,7/10], with capacity
+`min(d,2y-d)/(6kappa)`. On d in [7/10,h], use the proposed improved count and capacity
 
 ```text
 C(d) = min(3d/40, (2y-d)/2).
@@ -63,17 +63,18 @@ After multiplying by the positive count denominator, the six polynomials in
 `results/conditional-087.json` certify the denominators and these four endpoints:
 
 1. Old interval, d=0.
-2. Old interval, d=y, C=y/(6kappa).
-3. New interval, d=y, C=3y/40. The old count is a conservative upper bound here.
+2. Old interval, d=7/10, C=(2y-7/10)/(6kappa).
+3. New interval, d=7/10, C=3(7/10)/40. The old count is a conservative upper bound here.
 4. New interval, d=h, C=(2y-h)/2, using the **unproved** improved count.
 
 Every endpoint has E <= 0.87-0.0001 on the entire density/amplitude rectangle.
-The first interval is affine in d. On the second interval the exponent is the
-maximum of two affine functions, hence is convex in d. Endpoint bounds therefore
-cover both full conductor intervals.
+On each interval the exponent is the maximum of two affine functions of d,
+hence is convex. Endpoint bounds therefore cover both full conductor intervals.
+The switch is above 2/3, retaining the d>1/2 requirement of the source-selection
+lemmas while extending the inherited schedule's stronger d>3/4 restriction.
 
 The proof certificate uses rational Bernstein coefficients on a partition of
-the rectangle. There are 12 leaves total across the six polynomials; the
+the rectangle. There are 27 leaves total across the six polynomials; the
 conditional top polynomial uses 7. The weakest certified Bernstein lower bound
 for that numerator is 2501/2560000. These are exact rational bounds, not a grid
 scan. A replay also checks that retaining half of the count correction is
@@ -89,11 +90,12 @@ The following work is not supplied by the polynomial certificate:
 
 - Realize a source face at B<1, Lambda>2 with all positive fees, inside the
   rational margin. Its existence at the required parameters must be proved.
-- Generalize the transport box. Inherited `BoundsN` explicitly requires
-  theta>0.873, h>0.793 and y>0.458; these constants fall outside it. The old
-  small-saving cutoff 0.07 also fails: the actual quantity is 3659/75000,
-  approximately 0.0487867, which remains positive.
-  Every use of those bounds and the loss budgets must be re-established.
+- Complete the downstream use of the broadened transport. The original
+  `BoundsN` fails at these constants. The [nine-module fork](../formal-transport/README.md)
+  now admits the exact geometry and checks the generic high-transport assembly.
+  It lowers the small-saving cutoff to 6/125 and the geometric loss allowance
+  to 1/25; the actual small-saving quantity is 3659/75000, about 0.0487867.
+  The final count/reconstruction/feedback chain is still unchecked here.
 - Rebuild the physical reconstruction, old/small/central/tail contributions,
   actual-supremum feedback, and the Hecke-to-Dirichlet transfer with no additional
   analytic premises. Admit the final proof through the independent verifiers.

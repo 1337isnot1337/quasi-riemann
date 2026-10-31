@@ -38,6 +38,11 @@ modules reconstructed in the research notes are:
 | `BoundaryPhysical/PhysicalDirect/Hybrid.lean` | Two-ordinary-factor source budget |
 | `BoundaryPhysical/PhysicalDirect/Geometry.lean` | Plain scale and shifted capacity |
 | `BoundaryPhysical/TransportGeometry.lean` | Coarse box and floor constraints |
+| `BoundaryPhysical/Schedule.lean` | Conductor switch restrictions |
+| `BoundaryPhysical/Transport/TransportParameters.lean` | Positive loss budgets and constructors |
+| `BoundaryPhysical/Transport/Transport/PrincipalRemainderRegion.lean` | Local Euler-factor transport estimates |
+| `BoundaryPhysical/Transport/Transport/{NormalizedTransportSaving,NonfloorTransport,SharedNonfloor,HighApproximation}.lean` | Transport saving and propagation interfaces |
+| `BoundaryPhysical/Transport/FinalFixedHigh.lean` | High-source approximation from a finite numerator bound |
 
 The current proof builds on OpenAI, Hailey Collet, Sil, ArviFoxy, Joseph Bebel,
 Jacob Sussman and other credited upstream contributors. This repository's new
@@ -45,3 +50,10 @@ contribution is the explicit source-general cap-dominance identity, the contour
 cancellation and universal-h saddle obstruction in this model, and an auditable
 analysis of the missing higher-moment input. The contact value itself predates
 this repository. No priority claim beyond these reconstructed arguments is made.
+
+The scoped transport fork retains every inherited notice. Its exact nine-file
+patch, fresh geometry admission and reproducible build driver are in
+`formal-transport/`; it does not modify the pinned tracker checkout. The signed
+cache is credited solely as an authenticated compilation cache, not as an
+independent proof checker. The checked transport implications retain their
+explicit finite numerator premise.

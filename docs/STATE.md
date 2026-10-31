@@ -30,8 +30,9 @@ same contact. See the source lock for exact heads and rational bounds.
 5. An exact conditional exponent certificate reaches theta=0.87 with reserve
    1/10000 over the entire density/amplitude domain and both conductor intervals,
    if a new count retains only 2/5 of the inherited correction to 1-delta.
-   Six polynomials, certified with 12 rational Bernstein leaves, replay exactly.
-   The new count is unproved, and the inherited transport box does not apply.
+   Six polynomials, certified with 27 rational Bernstein leaves, replay exactly,
+   using conductor switch 7/10. The new count is unproved. The transport fork
+   below admits the geometry; the original transport box does not.
 6. Joint ordinary-detector/numerator moments do not beat the inherited fourth
    bound on a fixed common fibre: the difference is exactly `(R_P-R)/4`.
    One abstract array simultaneously saturates all ideal budgeted ordinary
@@ -45,8 +46,17 @@ same contact. See the source lock for exact heads and rational bounds.
    exponent at least 0.6673232250.... This support fact is proved; a resulting
    analytic energy saving is not. See `research/inverse-dominant-support.md`.
 
-These are model results and proof-obligation analysis. No new L-function theorem
-and no independent replay of the upstream Lean dependency closure are claimed.
+8. The fork in `formal-transport/` broadens the transport box and tightens its
+   geometric loss allowance. The generic high-transport assembly and the exact
+   0.87 geometry compile in Lean 4.34.1 over a 3,078-module source closure.
+   Of these, 2,923 matched the authenticated upstream cache; the remainder were
+   compiled locally. Six audited declarations use only propext, Classical.choice
+   and Quot.sound. The assembly remains conditional on its finite numerator input;
+   this does not supply the unproved count or a new nonvanishing theorem.
+
+The exact certificates and scoped Lean compilation are reproducible. No new
+L-function theorem or independent-kernel replay is claimed. See
+`results/transport-087-lean.json` and `results/transport-087-axioms.txt`.
 
 ## Active route
 
@@ -57,6 +67,8 @@ must address three ordinary factors, rather than the two admitted by the existin
 global source. At the inherited saddle the plain length is about 0.4277, making
 the three-factor support exceed the source budget even with no marked slots.
 
+The immediate transport obstacle is now closed through the generic high assembly,
+with the full reconstruction and transfer still unchecked at the new constants.
 The next task is a new joint count/moment argument on the actual rows in
 `PhysicalDirect/PublicCount.lean`. The quantified target and downstream gap list
 are in `research/conditional-087.md`. An alternative is a new off-diagonal or

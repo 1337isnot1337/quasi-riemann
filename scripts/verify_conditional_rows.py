@@ -87,6 +87,7 @@ def main():
     parser.add_argument("--write", action="store_true", help="write deterministic certificate")
     args = parser.parse_args()
     c, h = s.Rational(13, 100), s.Rational(391, 500)
+    switch = s.Rational(7, 10)
     theta, ell = 1-c, 4*c-s.Rational(1, 3)
     y, x = h-2*ell, 1+ell-h
     kappa, reserve = 1-2*c, s.Rational(1, 10000)
@@ -108,9 +109,9 @@ def main():
         "ideal_count_denominator": J,
         "old_count_denominator": Jo,
         "old_zero": margin_numerator(0, 0, Jo, No),
-        "old_join": margin_numerator(y, y/(6*kappa), Jo, No),
+        "old_join": margin_numerator(switch, (2*y-switch)/(6*kappa), Jo, No),
         # The old count is a conservative upper bound at the new interval's join.
-        "new_join": margin_numerator(y, s.Rational(3, 40)*y, Jo, No),
+        "new_join": margin_numerator(switch, s.Rational(3, 40)*switch, Jo, No),
         "new_top_CONDITIONAL": margin_numerator(h, (2*y-h)/2, J, Nnew),
     }
     assert (s.Rational(1, 6) < ell < s.Rational(1, 5)
@@ -120,7 +121,8 @@ def main():
                    - s.Rational(67, 100)*s.Rational(1, 10**22))
     assert floor_slack > reserve
     assert (2*y-h)/2 < s.Rational(3, 40)*h
-    assert s.Rational(3, 40)*y < y/2
+    assert s.Rational(3, 40)*switch < (2*y-switch)/2
+    assert y < switch < min(h, 2*y) and s.Rational(2, 3) < switch
     # The modified count is below the ideal count, which is below the old count.
     assert s.factor(((1-delta)*J+V*delta*(1-p)**2)-Nnew
                     - s.Rational(3, 5)*V*delta*(1-p)**2) == 0
@@ -131,8 +133,9 @@ def main():
         "status": "CONDITIONAL exponent-model certificate; no improved L-function bound",
         "theta": str(theta), "h": str(h), "ell": str(ell),
         "x": str(x), "y": str(y), "reserve": str(reserve),
+        "switch": str(switch),
         "unproved_count_contract": "R_new <= 1-delta + (2/5)*V*delta*(1-p)^2/J_ideal",
-        "domain": "0<=delta<=3/4, 0<=p<=1/2; conductor intervals [0,y] and [y,h]",
+        "domain": "0<=delta<=3/4, 0<=p<=1/2; conductor intervals [0,7/10] and [7/10,h]",
         "geometry_checked": True,
         "floor_slack": str(floor_slack),
         "inherited_BoundsN_applicable": False,

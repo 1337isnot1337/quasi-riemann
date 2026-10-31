@@ -21,6 +21,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Support of a long Möbius inverse factor](research/inverse-dominant-support.md)
 - [Targeted comparison with recent analytic sources](research/literature-intake.md)
 - [Exact conditional return target at 0.87](research/conditional-087.md)
+- [Lean transport fork admitting the 0.87 geometry](formal-transport/README.md)
 - [Source and credit map](docs/SOURCES.md)
 
 The research target is a structural jump beyond all preexisting candidates.
@@ -41,7 +42,12 @@ make sources PYTHON=.venv/bin/python
 `make verify` checks exact algebra and the explicitly labeled exponent models.
 It does not build the upstream Lean proof or verify a new zero-free region.
 The 0.87 certificate assumes an explicitly unproved stronger count, and covers
-the whole exponent-model domain by exact rational Bernstein bounds.
+the whole exponent-model domain by 27 exact rational Bernstein leaves. The
+separate [transport replay](formal-transport/README.md) checks a broadened generic
+high-transport assembly over 3,078 Lean modules, with 2,923 compatible modules
+from the authenticated upstream cache. Its exact 0.87 geometry and the three
+transport statements audited use only the standard Lean axioms. The stronger
+count and complete nonvanishing reconstruction remain unproved.
 The mixed-fibre replay proves that the ideal two-ordinary-factor source still
 saturates when detector and numerator are coupled. It quantifies a different,
 unproved mixed estimate involving the Möbius inverse detector. It also clarifies

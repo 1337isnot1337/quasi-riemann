@@ -1,0 +1,12 @@
+'Transport087.geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Transport087.bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Transport087.geometry_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.SevenEighths.BoundaryDensitySplitReturn.TransportHighRowFamily.actual_normalized_probe_transport_saving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Qrh.JointDetector.BoundaryPhysical.Return.GenericPhysical.FinalAssembly.sourceProbe_high_of_finite_numerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Qrh.JointDetector.BoundaryPhysical.Return.GenericPhysical.FinalAssembly.sourceProbe_high_of_finite_numerator_at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

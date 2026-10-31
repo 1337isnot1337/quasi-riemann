@@ -38,7 +38,7 @@
     {
       "number": 102,
       "url": "https://github.com/GTimG/QuasiRiemannTracker/pull/102",
-      "head": "e428d589d785f8d877d839e04e77783929ad9008",
+      "head": "ad7b7edd47bee2fdff34165da5cc14cc0331db2c",
       "state_at_snapshot": "open",
       "merged_at": null,
       "title": "All-moduli Dirichlet nonvanishing at 0.87338196661320751993"
@@ -144,6 +144,38 @@
     {
       "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/InverseAmplificationEndpoint.lean",
       "sha256": "223e9aad6c7f68506b8786d138c4ffcae11c8c5366b45c03d99274b68f7966fb"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/Schedule.lean",
+      "sha256": "b1dc42c8de1fac422d405c6cbf19238fdcd3b3b0e84ec23fb48532a213349da2"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/Transport/FinalFixedHigh.lean",
+      "sha256": "078d3c95e55f75827fadd5eecfb8a2fb7a4097a7381be2e49f21f8dabb7b9aea"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/Transport/Transport/HighApproximation.lean",
+      "sha256": "68a0f90b4efca54a1de77b17b2c2fef6d8f9b9370c24bbbcd562b1626df0323f"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/Transport/Transport/NonfloorTransport.lean",
+      "sha256": "f2a5363dd101eb1e1416b4ca5d7dea112fcee5af569809e34e1a5f2a04e94834"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/Transport/Transport/NormalizedTransportSaving.lean",
+      "sha256": "d4e0c3c586b5e113d46a5f141317afc171b91a0ac0425a148e537a9bdea4e383"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/Transport/Transport/PrincipalRemainderRegion.lean",
+      "sha256": "feaacfc9487110d1da2bd086878080960761b166063f6a14f2f8d336f51b8a0b"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/Transport/Transport/SharedNonfloor.lean",
+      "sha256": "7a8c14be62de51bc98c8a400d8201602eece088d994569dd884e4d39b2f3e208"
+    },
+    {
+      "path": "submissions/2026-10-30-positive-reserve-selected-gap/src/Candidate/Local/Qrh/JointDetector/BoundaryPhysical/Transport/TransportParameters.lean",
+      "sha256": "2aeed8e430219c2a166273f68f9f6eb1d8b00d4976ab15748c77fc0e4e01a9b5"
     }
   ]
 }
