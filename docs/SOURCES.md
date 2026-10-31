@@ -27,6 +27,10 @@ modules reconstructed in the research notes are:
 | `BoundaryPhysical/GenericScalar.lean` | Physical numerator and kernel exponents |
 | `BoundaryPhysical/PhysicalDirect/PacketBound.lean` | Actual fourth-moment packet hypothesis |
 | Baseline `Hecke/Dyadic.lean` | Ordinary versus Möbius coefficient definitions |
+| Baseline `Hecke/InverseAmplificationEndpoint.lean` | Ambient sextic lift and the 5/6 volume loss |
+| Baseline `Hecke/InverseAmplificationRows.lean` | Sixth-free cores and injective sixth-power decomposition |
+| Baseline `Hecke/InverseAmplificationMask.lean` | Prime deletion via the sixth mask |
+| Baseline `Hecke/Operations.lean` | Product and inverse characters |
 | Baseline `Hecke/DetectorFiberSpikes.lean` | Both spikes on one actual detector fibre |
 | Collet `Record1252270103Return/CountFromMoments.lean` | Inverse and ordinary moment count inputs |
 | Collet `Cycle25/Energy/Physical/CertifiedZero.lean` | Empty-slot ordinary pair moment for long lengths |

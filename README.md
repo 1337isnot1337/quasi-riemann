@@ -18,6 +18,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Exact return-model obstruction](research/return-model-barrier.md)
 - [Higher-moment route and its actual support cost](research/moment-lift.md)
 - [Mixed detector/numerator moments and the missing inverse input](research/mixed-fibre.md)
+- [Compensated cubic amplification and its moving-twist cost](research/cubic-compensation.md)
 - [Exact conditional return target at 0.87](research/conditional-087.md)
 - [Source and credit map](docs/SOURCES.md)
 
@@ -46,6 +47,11 @@ unproved mixed estimate involving the Möbius inverse detector. It also clarifie
 that the numerator itself has ordinary character coefficients.
 `make sources` downloads only pinned public source files into ignored `.sources/`
 and checks their SHA-256 hashes. No entire upstream tree is vendored.
+
+`make verify-lean` checks the new algebraic cubic-compensation lemma with Lean
+4.34.1, using only `Std`. It proves a character-phase identity, including zero;
+it does not formalize an analytic mean-square bound or an L-function result.
+Set `LEAN=/path/to/lean` if Lean is not on the command search path.
 
 New material is Apache-2.0. Upstream work remains credited to its authors and
 retains its original licenses. See [NOTICE](NOTICE).

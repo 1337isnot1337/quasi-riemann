@@ -39,9 +39,15 @@ same contact. See the source lock for exact heads and rational bounds.
    inverse/numerator energy would improve the contact if its unmarked exponent
    is below 1.11865419936482..., at total raw support 1.18052580125085....
    The new mixed energy is unproved. See `research/mixed-fibre.md`.
+7. A cubic lift admits an exact quadratic compensator which restores the
+   prime-deletion mask. The phase-character lemma is checked in Lean 4.34.1
+   with standard axioms only. The new graph-family moment would give source
+   exponent `1+(2+tau)(r-1)/3`; a strict gain over sextic amplification requires
+   `tau<1/2`. Its analytic bound is unproved. See `research/cubic-compensation.md`.
 
-These are model results and proof-obligation analysis. No new L-function theorem
-and no independent replay of the upstream Lean dependency closure are claimed.
+These are model results, an algebraic character lemma and proof-obligation
+analysis. No new L-function theorem and no independent replay of the upstream
+Lean dependency closure are claimed.
 
 ## Active route
 
@@ -63,6 +69,12 @@ The immediate alternative is to examine the detector's complete inverse/plain
 scale reconstruction before taking absolute values. A single dyadic mixed
 ordinary product cannot help; a mixed inverse product would need arithmetic
 cancellation, and its two shifts cannot be silently identified.
+
+The inverse detector also has a distinct amplification bottleneck: extending its
+raw moment uses the full ambient range of `u*p^6`. Investigate a direct long
+moment on sixth-free cores or the compensated cubic graph family. The cubic
+algebra is valid, but averaging its moving quadratic characters must save
+strictly more than a square root relative to the separate-family cost.
 
 ## Parked routes
 
