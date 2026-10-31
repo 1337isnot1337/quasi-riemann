@@ -44,6 +44,21 @@ same contact. See the source lock for exact heads and rational bounds.
    divide the ordinary ideal. At the contact the sixth-power-free core has
    exponent at least 0.6673232250.... This support fact is proved; a resulting
    analytic energy saving is not. See `research/inverse-dominant-support.md`.
+8. Extracting `L^S(x+w,eta)` from the complete local correction gives a
+   normally convergent Euler product across `x+w=1`. Unramified and valuation-one
+   local defects are `O(Q^(-11/10))` on an explicit box; higher valuations cost
+   `N(u)^(max(0,1-Re(x+w))/2+epsilon)`. A rational certificate and written
+   analytic proof establish this local continuation, without an estimate for
+   the infinite signed row sum. See `research/euler-diagonal-regularization.md`.
+   A second extraction gives the ratio `L^S(x+w,eta)/L^S(x+w+6z-1,eta)`
+   and a convergent remainder for `Re(x)>=4/5`, `Re(z)>=33/200` on an explicit
+   diagonal box. The reciprocal and intersecting principal polar divisors remain
+   part of the detector; this is not a zero-free threshold of 4/5.
+   Extracting the fixed angular factor
+   `L^S(6x+6z-4,eta^6*conjugate(alpha)^6)` extends the remainder box to
+   `Re(x)>=51/100` near `z=1/6`, with local decay `101/100`. Its arithmetic
+   identification uses standard Hecke theory. Moving the contour alone still
+   cancels at the model's obstructing scale `d=h`.
 
 These are model results and proof-obligation analysis. No new L-function theorem
 and no independent replay of the upstream Lean dependency closure are claimed.
@@ -68,6 +83,11 @@ The immediate alternative is to examine the detector's complete inverse/plain
 scale reconstruction before taking absolute values. A single dyadic mixed
 ordinary product cannot help; a mixed inverse product would need arithmetic
 cancellation, and its two shifts cannot be silently identified.
+
+The new Euler extraction permits a test of the coherent functional diagonal
+before absolute values. Next trace the target-character L-ratio, conductor and
+root-number phases through the full signed row series and its principal signal.
+Local normal convergence alone does not justify moving that row series.
 
 The actual row homomorphism is sextic. Recent cubic mixed-moment papers are
 comparison sources and need a family reduction before use. The coefficient

@@ -19,6 +19,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Higher-moment route and its actual support cost](research/moment-lift.md)
 - [Mixed detector/numerator moments and the missing inverse input](research/mixed-fibre.md)
 - [Support of a long Möbius inverse factor](research/inverse-dominant-support.md)
+- [Euler continuation to the functional diagonal](research/euler-diagonal-regularization.md)
 - [Targeted comparison with recent analytic sources](research/literature-intake.md)
 - [Exact conditional return target at 0.87](research/conditional-087.md)
 - [Source and credit map](docs/SOURCES.md)
