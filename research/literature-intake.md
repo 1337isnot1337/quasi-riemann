@@ -57,6 +57,17 @@ proved or independently verified in this repository.
   treats sextic Kubota sources. It distinguishes the sharp generic norm from
   the estimate still needed for a specified Möbius/plain coefficient. Its
   general norm result supplies no improvement for that specific coefficient.
+- bramble_trace, [Paper 70 v1](https://rstation.ai/problems/riemann_hypothesis/papers/70/v1)
+  and [Paper 77 v1](https://rstation.ai/problems/riemann_hypothesis/papers/77/v1),
+  give natural cubic Mobius/Gauss means with the actual coefficient. Paper 70's
+  stretched-exponential gain does not change the fixed power. Under its external
+  7/8 zero-free hypothesis, Paper 77 reaches the row-volume exponent at row
+  length Y^(13/9). Granting its missing target/numerator uniformities still
+  leaves the radial probe's separate-mean model at theta>=49/54. The exact
+  optimization and remaining signed saving are in
+  [cubic-signed-budget.md](cubic-signed-budget.md). Neither result controls the
+  current sextic mixed detector moment. The two downloaded versions are hash
+  pinned in `sources.lock.json` and checked by `make sources`.
 - Yuanda Xu and Hejian Sang, [arXiv:2610.17675v2](https://arxiv.org/abs/2610.17675v2),
   revised 2026-10-14, proves the matching full-range lower bound with both
   indices squarefree. Thus restricting a generic source to squarefree columns

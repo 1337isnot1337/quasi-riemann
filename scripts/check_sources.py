@@ -36,6 +36,22 @@ def main():
         if hashlib.sha256(data).hexdigest() != item["sha256"]:
             raise ValueError(f"source hash mismatch: {rel}")
     print(f"Verified {len(lock['files'])} source hashes at {lock['commit']}.")
+    for item in lock.get("external_files", []):
+        rel = Path(item["path"])
+        if rel.is_absolute() or ".." in rel.parts:
+            raise ValueError("unsafe path in external source lock")
+        path = ROOT / ".sources" / rel
+        if path.exists():
+            data = path.read_bytes()
+        else:
+            with urllib.request.urlopen(item["url"], timeout=45) as response:
+                data = response.read()
+        if hashlib.sha256(data).hexdigest() != item["sha256"]:
+            raise ValueError(f"external source hash mismatch: {rel}")
+        if not path.exists():
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(data)
+    print(f"Verified {len(lock.get('external_files', []))} external source hashes.")
 
 
 if __name__ == "__main__":

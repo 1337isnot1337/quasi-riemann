@@ -1,0 +1,30 @@
+{
+  "status": "exact separate-mean exponent model; no improved L-function bound",
+  "imported_norm": "Paper 77 v1 Theorem 2, conditional on its ZF",
+  "unproved_grants": [
+    "all target twists",
+    "all growing second-frequency twists",
+    "natural-row ordinary-Gauss comparator Fs",
+    "free completion/overlap reconstruction and profile separation"
+  ],
+  "row_exponent": "M=a+b",
+  "second_frequency_count_exponent": "1-a2",
+  "ordinary_mean_exponent": "max(M,b,2*(M+b)/3)",
+  "long_mean_exponent_for_1_to_2": "max(M,7/2-M/2-sqrt(6-3*M)) to 29/27; max(M,2*M/5+13/15) thereafter",
+  "theta_required": "Fc/2 + Fs/2 - M + a/3 - 2*a2/3 + 4/3",
+  "curved_above_linear_certificate": "(27*M - 29)**2/900",
+  "limiting_optimum": {
+    "M": "13/9",
+    "a": "13/18",
+    "b": "13/18",
+    "a2": "1"
+  },
+  "theta_infimum": "49/54",
+  "signed_saving_to_087": "101/2700",
+  "signed_saving_to_084": "91/1350",
+  "selected_084_geometry_cauchy_threshold": "11/12",
+  "selected_084_geometry_signed_saving": "23/300",
+  "selected_084_geometry_saving_with_reserve": "2303/30000",
+  "literal_centered_source_orientation_match": false,
+  "full_probe_direct_estimate_proved": false
+}

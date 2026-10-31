@@ -100,7 +100,16 @@ same contact. See the source lock for exact heads and rational bounds.
     with any published centered source estimate are unproved. See
     `research/cubic-aspect-contrast.md`.
 
-15. A one-variable Jacobi detector replaces the Gauss source by ordinary
+15. Even granting the newer cubic Mobius/Gauss norm all required target and
+    second-frequency twists, separate Cauchy estimates have limiting threshold
+    49/54. The exact envelope argument quantifies a further signed saving
+    101/2700 for 0.87 or 91/1350 for 0.84. At the fixed 0.84 high geometry the
+    reserved saving is 2303/30000. These are model gaps; no such cancellation is
+    proved. The literal substitution into Paper 58's centered theorem also
+    fails its coefficient and row-orientation conditions. See
+    `research/cubic-signed-budget.md` and `research/cubic-aspect-contrast.md`.
+
+16. A one-variable Jacobi detector replaces the Gauss source by ordinary
     character coefficients, over all good ideals. Its full physical sum has
     arbitrary-power decay for X=Z^a, a<1/2, by ordinary lattice Poisson.
     Its zero Fourier frequency retains 1/L(x,eta), with an explicitly nonzero
@@ -136,6 +145,12 @@ angular variant matches a coefficient-specific cubic mean while changing the
 frequency-pole geometry. Its global signal and full frequency sums need proof;
 the radial low-budget note rules out the simpler generic Cauchy route in the
 short-second-dual regime.
+
+The Jacobi operator is a separate alternative with a proved direct-side
+rapid-decay argument. Its remaining input is the complete sextic Kloosterman
+trace average (H) in `research/jacobi-detector.md`, at squared frequencies
+and varying moduli. A bound for a fixed squarefree modulus or only a cubic
+twist does not meet that contract. Every prime power remains in the source.
 
 A narrower analytic target is now the coefficient-sensitive regular primitive
 Kubota pairing for the actual Möbius/plain convolution. The fixed primitive pole

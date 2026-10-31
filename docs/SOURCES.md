@@ -60,3 +60,19 @@ patch, fresh geometry admission and reproducible build driver are in
 cache is credited solely as an authenticated compilation cache, not as an
 independent proof checker. The checked transport implications retain their
 explicit finite numerator premise.
+
+The [Jacobi detector](../research/jacobi-detector.md) uses the prime Jacobi
+evaluation from OpenAI's September 30 TeX at commit `fd4aeeb2`, and explicitly
+credits span_of_dilates's Paper 40 v5 for the observation that Jacobi sums
+already carry a Mobius sign. Papers 13 v1 and 15 v1 are comparison sources;
+neither estimates the required sextic trace average across all moduli.
+These four exact downloads are hash pinned in `external_files` and checked
+by `make sources`. The finite-field Kummer calculation is derived in the
+note and checked by exact cyclotomic arithmetic, without importing a
+cubic-character theorem for its sextic twist.
+
+The newer cubic norm comparisons credit bramble_trace's Papers 70 v1 and
+77 v1. Their exact downloaded Markdown hashes and versioned URLs are in the
+external portion of `sources.lock.json`. The latter retains its stated
+external zero-free hypothesis. Our separate-mean optimization grants missing
+twist uniformities and proves no new analytic mean or zero-free theorem.
