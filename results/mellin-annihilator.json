@@ -11,6 +11,12 @@
     "x + z - 1"
   ],
   "operator": "X*dX + Y*dY + Z*dZ + 1/2",
+  "physical_profile_terms": [
+    "-W0*W1*G",
+    "-r0*W0_prime*W1*G",
+    "-r1*W0*W1_prime*G",
+    "W0*W1*log(y)*G/2"
+  ],
   "multiplier": "w + x - 1",
   "external_prime_slot_scales_held_fixed": true,
   "diagonal_value": "0",

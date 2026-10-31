@@ -17,6 +17,7 @@ def main():
     exponents = [s.Rational(1, 2)-z, w-1, x+z-1]
     multiplier = x+w-1
     assert s.expand(sum(exponents)+s.Rational(1, 2)-multiplier) == 0
+    assert s.expand(-1+(1-z)+w+(x+z-1)-multiplier) == 0
     assert s.expand(multiplier.subs(w, 1-x)) == 0
     assert s.expand(multiplier.subs({w: 1, z: s.Rational(1, 6)})-x) == 0
     # Common dilation gives the sum of the three scale exponents plus a half.
@@ -48,6 +49,8 @@ def main():
         'independent_physical_scales': ['X', 'Y', 'Z'],
         'scale_exponents': list(map(str, exponents)),
         'operator': 'X*dX + Y*dY + Z*dZ + 1/2',
+        'physical_profile_terms': ['-W0*W1*G', '-r0*W0_prime*W1*G',
+                                   '-r1*W0*W1_prime*G', 'W0*W1*log(y)*G/2'],
         'multiplier': str(multiplier),
         'external_prime_slot_scales_held_fixed': True,
         'diagonal_value': '0',

@@ -162,6 +162,15 @@ def main():
     geometry_output.parent.mkdir(parents=True, exist_ok=True)
     run(lean, '-o', geometry_output, 'Transport087/Geometry.lean', cwd=work, env=environment)
     if args.target == TARGET:
+        shutil.copyfile(HERE/'GaussianLog.lean', geometry_dir/'GaussianLog.lean')
+        gaussian_output = output/'Transport087/GaussianLog.olean'
+        gaussian = subprocess.check_output([str(lean), '-o', str(gaussian_output),
+                                           'Transport087/GaussianLog.lean'],
+                                          cwd=work, env=environment, text=True)
+        (work/'replay-gaussian-axioms.txt').write_text(gaussian)
+        print(gaussian)
+        if 'sorryAx' in gaussian:
+            raise ValueError('Gaussian profile proof contains sorryAx')
         shutil.copyfile(HERE/'Audit.lean', geometry_dir/'Audit.lean')
         audit = subprocess.check_output([str(lean), 'Transport087/Audit.lean'], cwd=work,
                                         env=environment, text=True)
@@ -171,7 +180,9 @@ def main():
             raise ValueError('Axiom audit contains sorryAx')
     receipt = {'upstream_source': PIN, 'target': args.target, 'source_closure': len(closure),
                'environment': inputs['environment'], 'patch_sha256': sha(patch),
-               'geometry_sha256': sha(HERE/'Geometry.lean'), 'source_compiled_this_run': compiled, 'source_reused_modules': sorted(reused),
+               'geometry_sha256': sha(HERE/'Geometry.lean'),
+               'gaussian_log_sha256': sha(HERE/'GaussianLog.lean'),
+               'gaussian_log_checked': args.target == TARGET, 'source_compiled_this_run': compiled, 'source_reused_modules': sorted(reused),
                'authenticated_cached_modules': len(selected),
                'scope': 'Lean source build and geometry admission; no improved bound theorem; independent kernels not run'}
     (work/'replay-receipt.json').write_text(json.dumps(receipt, indent=2)+'\n')

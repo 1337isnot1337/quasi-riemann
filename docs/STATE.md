@@ -72,8 +72,9 @@ same contact. See the source lock for exact heads and rational bounds.
 
 11. A candidate coupled Euler derivative has exact Mellin multiplier x+w-1.
     It removes the exposed diagonal scalar pole while multiplying the original
-    principal signal by x. The multiplier is certified, but physical integration,
-    low estimates and a coherent row-sum saving remain unproved. It changes no
+    principal signal by x. Its four profile terms are explicit, and Lean proves
+    arbitrary-power tail bounds for the new logarithmic Gaussian term. The full
+    physical integration, low estimates and coherent row-sum saving remain unproved. It changes no
     conductor exponent by itself. See `research/coupled-mellin-annihilator.md`.
 
 12. An optimistic low-side audit of the separate shared-label cubic probe
