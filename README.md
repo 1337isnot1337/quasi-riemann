@@ -22,6 +22,7 @@ threshold at the 2026-10-31 snapshot. Open tracker PRs #100, #101 and #102 appro
 The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lock.json).
 
 - [Current state and next proof obligation](docs/STATE.md)
+- [Paused research handoff and remaining gaps](docs/HANDOFF.md)
 - [Exact return-model obstruction](research/return-model-barrier.md)
 - [Higher-moment route and its actual support cost](research/moment-lift.md)
 - [A compensated cubic lift and its remaining amplifier cost](research/cubic-compensation.md)
@@ -43,6 +44,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [A Jacobi detector with a proved direct bound and an open trace estimate](research/jacobi-detector.md)
 - [A sextic Jacobi variant with a cubic trace and a conditional 0.8 target](research/sextic-jacobi-detector.md)
 - [A written nonvanishing proof for the cubic Pell Picard factor and its remaining source-map gap](research/picard-factor-nonvanishing.md)
+- [A polynomial-phase Airy/Gauss representation of the squarefree Jacobi trace](research/airy-jacobi-trace.md)
 - [The classical cubic exponential-sum form and its retained Gauss weight](research/cubic-airy-trace.md)
 - [Its global identity and a separating family of candidate residues](research/angular-signal-family.md)
 - [A coupled derivative for the exposed diagonal pole](research/coupled-mellin-annihilator.md)

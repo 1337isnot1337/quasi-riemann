@@ -129,6 +129,17 @@ against Definition 3.2 and the conjugation against Definition 5.1 in the
 rendered source. This auxiliary nonvanishing statement does not supply
 the open quasi-Riemann trace estimate.
 
+The [Airy/Gauss representation](../research/airy-jacobi-trace.md) credits
+Duke--Iwaniec (1993) for the finite-field cubic exponential/Kloosterman
+identity. It uses equation (7.4) of Friedberg--Offen, *On the cubic Shimura
+lift to PGL(3): The fundamental lemma*, JEMS 28 (2026), as its pinned primary
+comparison source; printed p. 1726 was rendered to check the constants and
+character orientation. The present gcd extraction and squarefree Mellin
+identity are written derivations. That paper supplies a local fundamental
+lemma, not the required global trace bound. Its higher-conductor cubic
+identity is not silently applied to the different prime-power branches of
+the sextic Jacobi input.
+
 The corrected-dispersion comparison uses OpenAI's first-moment TeX at commit
 4eaee87548250b2682affda7d05d947c05554bae. Its paper, dispersion section and
 exceptional-moment section are separately hash pinned. Their coefficient

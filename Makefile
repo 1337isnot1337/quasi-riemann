@@ -17,6 +17,7 @@ verify:
 	$(PYTHON) scripts/verify_jacobi_detector.py
 	$(PYTHON) scripts/verify_angular_signal.py
 	$(PYTHON) scripts/verify_picard_factor.py
+	$(PYTHON) scripts/verify_airy_trace.py
 
 sources:
 	$(PYTHON) scripts/check_sources.py
@@ -26,3 +27,4 @@ verify-lean:
 
 diagnostics:
 	$(PYTHON) scripts/check_binary_fourier.py
+	$(PYTHON) scripts/check_coupled_fourier.py

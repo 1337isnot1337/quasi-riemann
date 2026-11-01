@@ -2,6 +2,9 @@
 
 Updated: 2026-10-31. This is a research checkpoint, not a bound submission.
 
+Research paused at the user's request. See [the handoff](HANDOFF.md) for
+the actual progress, final checks, and the unproved inputs. No bound was improved.
+
 ## Objective and baseline
 
 Obtain a substantial unconditional improvement beyond all existing numbers and
@@ -207,6 +210,14 @@ same contact. See the source lock for exact heads and rational bounds.
     with cubic theta coefficients; no source-compatible trace estimate or
     new quasi-Riemann bound follows. See
     `research/picard-factor-nonvanishing.md`.
+
+25. The classical Duke--Iwaniec identity turns the squared-frequency cubic
+    Kloosterman trace into the cubic phase h*(3*t-t^3)/2. An exact extraction
+    of every frequency gcd on squarefree moduli leaves a Gauss sum with
+    numerator h/g and removes g from the Gaussian argument. Its absolute-line
+    Mellin identity displays the reciprocal L-factor explicitly. The other
+    prime-power branches and the complete centered trace estimate remain
+    open. See `research/airy-jacobi-trace.md`.
 
 The exact certificates and scoped Lean compilation are reproducible. No new
 Dirichlet nonvanishing theorem or independent-kernel replay is claimed. See
