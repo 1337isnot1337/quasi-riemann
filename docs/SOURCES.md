@@ -42,6 +42,13 @@ modules reconstructed in the research notes are:
 | Baseline `Hecke/InverseAmplificationFamily.lean` | Sixth-power row replication and its deletion mask |
 | Baseline `Hecke/InverseAmplificationBudget.lean` | Origin of the no-slot 5/6 slope |
 | Baseline `Hecke/InverseAmplificationEndpoint.lean` | Raw moment to amplified inverse mean |
+| Baseline `Detector/EulerCoordinates.lean` | Actual unramified Euler coordinates and phases |
+| Baseline `Detector/HighEulerRational.lean` | Rational form of the complete local correction |
+| Baseline `Detector/HighRowsUnramified.lean` | Unramified closed correction in actual rows |
+| Baseline `Detector/CorrectionBounds.lean` | Original correction's convergence region |
+| Baseline `Arithmetic/IdealMobius.lean` | Multiplicative angular phase on primary ideal generators |
+| Baseline `PrimeRows/ActiveGaussFactorization.lean` | Normalized embedding defining the angular factor |
+| Baseline `Hecke/DyadicReflection.lean` | Numerator functional equation, conductor and Gauss phase |
 | `BoundaryPhysical/PhysicalDirect/Hybrid.lean` | Two-ordinary-factor source budget |
 | `BoundaryPhysical/PhysicalDirect/Geometry.lean` | Plain scale and shifted capacity |
 | `BoundaryPhysical/TransportGeometry.lean` | Coarse box and floor constraints |
@@ -55,7 +62,9 @@ The current proof builds on OpenAI, Hailey Collet, Sil, ArviFoxy, Joseph Bebel,
 Jacob Sussman and other credited upstream contributors. This repository's new
 contribution is the explicit source-general cap-dominance identity, the contour
 cancellation and universal-h saddle obstruction in this model, and an auditable
-analysis of the missing higher-moment input. The contact value itself predates
+analysis of the missing higher-moment input. The Euler audit additionally
+extracts three scalar factors and proves local continuation near the functional
+diagonal, with explicit row growth and retained poles. The contact value itself predates
 this repository. No priority claim beyond these reconstructed arguments is made.
 
 The scoped transport fork retains every inherited notice. Its exact nine-file

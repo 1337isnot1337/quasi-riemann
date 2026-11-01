@@ -220,6 +220,30 @@
     {
       "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/ChineseRemainder/PrimaryCompletions.lean",
       "sha256": "593a4060b10d449ea4fb71e38f7b3b9995911de49a38600691cb2384a64f945e"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Detector/EulerCoordinates.lean",
+      "sha256": "6464d677546474845acb94d10ef7ca0bc37ad7d13c0f5f683c5fbcc9609949a2"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Detector/HighEulerRational.lean",
+      "sha256": "018f11ff9af9652b7153386f4fde0ac42a827745d1d2afc86661d02edcf86e6e"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Detector/HighRowsUnramified.lean",
+      "sha256": "106c030bf560b5ee6942bf5842e48f4013b7834db39a1f9249957a07816d1e77"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Detector/CorrectionBounds.lean",
+      "sha256": "a0d95ef4f2e88a98b8cb466f272aaee255bd823b7405124b71c371a9d3a768ab"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Arithmetic/IdealMobius.lean",
+      "sha256": "5f7ba66e917686ff696da0aa01b7250226721f68b7d01d90fe79da976260bdab"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/PrimeRows/ActiveGaussFactorization.lean",
+      "sha256": "0988a3e36764be4efa2803502aa3ecba2f94434289b1488992567cfb8c5bd48b"
     }
   ],
   "external_files": [

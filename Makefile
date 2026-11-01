@@ -8,6 +8,7 @@ verify:
 	$(PYTHON) scripts/verify_cubic_compensation.py
 	$(PYTHON) scripts/verify_mixed_fibre.py
 	$(PYTHON) scripts/verify_inverse_support.py
+	$(PYTHON) scripts/verify_euler_regularization.py
 	$(PYTHON) scripts/verify_conditional_rows.py
 	$(PYTHON) scripts/verify_mellin_annihilator.py
 	$(PYTHON) scripts/verify_cubic_signed_budget.py

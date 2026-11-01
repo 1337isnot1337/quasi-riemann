@@ -20,6 +20,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Mixed detector/numerator moments and the missing inverse input](research/mixed-fibre.md)
 - [A fixed primitive pole pairing and its remaining contour gap](research/primitive-pole-pairing.md)
 - [Support of a long Möbius inverse factor](research/inverse-dominant-support.md)
+- [Euler continuation to the functional diagonal](research/euler-diagonal-regularization.md)
 - [Targeted comparison with recent analytic sources](research/literature-intake.md)
 - [Exact conditional return target at 0.87](research/conditional-087.md)
 - [Lean transport fork admitting the 0.87 geometry](formal-transport/README.md)
