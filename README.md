@@ -43,6 +43,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [A Jacobi detector with a proved direct bound and an open trace estimate](research/jacobi-detector.md)
 - [A sextic Jacobi variant with a cubic trace and a conditional 0.8 target](research/sextic-jacobi-detector.md)
 - [A written nonvanishing proof for the cubic Pell Picard factor and its remaining source-map gap](research/picard-factor-nonvanishing.md)
+- [The classical cubic exponential-sum form and its retained Gauss weight](research/cubic-airy-trace.md)
 - [Its global identity and a separating family of candidate residues](research/angular-signal-family.md)
 - [A coupled derivative for the exposed diagonal pole](research/coupled-mellin-annihilator.md)
 - [Physical differentiation and stability of the baseline low estimates](research/derivative-low-stability.md)
@@ -66,7 +67,8 @@ make sources PYTHON=.venv/bin/python
 `make verify` checks exact algebra and the explicitly labeled exponent models.
 It does not build the upstream Lean proof or verify a new zero-free region.
 `make diagnostics` separately runs the numerical finite-Fourier checks, including
-the sixteen two-prime source/label configurations. The optional `make verify-lean`
+the sixteen two-prime source/label configurations and 128 one-Poisson overlap
+cases. The optional `make verify-lean`
 checks the compensated-cubic character identity with Lean 4.34.1 and Std only;
 it proves no analytic amplifier estimate.
 The 0.87 certificate assumes an explicitly unproved stronger count, and covers

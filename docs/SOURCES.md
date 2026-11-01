@@ -88,6 +88,12 @@ These four exact downloads are hash pinned in `external_files` and checked
 by `make sources`. The finite-field Kummer calculation is derived in the
 notes and checked by exact cyclotomic arithmetic. The cubic-input control
 and sextic-input variant keep their different output character orders.
+The unit-frequency Airy reformulation additionally credits Louvel,
+arXiv:1107.0197v2, Proposition 2.1, which records the classical diagonal
+cubic Kloosterman identity, and Paper 15, Lemma 3.1, for the finite trace
+calculation. Louvel's exact PDF is hash pinned. Its unweighted
+varying-modulus theorem is not asserted to cover the retained Mobius and
+frequency-dependent Gauss coefficient of this probe.
 
 The newer cubic norm comparisons credit bramble_trace's Papers 70 v1 and
 77 v1. Their exact downloaded Markdown hashes and versioned URLs are in the

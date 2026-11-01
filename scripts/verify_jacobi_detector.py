@@ -72,6 +72,37 @@ def check_kummer(p, character, phi, centered=False):
     return p
 
 
+def check_dickson(p, character):
+    """Classical cubic trace identity and the actual squared-frequency scaling."""
+    for y in range(p):
+        roots = sum((x**3-3*x-y) % p == 0 for x in range(p))
+        trace = (0, 0)
+        for u in range(1, p):
+            if (u+pow(u, -1, p)-y) % p == 0:
+                a, b = character(u, 2)
+                trace = (trace[0]+a, trace[1]+b)
+        assert trace == (roots-1, 0)
+    gauss = [(0, 0)]+[character(u, 2) for u in range(1, p)]
+    for h in range(p):
+        actual, expected = [(0, 0)]*p, [(0, 0)]*p
+        for u in range(1, p):
+            k = (u+h*h*pow(4*u, -1, p)) % p
+            a, b = character(u, 2)
+            c, d = actual[k]
+            actual[k] = (a+c, b+d)
+        if h:
+            t = h*pow(2, -1, p) % p
+            phase = character(t, 2)
+            for x in range(p):
+                k = t*(x**3-3*x) % p
+                a, b = expected[k]
+                expected[k] = (a+phase[0], b+phase[1])
+        else:
+            expected = gauss
+        cyclotomic_equal(actual, expected)
+    return p
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--write', action='store_true')
@@ -80,6 +111,7 @@ def main():
     kummer_checks = 0
     sextic_checks = []
     sextic_kummer_checks = 0
+    dickson_checks = 0
     distributions = []
     for p in (7, 13, 19, 31, 37):
         root = next(r for r in range(p) if (r*r+r+1) % p == 0)
@@ -117,6 +149,7 @@ def main():
         assert len(lookup6) == 6
         def chi6(x, power=1):
             return roots6[(power*lookup6[pow(x % p, (p-1)//6, p)]) % 6]
+        dickson_checks += check_dickson(p, chi6)
         distribution = [0]*6
         for xx in range(p):
             u = (xx*xx-1) % p
@@ -245,6 +278,12 @@ def main():
             'exact_kummer_trace_checks': sextic_kummer_checks,
             'exact_source_Gauss_phase_checks': 5,
             'Kloosterman_twist_order': 3,
+            'exact_Dickson_trace_value_checks': dickson_checks,
+            'exact_squared_frequency_Airy_checks': dickson_checks,
+            'Airy_polynomial': 'x^3-3*x',
+            'squarefree_unit_frequency_Airy_coefficient':
+                'mu(c)*eta(c)*gamma_4(c)*chi_c(h/2)^2',
+            'Airy_reformulation_estimates_covariance': False,
             'formal_euler_coefficients_checked': 13,
             'completion_factor': 'L^S(6*x-3,eta^6*alpha_bar^6)',
             'physical_polynomial': 'm^2-1',
