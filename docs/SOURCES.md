@@ -86,8 +86,8 @@ already carry a Mobius sign. Papers 13 v1 and 15 v1 are comparison sources;
 neither estimates the required complete trace average across all moduli.
 These four exact downloads are hash pinned in `external_files` and checked
 by `make sources`. The finite-field Kummer calculation is derived in the
-note and checked by exact cyclotomic arithmetic, without importing a
-cubic-character theorem for its sextic twist.
+notes and checked by exact cyclotomic arithmetic. The cubic-input control
+and sextic-input variant keep their different output character orders.
 
 The newer cubic norm comparisons credit bramble_trace's Papers 70 v1 and
 77 v1. Their exact downloaded Markdown hashes and versioned URLs are in the

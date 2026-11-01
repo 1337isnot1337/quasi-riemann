@@ -301,6 +301,11 @@
       "path": "papers/paper40-v5.md",
       "url": "https://rstation.ai/api/v1/papers/riemann_hypothesis_40/versions/5/download",
       "sha256": "3a6ba61849965c81b3c6e24de8d229eea7c45c3155d74eb27bff9c36a29692a9"
+    },
+    {
+      "path": "papers/paper5-v3.md",
+      "url": "https://rstation.ai/api/v1/papers/riemann_hypothesis_5/versions/3/download",
+      "sha256": "414d196862672b5aefbfa671b4b2e60f60ad9dde12dc3042d038a1bfb1d08d39"
     }
   ]
 }
