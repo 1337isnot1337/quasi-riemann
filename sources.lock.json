@@ -214,6 +214,21 @@
       "path": "papers/shared-label-297a7ef.md",
       "url": "https://raw.githubusercontent.com/1337isnot1337/quasi-riemann/297a7efac59ea6f8f801b027d3f4f03872716a68/research/shared-label-cubic-identity.md",
       "sha256": "8c788b3a4cef972b8b4c01a7df41c1d0862f7bd8e32fb0006cfe2e3bc27f0cd6"
+    },
+    {
+      "path": "papers/paper13-v1.md",
+      "url": "https://rstation.ai/api/v1/papers/riemann_hypothesis_13/versions/1/download",
+      "sha256": "cbd7e5e3a00a11d0715c46f8e3ca34f9a684f50e3168789b6de5613b80b1eb42"
+    },
+    {
+      "path": "papers/paper15-v1.md",
+      "url": "https://rstation.ai/api/v1/papers/riemann_hypothesis_15/versions/1/download",
+      "sha256": "66680aa2f6265dd8800b7e7f8f20fc0f368c84bd3739be36e7b9e5ca14cd700a"
+    },
+    {
+      "path": "papers/paper40-v5.md",
+      "url": "https://rstation.ai/api/v1/papers/riemann_hypothesis_40/versions/5/download",
+      "sha256": "3a6ba61849965c81b3c6e24de8d229eea7c45c3155d74eb27bff9c36a29692a9"
     }
   ]
 }

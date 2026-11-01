@@ -127,6 +127,30 @@ same contact. See the source lock for exact heads and rational bounds.
     geometric ratios have conductors above Z^(1/50). Further transformed row
     parameters must still be checked before applying an external estimate.
 
+17. A one-variable Jacobi detector replaces the Gauss source by ordinary
+    character coefficients, over all good ideals. Its full physical sum has
+    arbitrary-power decay for X=Z^a, a<1/2, by ordinary lattice Poisson.
+    Its zero Fourier frequency retains 1/L(x,eta), with an explicitly nonzero
+    coefficient for Re(x)>5/6. The remaining trace is a sextic Kloosterman
+    trace, as checked in 107 exact finite-field cases. Bounding its complete
+    nonzero-frequency sum by Z^(399/10000) at X=Z^(2/5) would give 0.84;
+    that estimate is open. See `research/jacobi-detector.md`.
+
+18. Using a sextic Jacobi character instead makes the output Kloosterman
+    character cubic. On squarefree sources its dressed coefficient is exactly
+    mu(c)*eta(c)*gamma_4(c). The all-prime-power signal correction converges
+    and is nonzero for Re(x)>3/4, with local numerator bound 107/252.
+    The same direct-side decay holds. A subpower bound for the complete
+    nonzero-frequency sum at X=Z^(2/5) would give 0.8, but is unproved. The fixed-modulus
+    cubic theorem does not establish this varying-modulus correlation.
+    Its exact complete frequency mean can be removed with arbitrary-power
+    error, retaining all prime powers; the remaining covariance is unproved.
+    A positive local resolvent proves nonvanishing for Re(x)>1/2, and three
+    further inverse Euler factors give a normally convergent nonzero correction
+    there. A lower zero-supremum bootstrap requires an unproved trace estimate
+    over an explicitly enlarged angular family.
+    See `research/sextic-jacobi-detector.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.
@@ -159,6 +183,14 @@ are below budget by absolute values. The unresolved signed estimate is the
 remaining geometric ratio classes, whose attached Kummer conductors exceed
 Z^(1/50). A further transform must retain the original profiles, target and
 masks and verify any changes to those row parameters.
+
+The preferred Jacobi variant has a proved direct-side rapid-decay argument
+and an exact centered cubic Kloosterman kernel on squarefree sources. Its
+remaining input is the full mean-zero trace average (OPEN6o) in
+`research/sextic-jacobi-detector.md`, at squared frequencies and varying
+moduli. The complete finite frequency mean is removed with arbitrary-power
+error. The current fixed-modulus short-window theorem does not meet the
+remaining contract, and every prime power stays in the source.
 
 A narrower analytic target is now the coefficient-sensitive regular primitive
 Kubota pairing for the actual Möbius/plain convolution. The fixed primitive pole
