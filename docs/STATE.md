@@ -192,8 +192,18 @@ same contact. See the source lock for exact heads and rational bounds.
     The full row-sum asymptotic and direct estimate remain open. See
     `research/angular-signal-family.md`.
 
+24. A hyperbolic change of variables and a positive energy identity prove
+    that the exact Goldfeld--Hinkle Picard factor F(s,x) is nonzero for real
+    x>=2 and Re(s)>1/2. With their imported spectral theorems, this removes
+    the possible extra poles from zeros of that factor in their cubic Pell
+    L-function theorem. The analytic proof is written, not Lean formalized.
+    The ratio-Jacobi character still has a valuation-two support mismatch
+    with cubic theta coefficients; no source-compatible trace estimate or
+    new quasi-Riemann bound follows. See
+    `research/picard-factor-nonvanishing.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
-L-function theorem or independent-kernel replay is claimed. See
+Dirichlet nonvanishing theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.
 
 ## Active route
