@@ -268,6 +268,11 @@
   ],
   "external_files": [
     {
+      "path": "pell/2209.11874v3.pdf",
+      "url": "https://arxiv.org/pdf/2209.11874v3",
+      "sha256": "375c1bb3342f6bf57928b446d5ff3083bd1be3cf48f2b5a9ab5ec3d27d10aa69"
+    },
+    {
       "path": "papers/paper70-v1.md",
       "url": "https://rstation.ai/api/v1/papers/riemann_hypothesis_70/versions/1/download",
       "sha256": "ec78c82fc6360681ccfae95b46da458a06c5df4e786d3e6560c21e23c84c7128"

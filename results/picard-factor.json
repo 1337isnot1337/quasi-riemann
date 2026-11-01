@@ -1,0 +1,12 @@
+{
+  "status": "exact identities checked; analytic proof is written, not Lean",
+  "integrand_identity": true,
+  "hyperbolic_pullback": true,
+  "conjugated_ode": true,
+  "energy_identity": true,
+  "complex_parameter_algebra": true,
+  "written_proposition": "F(s,x) != 0 for real x >= 2 and Re(s) > 1/2",
+  "analytic_boundary_terms_formalized": false,
+  "goldfeld_hinkle_spectral_theorems_independently_verified": false,
+  "improved_quasi_riemann_bound": false
+}

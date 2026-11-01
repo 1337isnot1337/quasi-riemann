@@ -117,6 +117,18 @@ kernel, completed overlap calculation and global representation are presented
 as this repository's written derivation. Their exact local and unit checks do
 not independently verify the analytic Poisson argument in a proof assistant.
 
+The [Picard-factor proof](../research/picard-factor-nonvanishing.md) uses the
+exact factor in Goldfeld--Hinkle, *The cubic Pell equation L-function*,
+arXiv:2209.11874v3, p. 2. Its PDF is hash pinned. Their Theorems 1.1 and
+1.3 supply the spectral continuation and growth in the stated corollary;
+those theorems are imported, not independently verified here. The
+hyperbolic differential equation and endpoint energy argument are derived
+in the note. DLMF 14.12.4 provides the classical associated-Legendre
+normalization check. The ratio-character support mismatch is checked
+against Definition 3.2 and the conjugation against Definition 5.1 in the
+rendered source. This auxiliary nonvanishing statement does not supply
+the open quasi-Riemann trace estimate.
+
 The corrected-dispersion comparison uses OpenAI's first-moment TeX at commit
 4eaee87548250b2682affda7d05d947c05554bae. Its paper, dispersion section and
 exceptional-moment section are separately hash pinned. Their coefficient
