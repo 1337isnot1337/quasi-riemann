@@ -192,6 +192,34 @@
     {
       "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean",
       "sha256": "e0bad60df00aa41bfbc402a2bdcf1921ea6c260b133566f3ab5f56de903b4f90"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/InverseAmplificationRows.lean",
+      "sha256": "9fda2dab6f2c10ff0de51de1af5c6a9d80d3023939419eb3dde1e860618d511b"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/InverseAmplificationRaw.lean",
+      "sha256": "25a7a12b2cdcdaffcb85a2c88d36b30f62fb4c057bfbcbbcd61902627e84014c"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/InverseAmplificationMask.lean",
+      "sha256": "5c088bd7a4e3fa436deee1f72e46eb0aae73c57de8b65fead8aad20b66e8e995"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/InverseAmplificationColumn.lean",
+      "sha256": "334cff21ea609327daa11ea841edc3bee879d359fac32040d17b780dfcb50e32"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/Operations.lean",
+      "sha256": "8cf90882000e51671b2f33ad471830049d0a39eaf6f47473e96db8e74e62a0ef"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/Conjugation.lean",
+      "sha256": "984d790b812af191505ee725a6d883bee934d2e2301042877e8d46d52b87d0af"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/ChineseRemainder/PrimaryCompletions.lean",
+      "sha256": "593a4060b10d449ea4fb71e38f7b3b9995911de49a38600691cb2384a64f945e"
     }
   ],
   "external_files": [
