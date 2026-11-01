@@ -168,6 +168,12 @@ same contact. See the source lock for exact heads and rational bounds.
     there. A lower zero-supremum bootstrap requires an unproved trace estimate
     over an explicitly enlarged angular family.
     See `research/sextic-jacobi-detector.md`.
+    The squarefree unit-frequency trace also has a classical cubic
+    exponential-sum representation. Its moving Gauss coefficient and
+    diagonal restriction remain, so existing unweighted or bilinear
+    estimates do not imply the required cancellation. Two sets of 107
+    exact finite-field checks support this map; see
+    `research/cubic-airy-trace.md`.
 
 20. The compensated cubic lift has an exact character identity, checked in
     Std Lean 4.34.1. Its compensated phase matrix has rank one, so an ordinary

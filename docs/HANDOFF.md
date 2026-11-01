@@ -43,7 +43,7 @@ make diagnostics PYTHON=/path/to/python-with-sympy
 
 The final tree has 15 exact research checkers and separately labeled
 numerical diagnostics. Source verification covers 55 tracker files and
-14 external downloads. The Airy checker includes 640 unit identities and
+15 external downloads. The Airy checker includes 640 unit identities and
 706 Gauss/overlap identities, including 64 composite cases. The optional
 Picard quadrature diagnostic is
 `python scripts/verify_picard_factor.py --numerical`.

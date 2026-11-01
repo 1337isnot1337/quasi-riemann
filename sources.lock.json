@@ -336,6 +336,11 @@
       "path": "papers/first-moment-4eaee875-dual.tex",
       "url": "https://raw.githubusercontent.com/openai/math/4eaee87548250b2682affda7d05d947c05554bae/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/dual.tex",
       "sha256": "1209fd17cee79f4a21b71d66d3d8b60b210216fa783ec555959d2ebff2fba483"
+    },
+    {
+      "path": "papers/louvel-1107.0197v2.pdf",
+      "url": "https://arxiv.org/pdf/1107.0197v2",
+      "sha256": "54c1effbafc7de2082ae427bff3f281b41f9d43251e8ec48ea692be91af2a10f"
     }
   ]
 }
