@@ -30,6 +30,7 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [An angular cubic-probe candidate and its changed signal](research/angular-cubic-probe.md)
 - [A Jacobi detector with a proved direct bound and an open trace estimate](research/jacobi-detector.md)
 - [A sextic Jacobi variant with a cubic trace and a conditional 0.8 target](research/sextic-jacobi-detector.md)
+- [Its global identity and a separating family of candidate residues](research/angular-signal-family.md)
 - [A coupled derivative for the exposed diagonal pole](research/coupled-mellin-annihilator.md)
 - [Physical differentiation and stability of the baseline low estimates](research/derivative-low-stability.md)
 - [Source and credit map](docs/SOURCES.md)

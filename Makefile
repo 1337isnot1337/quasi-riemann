@@ -15,11 +15,13 @@ verify:
 	$(PYTHON) scripts/verify_mellin_annihilator.py
 	$(PYTHON) scripts/verify_cubic_signed_budget.py
 	$(PYTHON) scripts/verify_jacobi_detector.py
+	$(PYTHON) scripts/verify_angular_signal.py
 
 sources:
 	$(PYTHON) scripts/check_sources.py
 
 verify-lean:
 	$(LEAN) lean/CubicCompensation.lean
+
 diagnostics:
 	$(PYTHON) scripts/check_binary_fourier.py
