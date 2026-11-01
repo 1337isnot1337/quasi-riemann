@@ -202,6 +202,14 @@ same contact. See the source lock for exact heads and rational bounds.
     new quasi-Riemann bound follows. See
     `research/picard-factor-nonvanishing.md`.
 
+25. The classical Duke--Iwaniec identity turns the squared-frequency cubic
+    Kloosterman trace into the cubic phase h*(3*t-t^3)/2. An exact extraction
+    of every frequency gcd on squarefree moduli leaves a Gauss sum with
+    numerator h/g and removes g from the Gaussian argument. Its absolute-line
+    Mellin identity displays the reciprocal L-factor explicitly. The other
+    prime-power branches and the complete centered trace estimate remain
+    open. See `research/airy-jacobi-trace.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 Dirichlet nonvanishing theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.

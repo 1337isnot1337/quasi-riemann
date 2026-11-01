@@ -1,0 +1,24 @@
+{
+  "status": "exact finite Airy and gcd identities; no new analytic bound",
+  "unit_airy_checks": 640,
+  "gauss_overlap_checks": 706,
+  "composite_overlap_checks": 64,
+  "prime_norms": [
+    7,
+    13,
+    19,
+    31,
+    37
+  ],
+  "composite_norms": [
+    91,
+    133
+  ],
+  "cubic_embeddings_per_modulus": 2,
+  "prime_additive_characters_per_embedding": 3,
+  "phase": "h*(3*t-t^3)/2",
+  "all_frequency_gcds_derived_for_squarefree_moduli": true,
+  "nonsquarefree_moduli_estimated": false,
+  "full_mean_zero_trace_estimated": false,
+  "improved_quasi_riemann_bound": false
+}
