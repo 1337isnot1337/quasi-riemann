@@ -2,7 +2,10 @@
 
 Status: exact angular bookkeeping for a candidate modification. No global
 angular Poisson identity, principal asymptotic, full low estimate or improved
-zero-free bound is proved here. The radial shared-label construction is the
+zero-free bound is proved in this initial note. The subsequent
+[signal-family derivation](angular-signal-family.md) supplies the absolute-line
+identity and a noncommon-zero residue argument; the full asymptotic and bounds
+remain open. The radial shared-label construction is the
 separate checkpoint `297a7ef` referenced in `binary-cubic-low-budget.md`.
 
 The relevant external input is bramble_trace's

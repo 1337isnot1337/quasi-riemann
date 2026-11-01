@@ -98,7 +98,7 @@ events, or off-diagonal arithmetic cancellation. Plausible targets are:
 
 1. A joint count/moment inequality on zero-selected rows, improving the product
    of row cardinality and weighted energy without separately bounding each.
-2. A long reciprocal-polynomial sixth moment with a genuine saving over the
+2. A sixth moment for the ordinary numerator polynomial with a genuine saving over the
    direct three-factor support cost, uniform in the conductor and selected weights.
 3. A factorization argument which handles the rough-ideal remainder as well as
    factorable ideals. Splitting only smooth ideals does not address prime ideals

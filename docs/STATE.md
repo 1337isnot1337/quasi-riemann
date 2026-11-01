@@ -93,7 +93,9 @@ same contact. See the source lock for exact heads and rational bounds.
     column matches the published j=2 cubic mean; the radial probe instead has
     the excluded j=0 mode. Only the pole 2*t1+t2=1 remains untwisted, with
     coupled scales X2^2=Z*X1. The order and scale identities are certified;
-    the global angular identity, signal and full frequency estimates are not.
+    the initial note does not prove a global identity or estimate. Result 22
+    below supplies the absolute-line identity and fixed-row signal family;
+    the full asymptotic and frequency estimates remain open.
     See `research/angular-cubic-probe.md`.
 
 14. A second fixed-product aspect difference of the radial cubic probe has
@@ -151,6 +153,32 @@ same contact. See the source lock for exact heads and rational bounds.
     over an explicitly enlarged angular family.
     See `research/sextic-jacobi-detector.md`.
 
+19. The compensated cubic lift has an exact character identity, checked in
+    Std Lean 4.34.1. Its compensated phase matrix has rank one, so an ordinary
+    graph lift does not supply the required amplifier cost below one half.
+    The analytic graph moment is open. See `research/cubic-compensation.md`.
+
+20. Three scalar Euler extractions continue the inherited correction across
+    a neighborhood of x+w=1, with explicit retained poles and ramified-row
+    growth. The remaining product is normally convergent there; no infinite
+    signed row-sum continuation or saving follows. The exact certificate is
+    in `research/euler-diagonal-regularization.md`.
+
+21. The radial shared-label cubic identity is derived on absolute lines with
+    all unit classes, completion valuations and source/label overlaps. Its
+    written conditional 0.84 reduction closes the stated high contour budget,
+    assuming the complete direct estimate Z^(8797/30000). That direct estimate
+    is open. See `research/shared-label-cubic-identity.md` and
+    `research/cubic-direct-target-084.md`; neither analytic argument is Lean
+    formalized. The exact kernel checks and numerical diagnostics are separate.
+
+22. The angular variant's absolute-line identity has unit multiplier omega^r
+    and completion character alpha^3. Its principal local numerator is bounded
+    away from zero by 1647/7840 for Re(x)>5/6. Rational fixed scale ratios in
+    [1,2] separate every possible target zero there by Mellin uniqueness.
+    The full row-sum asymptotic and direct estimate remain open. See
+    `research/angular-signal-family.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.
@@ -175,8 +203,9 @@ of Holder exponent is insufficient.
 
 The shared-label cubic construction is a separate structural route. The new
 angular variant matches a coefficient-specific cubic mean while changing the
-frequency-pole geometry. Its global signal and full frequency sums need proof;
-the radial low-budget note rules out the simpler generic Cauchy route in the
+frequency-pole geometry. Its absolute-line identity and fixed-row signal
+family are derived; the full asymptotic and frequency bounds need proof.
+The radial low-budget note rules out the simpler generic Cauchy route in the
 short-second-dual regime.
 For the radial 0.84 direct target, all physical cubic cores through Z^(1/25)
 are below budget by absolute values. The unresolved signed estimate is the

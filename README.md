@@ -17,18 +17,23 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [Current state and next proof obligation](docs/STATE.md)
 - [Exact return-model obstruction](research/return-model-barrier.md)
 - [Higher-moment route and its actual support cost](research/moment-lift.md)
+- [A compensated cubic lift and its remaining amplifier cost](research/cubic-compensation.md)
 - [Mixed detector/numerator moments and the missing inverse input](research/mixed-fibre.md)
 - [A fixed primitive pole pairing and its remaining contour gap](research/primitive-pole-pairing.md)
 - [Support of a long Möbius inverse factor](research/inverse-dominant-support.md)
+- [Euler continuation to the functional diagonal](research/euler-diagonal-regularization.md)
 - [Targeted comparison with recent analytic sources](research/literature-intake.md)
 - [Exact conditional return target at 0.87](research/conditional-087.md)
 - [Lean transport fork admitting the 0.87 geometry](formal-transport/README.md)
+- [The shared-label cubic identity with all completion and overlap terms](research/shared-label-cubic-identity.md)
+- [The complete direct estimate required by the radial 0.84 reduction](research/cubic-direct-target-084.md)
 - [A fixed-product cubic contrast that preserves the reciprocal signal](research/cubic-aspect-contrast.md)
 - [The signed-correlation gap after newer cubic Gauss norm estimates](research/cubic-signed-budget.md)
 - [Small physical cubic cores below the 0.84 direct target](research/cubic-principal-ratio-sector.md)
 - [An angular cubic-probe candidate and its changed signal](research/angular-cubic-probe.md)
 - [A Jacobi detector with a proved direct bound and an open trace estimate](research/jacobi-detector.md)
 - [A sextic Jacobi variant with a cubic trace and a conditional 0.8 target](research/sextic-jacobi-detector.md)
+- [Its global identity and a separating family of candidate residues](research/angular-signal-family.md)
 - [A coupled derivative for the exposed diagonal pole](research/coupled-mellin-annihilator.md)
 - [Physical differentiation and stability of the baseline low estimates](research/derivative-low-stability.md)
 - [Source and credit map](docs/SOURCES.md)
@@ -50,6 +55,10 @@ make sources PYTHON=.venv/bin/python
 
 `make verify` checks exact algebra and the explicitly labeled exponent models.
 It does not build the upstream Lean proof or verify a new zero-free region.
+`make diagnostics` separately runs the numerical finite-Fourier checks, including
+the sixteen two-prime source/label configurations. The optional `make verify-lean`
+checks the compensated-cubic character identity with Lean 4.34.1 and Std only;
+it proves no analytic amplifier estimate.
 The 0.87 certificate assumes an explicitly unproved stronger count, and covers
 the whole exponent-model domain by 27 exact rational Bernstein leaves. The
 separate [transport replay](formal-transport/README.md) checks a broadened generic
