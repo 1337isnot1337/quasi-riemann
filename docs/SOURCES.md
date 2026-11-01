@@ -41,7 +41,6 @@ modules reconstructed in the research notes are:
 | Baseline `PrimeRows/Character.lean` | Actual numerator row and prime coefficients |
 | Baseline `Hecke/InverseAmplificationFamily.lean` | Sixth-power row replication and its deletion mask |
 | Baseline `Hecke/InverseAmplificationBudget.lean` | Origin of the no-slot 5/6 slope |
-| Baseline `Hecke/InverseAmplificationEndpoint.lean` | Raw moment to amplified inverse mean |
 | Baseline `Detector/EulerCoordinates.lean` | Actual unramified Euler coordinates and phases |
 | Baseline `Detector/HighEulerRational.lean` | Rational form of the complete local correction |
 | Baseline `Detector/HighRowsUnramified.lean` | Unramified closed correction in actual rows |
@@ -51,6 +50,10 @@ modules reconstructed in the research notes are:
 | Baseline `Hecke/DyadicReflection.lean` | Numerator functional equation, conductor and Gauss phase |
 | Baseline `GaussSum/CubicNormalization.lean` | Cubic Gauss cube and primary angular normalization |
 | Baseline `GaussSum/SexticNormalization.lean` | Actual ideal CRT and normalized Gauss identities |
+| Baseline `Hecke/LogarithmicActual.lean` | Euler logarithm and primitive reciprocal strip estimate |
+| Baseline `Hecke/Primitive.lean` | Primitive functional equation for conductor convexity |
+| Baseline `Hecke/StripActual.lean` | Strip growth and its functional-equation input |
+| Baseline `Hecke/ZeroSupremum.lean` | All-character zero supremum and uniform-margin principle |
 | `BoundaryPhysical/PhysicalDirect/Hybrid.lean` | Two-ordinary-factor source budget |
 | `BoundaryPhysical/PhysicalDirect/Geometry.lean` | Plain scale and shifted capacity |
 | `BoundaryPhysical/TransportGeometry.lean` | Coarse box and floor constraints |

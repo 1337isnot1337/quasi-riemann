@@ -252,6 +252,18 @@
     {
       "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/GaussSum/SexticNormalization.lean",
       "sha256": "188af867db7719174ca36916f0137997f97e927f4e7dcd4b5eb6bf3a5b885a69"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/LogarithmicActual.lean",
+      "sha256": "32b72de27b2a2127a40f5e9dd583183d9cd5c454954aad87313ad719eb00dba9"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/StripActual.lean",
+      "sha256": "32d7dc7c61423b9fce6096520777a927ba052bcb6e78945a3f0ee9a645044799"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/Hecke/ZeroSupremum.lean",
+      "sha256": "5f04159a3690d12d1d5f435b0f31e606aef7498a2f464de986e9d1a86392ddf6"
     }
   ],
   "external_files": [
