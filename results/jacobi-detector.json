@@ -1,0 +1,483 @@
+{
+  "status": "Jacobi detector identities and conditional target; no new bound",
+  "finite_prime_power_checks": [
+    {
+      "norm": 7,
+      "power": 1,
+      "jacobi": [
+        -1,
+        -3
+      ]
+    },
+    {
+      "norm": 7,
+      "power": 2,
+      "jacobi": [
+        14,
+        21
+      ]
+    },
+    {
+      "norm": 7,
+      "power": 3,
+      "jacobi": [
+        245,
+        0
+      ]
+    },
+    {
+      "norm": 13,
+      "power": 1,
+      "jacobi": [
+        -4,
+        -3
+      ]
+    },
+    {
+      "norm": 13,
+      "power": 2,
+      "jacobi": [
+        -13,
+        39
+      ]
+    },
+    {
+      "norm": 13,
+      "power": 3,
+      "jacobi": [
+        1859,
+        0
+      ]
+    },
+    {
+      "norm": 19,
+      "power": 1,
+      "jacobi": [
+        2,
+        -3
+      ]
+    },
+    {
+      "norm": 19,
+      "power": 2,
+      "jacobi": [
+        95,
+        57
+      ]
+    },
+    {
+      "norm": 19,
+      "power": 3,
+      "jacobi": [
+        6137,
+        0
+      ]
+    },
+    {
+      "norm": 31,
+      "power": 1,
+      "jacobi": [
+        -1,
+        -6
+      ]
+    },
+    {
+      "norm": 31,
+      "power": 2,
+      "jacobi": [
+        155,
+        186
+      ]
+    },
+    {
+      "norm": 31,
+      "power": 3,
+      "jacobi": [
+        27869,
+        0
+      ]
+    },
+    {
+      "norm": 37,
+      "power": 1,
+      "jacobi": [
+        -7,
+        -3
+      ]
+    },
+    {
+      "norm": 37,
+      "power": 2,
+      "jacobi": [
+        -148,
+        111
+      ]
+    },
+    {
+      "norm": 37,
+      "power": 3,
+      "jacobi": [
+        47915,
+        0
+      ]
+    }
+  ],
+  "exact_kummer_trace_checks": 107,
+  "trace_twist_order": 6,
+  "formal_euler_coefficients_checked": 13,
+  "zero_frequency_series": "L^S(3*x-3/2,eta^3*alpha_bar^3)*K_eta(x)/L^S(x,eta)",
+  "local_numerator": "1-D-E-2*q*R",
+  "local_numerator_nonzero_lower_bound": "151/245",
+  "correction_absolute_domain": "Re(x)>3/4",
+  "nonzero_signal_domain": "Re(x)>5/6",
+  "ordinary_source_direct_bound_written": true,
+  "direct_bound": "I_eta <<_A sqrt(X*Z)*(X^2/Z)^A + X^(-1/2)*V(1/Z)",
+  "direct_bound_uses_eta_finite_and_angular_order_minus_one": true,
+  "target_X": "Z^(2/5)",
+  "unproved_complete_nonzero_frequency_bound": "H_eta << Z^(399/10000)",
+  "conditional_zero_free_threshold": "21/25",
+  "nonzero_frequency_bound_proved": false,
+  "improved_L_function_bound_proved": false,
+  "sextic_jacobi_variant": {
+    "finite_residue_field_checks": [
+      {
+        "norm": 7,
+        "exponent": 1,
+        "jacobi": [
+          3,
+          2
+        ]
+      },
+      {
+        "norm": 7,
+        "exponent": 2,
+        "jacobi": [
+          3,
+          2
+        ]
+      },
+      {
+        "norm": 7,
+        "exponent": 3,
+        "jacobi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "norm": 7,
+        "exponent": 4,
+        "jacobi": [
+          1,
+          -2
+        ]
+      },
+      {
+        "norm": 7,
+        "exponent": 5,
+        "jacobi": [
+          1,
+          -2
+        ]
+      },
+      {
+        "norm": 7,
+        "exponent": 6,
+        "jacobi": [
+          5,
+          0
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 1,
+        "jacobi": [
+          1,
+          4
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 2,
+        "jacobi": [
+          1,
+          4
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 3,
+        "jacobi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 4,
+        "jacobi": [
+          -3,
+          -4
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 5,
+        "jacobi": [
+          -3,
+          -4
+        ]
+      },
+      {
+        "norm": 13,
+        "exponent": 6,
+        "jacobi": [
+          11,
+          0
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 1,
+        "jacobi": [
+          -5,
+          -2
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 2,
+        "jacobi": [
+          -5,
+          -2
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 3,
+        "jacobi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 4,
+        "jacobi": [
+          -3,
+          2
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 5,
+        "jacobi": [
+          -3,
+          2
+        ]
+      },
+      {
+        "norm": 19,
+        "exponent": 6,
+        "jacobi": [
+          17,
+          0
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 1,
+        "jacobi": [
+          -1,
+          -6
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 2,
+        "jacobi": [
+          -1,
+          -6
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 3,
+        "jacobi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 4,
+        "jacobi": [
+          5,
+          6
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 5,
+        "jacobi": [
+          5,
+          6
+        ]
+      },
+      {
+        "norm": 31,
+        "exponent": 6,
+        "jacobi": [
+          29,
+          0
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 1,
+        "jacobi": [
+          3,
+          -4
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 2,
+        "jacobi": [
+          3,
+          -4
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 3,
+        "jacobi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 4,
+        "jacobi": [
+          7,
+          4
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 5,
+        "jacobi": [
+          7,
+          4
+        ]
+      },
+      {
+        "norm": 37,
+        "exponent": 6,
+        "jacobi": [
+          35,
+          0
+        ]
+      }
+    ],
+    "positive_local_distributions": [
+      {
+        "norm": 7,
+        "positive_resolvent_weights": [
+          2,
+          2,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "norm": 13,
+        "positive_resolvent_weights": [
+          1,
+          4,
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "norm": 19,
+        "positive_resolvent_weights": [
+          0,
+          2,
+          4,
+          3,
+          4,
+          4
+        ]
+      },
+      {
+        "norm": 31,
+        "positive_resolvent_weights": [
+          6,
+          2,
+          4,
+          5,
+          4,
+          8
+        ]
+      },
+      {
+        "norm": 37,
+        "positive_resolvent_weights": [
+          9,
+          4,
+          4,
+          6,
+          4,
+          8
+        ]
+      }
+    ],
+    "exact_kummer_trace_checks": 107,
+    "exact_source_Gauss_phase_checks": 5,
+    "Kloosterman_twist_order": 3,
+    "formal_euler_coefficients_checked": 13,
+    "completion_factor": "L^S(6*x-3,eta^6*alpha_bar^6)",
+    "physical_polynomial": "m^2-1",
+    "source_compensator": "alpha_bar(c)*epsilon(c)",
+    "linear_additive_phase_absent": true,
+    "finite_frequency_mean_checks": 5,
+    "complete_trace_center": "J6_c(h)-chi_c(-1)",
+    "written_removed_mean_bound": "arbitrary-power decay for X=Z^a, 0<a<1",
+    "squarefree_high_coefficient": "mu(c)*eta(c)*gamma_4(c)",
+    "nonzero_signal_domain": "Re(x)>3/4",
+    "local_numerator_lower_bound": "107/252",
+    "local_nonzero_domain": "Re(x)>1/2",
+    "local_nonzero_proof": "Re(P_p(z))>1/2+1/Q for abs(z)<1",
+    "fully_extracted_defect_powers": [
+      "12*x - 4",
+      "7*x - 2",
+      "8*x - 5/2",
+      "3*x - 1/2",
+      "10*x - 7/2",
+      "5*x - 3/2",
+      "6*x - 2",
+      "11*x - 4",
+      "6*x - 2",
+      "7*x - 5/2",
+      "9*x - 7/2",
+      "3*x - 1/2",
+      "6*x - 2"
+    ],
+    "fully_extracted_correction_domain": "Re(x)>1/2; holomorphic and nonzero",
+    "meromorphic_zero_free_signal_domain": "Re(x)>2/3",
+    "closed_angular_family": "eta_finite*alpha^k, k<=0",
+    "zero_supremum_map": "beta -> 6*beta-3",
+    "no_cancellation_supremum_condition": "beta>3/5",
+    "trace_estimate_for_closed_angular_family_proved": false,
+    "unproved_complete_trace_bound": "H6_centered_eta(Z^(2/5),Z) <<_eps Z^eps for every eps>0",
+    "reserved_sufficient_version": "H6_centered_eta(Z^(2/5),Z) << Z^(-1/10000)",
+    "conditional_zero_free_threshold": "4/5",
+    "trace_bound_proved": false
+  }
+}

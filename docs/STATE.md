@@ -93,7 +93,9 @@ same contact. See the source lock for exact heads and rational bounds.
     column matches the published j=2 cubic mean; the radial probe instead has
     the excluded j=0 mode. Only the pole 2*t1+t2=1 remains untwisted, with
     coupled scales X2^2=Z*X1. The order and scale identities are certified;
-    the global angular identity, signal and full frequency estimates are not.
+    the initial note does not prove a global identity or estimate. Result 22
+    below supplies the absolute-line identity and fixed-row signal family;
+    the full asymptotic and frequency estimates remain open.
     See `research/angular-cubic-probe.md`.
 
 14. A second fixed-product aspect difference of the radial cubic probe has
@@ -140,6 +142,56 @@ same contact. See the source lock for exact heads and rational bounds.
     The imported high argument remains a written proof. See
     `research/cubic-signed-correlation-contract.md`.
 
+18. A one-variable Jacobi detector replaces the Gauss source by ordinary
+    character coefficients, over all good ideals. Its full physical sum has
+    arbitrary-power decay for X=Z^a, a<1/2, by ordinary lattice Poisson.
+    Its zero Fourier frequency retains 1/L(x,eta), with an explicitly nonzero
+    coefficient for Re(x)>5/6. The remaining trace is a sextic Kloosterman
+    trace, as checked in 107 exact finite-field cases. Bounding its complete
+    nonzero-frequency sum by Z^(399/10000) at X=Z^(2/5) would give 0.84;
+    that estimate is open. See `research/jacobi-detector.md`.
+
+19. Using a sextic Jacobi character instead makes the output Kloosterman
+    character cubic. On squarefree sources its dressed coefficient is exactly
+    mu(c)*eta(c)*gamma_4(c). The all-prime-power signal correction converges
+    and is nonzero for Re(x)>3/4, with local numerator bound 107/252.
+    The same direct-side decay holds. A subpower bound for the complete
+    nonzero-frequency sum at X=Z^(2/5) would give 0.8, but is unproved. The fixed-modulus
+    cubic theorem does not establish this varying-modulus correlation.
+    Its exact complete frequency mean can be removed with arbitrary-power
+    error, retaining all prime powers; the remaining covariance is unproved.
+    A positive local resolvent proves nonvanishing for Re(x)>1/2, and three
+    further inverse Euler factors give a normally convergent nonzero correction
+    there. A lower zero-supremum bootstrap requires an unproved trace estimate
+    over an explicitly enlarged angular family.
+    See `research/sextic-jacobi-detector.md`.
+
+20. The compensated cubic lift has an exact character identity, checked in
+    Std Lean 4.34.1. Its compensated phase matrix has rank one, so an ordinary
+    graph lift does not supply the required amplifier cost below one half.
+    The analytic graph moment is open. See `research/cubic-compensation.md`.
+
+21. Three scalar Euler extractions continue the inherited correction across
+    a neighborhood of x+w=1, with explicit retained poles and ramified-row
+    growth. The remaining product is normally convergent there; no infinite
+    signed row-sum continuation or saving follows. The exact certificate is
+    in `research/euler-diagonal-regularization.md`.
+
+22. The radial shared-label cubic identity is derived on absolute lines with
+    all unit classes, completion valuations and source/label overlaps. Its
+    written conditional 0.84 reduction closes the stated high contour budget,
+    assuming the complete direct estimate Z^(8797/30000). That direct estimate
+    is open. See `research/shared-label-cubic-identity.md` and
+    `research/cubic-direct-target-084.md`; neither analytic argument is Lean
+    formalized. The exact kernel checks and numerical diagnostics are separate.
+
+23. The angular variant's absolute-line identity has unit multiplier omega^r
+    and completion character alpha^3. Its principal local numerator is bounded
+    away from zero by 1647/7840 for Re(x)>5/6. Rational fixed scale ratios in
+    [1,2] separate every possible target zero there by Mellin uniqueness.
+    The full row-sum asymptotic and direct estimate remain open. See
+    `research/angular-signal-family.md`.
+
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
 `results/transport-087-lean.json` and `results/transport-087-axioms.txt`.
@@ -164,8 +216,9 @@ of Holder exponent is insufficient.
 
 The shared-label cubic construction is a separate structural route. The new
 angular variant matches a coefficient-specific cubic mean while changing the
-frequency-pole geometry. Its global signal and full frequency sums need proof;
-the radial low-budget note rules out the simpler generic Cauchy route in the
+frequency-pole geometry. Its absolute-line identity and fixed-row signal
+family are derived; the full asymptotic and frequency bounds need proof.
+The radial low-budget note rules out the simpler generic Cauchy route in the
 short-second-dual regime.
 For the radial 0.84 direct target, all physical cubic cores through Z^(1/25)
 are below budget by absolute values. The unresolved signed estimate is the
@@ -173,10 +226,18 @@ remaining geometric ratio classes, whose attached Kummer conductors exceed
 Z^(1/50). The verified overlap extraction retains a Z^(1/100-epsilon)
 primitive-conductor margin. A further transform must retain the original
 profiles, target, real lifts and masks and verify additional parameter changes.
-The full correlation contract SC_(1/20), with the explicit joint contrast
+For this radial route, the full correlation contract SC_(1/20), with the explicit joint contrast
 profile and original core cutoff, is the narrower next target. It includes
 all completions and overlaps through summable weights; proving only the
 completion-free coprime case would not establish that contract.
+
+The preferred Jacobi variant has a proved direct-side rapid-decay argument
+and an exact centered cubic Kloosterman kernel on squarefree sources. Its
+remaining input is the full mean-zero trace average (OPEN6o) in
+`research/sextic-jacobi-detector.md`, at squared frequencies and varying
+moduli. The complete finite frequency mean is removed with arbitrary-power
+error. The current fixed-modulus short-window theorem does not meet the
+remaining contract, and every prime power stays in the source.
 
 A narrower analytic target is now the coefficient-sensitive regular primitive
 Kubota pairing for the actual Möbius/plain convolution. The fixed primitive pole

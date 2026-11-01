@@ -1,0 +1,82 @@
+{
+  "status": "binary cubic local and unit certificate; no analytic row bound",
+  "F_j": [
+    "(A**2*B + A*B**2 + 1)/((1 - A**3)*(1 - B**3))",
+    "(A**2*B**2 + A + B)/((1 - A**3)*(1 - B**3))",
+    "(A**2 + A*B + B**2)/((1 - A**3)*(1 - B**3))"
+  ],
+  "G_j": [
+    "(1 - 1/Q)**2*(A**2*B + A*B**2 + 1)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(A/(B*(1 - A**3)) + B/(A*(1 - B**3)))/Q",
+    "(1 - 1/Q)**2*(A**2*B**2 + A + B)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(A**2/(B*(1 - A**3)) + B**2/(A*(1 - B**3)))/Q + 1/(A*B*Q**2)",
+    "(1 - 1/Q)**2*(A**2 + A*B + B**2)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(1/(B*(1 - A**3)) + 1/(A*(1 - B**3)))/Q"
+  ],
+  "P_j": [
+    "(-D + R*((1 - 1/Q)**2*(A**2*B + A*B**2 + 1)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(A/(B*(1 - A**3)) + B/(A*(1 - B**3)))/Q))/(1 - R) + (A**2*B + A*B**2 + 1)/((1 - A**3)*(1 - B**3))",
+    "R*((1 - 1/Q)**2*(A**2*B**2 + A + B)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(A**2/(B*(1 - A**3)) + B**2/(A*(1 - B**3)))/Q + 1/(A*B*Q**2))/(1 - R) + (A**2*B**2 + A + B)/((1 - A**3)*(1 - B**3))",
+    "R*((1 - 1/Q)**2*(A**2 + A*B + B**2)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(1/(B*(1 - A**3)) + 1/(A*(1 - B**3)))/Q)/(1 - R) + (A**2 + A*B + B**2)/((1 - A**3)*(1 - B**3))"
+  ],
+  "finite_valuation_checks": 8664,
+  "critical_G_j": [
+    "1",
+    "2/t",
+    "t**(-2)"
+  ],
+  "shared_scalar_poles": [
+    "3t1=1",
+    "3t2=1",
+    "t1+2t2=1",
+    "2t1+t2=1"
+  ],
+  "common_completion_ratio": "eta(p)^3*alpha_bar(p)^3*Q^(-1-3v)",
+  "reciprocal_argument": "x=3/2+v-t1-t2",
+  "unmarked_principal_candidate_power": "x-5/6+(2/3)*(log_Z(X1)+log_Z(X2))",
+  "leading_log_degree_at_shared_intersection": 2,
+  "principal_row_isolated_by_unmarked_frequency_poles": false,
+  "shared_label_uses_matching_cubic_selector": true,
+  "shared_cubic_label": {
+    "physical_factor": "chi_A(m1)^2*chi_A(m2)^2*chi_s(m1*m2)^4*gamma_4(s)^(-2)",
+    "label_support": "squarefree s",
+    "marked_P_j": [
+      "(-A**2*B**2*Q**2*T*((1 - 1/Q)**2*(A**2 + A*B + B**2)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(1/(B*(1 - A**3)) + 1/(A*(1 - B**3)))/Q) - D + R*((1 - 1/Q)**2*(A**2*B + A*B**2 + 1)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(A/(B*(1 - A**3)) + B/(A*(1 - B**3)))/Q) + W)/(1 - R) + (A**2*B + A*B**2 + 1)/((1 - A**3)*(1 - B**3))",
+      "(-A**2*B**2*Q**2*T*((1 - 1/Q)**2*(A**2*B + A*B**2 + 1)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(A/(B*(1 - A**3)) + B/(A*(1 - B**3)))/Q) + R*((1 - 1/Q)**2*(A**2*B**2 + A + B)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(A**2/(B*(1 - A**3)) + B**2/(A*(1 - B**3)))/Q + 1/(A*B*Q**2)))/(1 - R) + (A**2*B**2 + A + B)/((1 - A**3)*(1 - B**3))",
+      "(-A**2*B**2*Q**2*T*((1 - 1/Q)**2*(A**2*B**2 + A + B)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(A**2/(B*(1 - A**3)) + B**2/(A*(1 - B**3)))/Q + 1/(A*B*Q**2)) + R*((1 - 1/Q)**2*(A**2 + A*B + B**2)/((1 - A**3)*(1 - B**3)) - (1 - 1/Q)*(1/(B*(1 - A**3)) + 1/(A*(1 - B**3)))/Q))/(1 - R) + (A**2 + A*B + B**2)/((1 - A**3)*(1 - B**3))"
+    ],
+    "CRT_pair_phase": "6*e*ee + 6*e*ell2 + 6*ee*ell - 6*ell*kk - 6*ell2*k",
+    "CRT_pair_phase_divisible_by": 6,
+    "exact_unit_packet_checks": 9,
+    "element_frequency_unit_multiplicity": 12,
+    "finite_overlap_valuation_checks": 8664,
+    "ordinary_selector": "L^S(w,rho_u)/L^S(2w,rho_u^2)",
+    "candidate_power": "x-5/6+(log_Z(X1)+log_Z(X2))/6",
+    "selector_uses_same_cubic_row_as_inverse": true,
+    "critical_principal_numerator": "(1-D)*(1+W)+(1-R)*(F0-1)",
+    "fixed_bad_prime_frequency_factors": "F_j (source and label avoid S)",
+    "global_identity_has_written_derivation": true,
+    "global_identity_formalized": false,
+    "frequency_divisibility": "n^2*gcd(c,s) divides both h_i",
+    "support_all_size_affine_proof": [
+      {
+        "source_valuation": 0,
+        "label_valuation": 0,
+        "residual_for_ell=t+1": "t+0"
+      },
+      {
+        "source_valuation": 0,
+        "label_valuation": 1,
+        "residual_for_ell=t+1": "t+1"
+      },
+      {
+        "source_valuation": 1,
+        "label_valuation": 0,
+        "residual_for_ell=t+1": "t+1"
+      },
+      {
+        "source_valuation": 1,
+        "label_valuation": 1,
+        "residual_for_ell=t+1": "t+1"
+      }
+    ],
+    "global_direct_estimate_proved": false
+  },
+  "new_zero_free_bound_proved": false
+}
