@@ -2,6 +2,9 @@
 
 Updated: 2026-10-31. This is a research checkpoint, not a bound submission.
 
+Research paused at the user's request. See [the handoff](HANDOFF.md) for
+the actual progress, final checks, and the unproved inputs. No bound was improved.
+
 ## Objective and baseline
 
 Obtain a substantial unconditional improvement beyond all existing numbers and

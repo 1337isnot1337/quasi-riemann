@@ -27,3 +27,4 @@ verify-lean:
 
 diagnostics:
 	$(PYTHON) scripts/check_binary_fourier.py
+	$(PYTHON) scripts/check_coupled_fourier.py

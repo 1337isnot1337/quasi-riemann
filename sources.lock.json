@@ -321,6 +321,21 @@
       "path": "papers/cubic-high-9f30963.md",
       "url": "https://raw.githubusercontent.com/1337isnot1337/quasi-riemann/9f309638642422757108c0690fb36b60f6810d69/research/cubic-direct-target-084.md",
       "sha256": "fd93d298a664b6cee4a3d8287b249eb443ddf8ac8c8ffd81f9b6c4bf1608e117"
+    },
+    {
+      "path": "papers/first-moment-4eaee875-paper.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/4eaee87548250b2682affda7d05d947c05554bae/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/paper.tex",
+      "sha256": "8cfe4339113b0f734a728e59f7bc82a17fbd15084c04097ba103ced76f2f10c3"
+    },
+    {
+      "path": "papers/first-moment-4eaee875-dispersion.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/4eaee87548250b2682affda7d05d947c05554bae/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/dispersion.tex",
+      "sha256": "9a04b892feb99a79ec4e825bcd5096d3adb994c53d539c41d2da35f0a77f317c"
+    },
+    {
+      "path": "papers/first-moment-4eaee875-dual.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/4eaee87548250b2682affda7d05d947c05554bae/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/dual.tex",
+      "sha256": "1209fd17cee79f4a21b71d66d3d8b60b210216fa783ec555959d2ebff2fba483"
     }
   ]
 }

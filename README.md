@@ -22,6 +22,7 @@ threshold at the 2026-10-31 snapshot. Open tracker PRs #100, #101 and #102 appro
 The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lock.json).
 
 - [Current state and next proof obligation](docs/STATE.md)
+- [Paused research handoff and remaining gaps](docs/HANDOFF.md)
 - [Exact return-model obstruction](research/return-model-barrier.md)
 - [Higher-moment route and its actual support cost](research/moment-lift.md)
 - [A compensated cubic lift and its remaining amplifier cost](research/cubic-compensation.md)

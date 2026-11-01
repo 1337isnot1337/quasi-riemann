@@ -7,6 +7,13 @@ The finite phase and valuation bookkeeping is checked by
 `scripts/verify_cubic_signed_budget.py`; the character identities and analytic
 truncation are not formalized in Lean.
 
+The opt-in numerical diagnostic `make diagnostics` also evaluates the
+one-Poisson identity directly in Eisenstein quotient rings at norms 7 and
+13. Its 128 cases include both Ramanujan boundary and full-divisibility
+overlap lifts, with maximum relative error 1.77e-14. This supports the row
+normalization separately from the exact symbolic bookkeeping; it is not
+an exact arithmetic proof or an analytic estimate.
+
 Use the radial probe, additive convention and Gauss identities of the
 [shared-label checkpoint](https://github.com/1337isnot1337/quasi-riemann/blob/297a7efac59ea6f8f801b027d3f4f03872716a68/research/shared-label-cubic-identity.md).
 Write chi for the cubic symbol, so G=gamma_2 and gamma_4=conjugate(G).

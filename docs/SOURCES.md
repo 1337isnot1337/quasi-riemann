@@ -133,3 +133,8 @@ identity are written derivations. That paper supplies a local fundamental
 lemma, not the required global trace bound. Its higher-conductor cubic
 identity is not silently applied to the different prime-power branches of
 the sextic Jacobi input.
+
+The corrected-dispersion comparison uses OpenAI's first-moment TeX at commit
+4eaee87548250b2682affda7d05d947c05554bae. Its paper, dispersion section and
+exceptional-moment section are separately hash pinned. Their coefficient
+classes and height averaging do not supply SC_sigma as currently stated.
