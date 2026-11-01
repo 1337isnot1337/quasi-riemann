@@ -49,6 +49,8 @@ modules reconstructed in the research notes are:
 | Baseline `Arithmetic/IdealMobius.lean` | Multiplicative angular phase on primary ideal generators |
 | Baseline `PrimeRows/ActiveGaussFactorization.lean` | Normalized embedding defining the angular factor |
 | Baseline `Hecke/DyadicReflection.lean` | Numerator functional equation, conductor and Gauss phase |
+| Baseline `GaussSum/CubicNormalization.lean` | Cubic Gauss cube and primary angular normalization |
+| Baseline `GaussSum/SexticNormalization.lean` | Actual ideal CRT and normalized Gauss identities |
 | `BoundaryPhysical/PhysicalDirect/Hybrid.lean` | Two-ordinary-factor source budget |
 | `BoundaryPhysical/PhysicalDirect/Geometry.lean` | Plain scale and shifted capacity |
 | `BoundaryPhysical/TransportGeometry.lean` | Coarse box and floor constraints |
@@ -95,3 +97,9 @@ The shared-label probe definition is pinned at this repository's separate
 297a7ef checkpoint. The full physical cube-ratio estimate uses its one-Poisson
 normalization, elementary tame Gauss lifts and ideal counting; it imports no
 new moment theorem. Its source text is included in the external hash lock.
+The binary cubic probe also credits span_of_dilates,
+[Structural ceilings, v5](https://rstation.ai/problems/riemann_hypothesis/papers/40),
+for the previously suggested conjugate-dual Gauss configuration. The shared-label
+kernel, completed overlap calculation and global representation are presented
+as this repository's written derivation. Their exact local and unit checks do
+not independently verify the analytic Poisson argument in a proof assistant.

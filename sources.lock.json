@@ -244,6 +244,14 @@
     {
       "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/PrimeRows/ActiveGaussFactorization.lean",
       "sha256": "0988a3e36764be4efa2803502aa3ecba2f94434289b1488992567cfb8c5bd48b"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/GaussSum/CubicNormalization.lean",
+      "sha256": "c6bccbf90a0892c17daf7d677fe5e44abd8d56277261863c30ec0ae2f99e665f"
+    },
+    {
+      "path": "submissions/2026-10-06-openai-baseline/src/Submissions/openai_baseline/OAI/NumberTheory/DirichletL/GaussSum/SexticNormalization.lean",
+      "sha256": "188af867db7719174ca36916f0137997f97e927f4e7dcd4b5eb6bf3a5b885a69"
     }
   ],
   "external_files": [
