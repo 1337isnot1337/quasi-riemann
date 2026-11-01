@@ -135,11 +135,15 @@ same contact. See the source lock for exact heads and rational bounds.
     character cubic. On squarefree sources its dressed coefficient is exactly
     mu(c)*eta(c)*gamma_4(c). The all-prime-power signal correction converges
     and is nonzero for Re(x)>3/4, with local numerator bound 107/252.
-    The same direct-side decay holds. A complete nonzero-frequency bound
-    Z^(-1/10000) at X=Z^(2/5) would give 0.8, but is unproved. The fixed-modulus
+    The same direct-side decay holds. A subpower bound for the complete
+    nonzero-frequency sum at X=Z^(2/5) would give 0.8, but is unproved. The fixed-modulus
     cubic theorem does not establish this varying-modulus correlation.
     Its exact complete frequency mean can be removed with arbitrary-power
     error, retaining all prime powers; the remaining covariance is unproved.
+    A positive local resolvent proves nonvanishing for Re(x)>1/2, and three
+    further inverse Euler factors give a normally convergent nonzero correction
+    there. A lower zero-supremum bootstrap requires an unproved trace estimate
+    over an explicitly enlarged angular family.
     See `research/sextic-jacobi-detector.md`.
 
 The exact certificates and scoped Lean compilation are reproducible. No new

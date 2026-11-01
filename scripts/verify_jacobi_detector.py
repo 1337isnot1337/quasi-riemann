@@ -80,6 +80,7 @@ def main():
     kummer_checks = 0
     sextic_checks = []
     sextic_kummer_checks = 0
+    distributions = []
     for p in (7, 13, 19, 31, 37):
         root = next(r for r in range(p) if (r*r+r+1) % p == 0)
         lookup = {1: 0, root: 1, root*root % p: 2}
@@ -116,6 +117,13 @@ def main():
         assert len(lookup6) == 6
         def chi6(x, power=1):
             return roots6[(power*lookup6[pow(x % p, (p-1)//6, p)]) % 6]
+        distribution = [0]*6
+        for xx in range(p):
+            u = (xx*xx-1) % p
+            if u:
+                distribution[lookup6[pow(u, (p-1)//6, p)]] += 1
+        assert sum(distribution) == p-2
+        distributions.append({'norm': p, 'positive_resolvent_weights': distribution})
         epsilon = chi6(4)
         epsilon_bar = (epsilon[0]-epsilon[1], -epsilon[1])
         pi, pi_bar = (a, b), (a-b, -b)
@@ -179,6 +187,38 @@ def main():
     assert margin6 == Fraction(107, 252) and margin6 > 0
     assert 7**3 > 4**4 and 7**3 > 18**2
     assert Fraction(4, 5)-Fraction(1, 10000) > Fraction(3, 4)
+    # Extract every non-absolutely-convergent linear term. All defects are
+    # products of distinct linear terms, or the two already summable terms.
+    DD, E2, E4, E5, F3, RR, qq = s.symbols('DD E2 E4 E5 F3 RR qq')
+    numerator6 = 1-DD-E2-E4-E5-F3-2*qq*RR
+    denom6 = (1-DD)*(1-E2)*(1-E4)*(1-E5)
+    defect6 = s.Poly(s.expand(numerator6-denom6), DD, E2, E4, E5, F3, RR, qq)
+    decay = [x, 2*x-s.Rational(1, 2), 4*x-s.Rational(3, 2),
+             5*x-2, 3*x-s.Rational(1, 2), 6*x-3, s.Integer(1)]
+    defect_powers = []
+    for powers, coefficient in defect6.terms():
+        exponent = s.expand(sum(n*e for n, e in zip(powers, decay)))
+        assert exponent.subs(x, s.Rational(1, 2)) >= 1
+        assert s.diff(exponent, x) > 0
+        defect_powers.append(str(exponent))
+    beta = s.symbols('beta')
+    assert s.expand((6*beta-3)-beta) == 5*beta-3
+    assert (5*beta-3).subs(beta, s.Rational(3, 5)) == 0
+    assert all(a > 0 and b < 0 for a, b in [(2, -1), (4, -5), (5, -6)])
+    real, imag = s.symbols('real imag', real=True)
+    modden = (1-real)**2+imag**2
+    assert s.cancel((1-real)/modden-s.Rational(1, 2)
+                    -(1-real**2-imag**2)/(2*modden)) == 0
+    phase_eta = s.symbols('phase_eta', nonzero=True)
+    source_phase = phase_eta/alpha*epsilon
+    for actual, expected in [
+        (alpha/epsilon*source_phase**2, phase_eta**2/alpha*epsilon),
+        (alpha**-1*epsilon*source_phase**4, phase_eta**4/alpha**5*epsilon**2),
+        (alpha**-1*epsilon*source_phase**5, phase_eta**5/alpha**6),
+        (source_phase**6, phase_eta**6/alpha**6),
+    ]:
+        num, _ = s.fraction(s.cancel(actual-expected))
+        assert s.rem(num, epsilon**3-1, epsilon) == 0
     receipt = {
         'status': 'Jacobi detector identities and conditional target; no new bound',
         'finite_prime_power_checks': checks,
@@ -201,6 +241,7 @@ def main():
         'improved_L_function_bound_proved': False,
         'sextic_jacobi_variant': {
             'finite_residue_field_checks': sextic_checks,
+            'positive_local_distributions': distributions,
             'exact_kummer_trace_checks': sextic_kummer_checks,
             'exact_source_Gauss_phase_checks': 5,
             'Kloosterman_twist_order': 3,
@@ -215,7 +256,17 @@ def main():
             'squarefree_high_coefficient': 'mu(c)*eta(c)*gamma_4(c)',
             'nonzero_signal_domain': 'Re(x)>3/4',
             'local_numerator_lower_bound': str(margin6),
-            'unproved_complete_trace_bound': 'H6_centered_eta(Z^(2/5),Z) << Z^(-1/10000)',
+            'local_nonzero_domain': 'Re(x)>1/2',
+            'local_nonzero_proof': 'Re(P_p(z))>1/2+1/Q for abs(z)<1',
+            'fully_extracted_defect_powers': defect_powers,
+            'fully_extracted_correction_domain': 'Re(x)>1/2; holomorphic and nonzero',
+            'meromorphic_zero_free_signal_domain': 'Re(x)>2/3',
+            'closed_angular_family': 'eta_finite*alpha^k, k<=0',
+            'zero_supremum_map': 'beta -> 6*beta-3',
+            'no_cancellation_supremum_condition': 'beta>3/5',
+            'trace_estimate_for_closed_angular_family_proved': False,
+            'unproved_complete_trace_bound': 'H6_centered_eta(Z^(2/5),Z) <<_eps Z^eps for every eps>0',
+            'reserved_sufficient_version': 'H6_centered_eta(Z^(2/5),Z) << Z^(-1/10000)',
             'conditional_zero_free_threshold': '4/5',
             'trace_bound_proved': False,
         },

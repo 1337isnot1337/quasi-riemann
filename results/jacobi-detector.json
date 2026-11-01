@@ -381,6 +381,63 @@
         ]
       }
     ],
+    "positive_local_distributions": [
+      {
+        "norm": 7,
+        "positive_resolvent_weights": [
+          2,
+          2,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "norm": 13,
+        "positive_resolvent_weights": [
+          1,
+          4,
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "norm": 19,
+        "positive_resolvent_weights": [
+          0,
+          2,
+          4,
+          3,
+          4,
+          4
+        ]
+      },
+      {
+        "norm": 31,
+        "positive_resolvent_weights": [
+          6,
+          2,
+          4,
+          5,
+          4,
+          8
+        ]
+      },
+      {
+        "norm": 37,
+        "positive_resolvent_weights": [
+          9,
+          4,
+          4,
+          6,
+          4,
+          8
+        ]
+      }
+    ],
     "exact_kummer_trace_checks": 107,
     "exact_source_Gauss_phase_checks": 5,
     "Kloosterman_twist_order": 3,
@@ -395,7 +452,31 @@
     "squarefree_high_coefficient": "mu(c)*eta(c)*gamma_4(c)",
     "nonzero_signal_domain": "Re(x)>3/4",
     "local_numerator_lower_bound": "107/252",
-    "unproved_complete_trace_bound": "H6_centered_eta(Z^(2/5),Z) << Z^(-1/10000)",
+    "local_nonzero_domain": "Re(x)>1/2",
+    "local_nonzero_proof": "Re(P_p(z))>1/2+1/Q for abs(z)<1",
+    "fully_extracted_defect_powers": [
+      "12*x - 4",
+      "7*x - 2",
+      "8*x - 5/2",
+      "3*x - 1/2",
+      "10*x - 7/2",
+      "5*x - 3/2",
+      "6*x - 2",
+      "11*x - 4",
+      "6*x - 2",
+      "7*x - 5/2",
+      "9*x - 7/2",
+      "3*x - 1/2",
+      "6*x - 2"
+    ],
+    "fully_extracted_correction_domain": "Re(x)>1/2; holomorphic and nonzero",
+    "meromorphic_zero_free_signal_domain": "Re(x)>2/3",
+    "closed_angular_family": "eta_finite*alpha^k, k<=0",
+    "zero_supremum_map": "beta -> 6*beta-3",
+    "no_cancellation_supremum_condition": "beta>3/5",
+    "trace_estimate_for_closed_angular_family_proved": false,
+    "unproved_complete_trace_bound": "H6_centered_eta(Z^(2/5),Z) <<_eps Z^eps for every eps>0",
+    "reserved_sufficient_version": "H6_centered_eta(Z^(2/5),Z) << Z^(-1/10000)",
     "conditional_zero_free_threshold": "4/5",
     "trace_bound_proved": false
   }

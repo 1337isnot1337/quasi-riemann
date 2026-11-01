@@ -177,7 +177,8 @@ residue-field Kummer transformations; exponent 3 is quadratic and exponent
 At X=Z^(2/5), the remaining sufficient contract is
 
 ```text
-|H6_eta(Z^(2/5),Z)| <<_(eta,S) Z^(-1/10000), Z>=2.      (OPEN6)
+|H6_eta(Z^(2/5),Z)| <<_(eta,S,e) Z^e
+for every e>0 and all Z>=2.                            (OPEN6)
 ```
 
 Section 6 replaces this by an equivalent complete mean-zero trace contract,
@@ -191,10 +192,11 @@ integral_0^infinity I6_0(Z^(2/5),Z)*Z^(-s) dZ/Z
  =U(0)*exp((s-1/5)^2)*D6_eta(s+4/5),
 ```
 
-with a holomorphic left side for Re(s)>-1/10000. The coefficient in Section
+with a holomorphic left side for Re(s)>0. The coefficient in Section
 2 is nonzero for Re(x)>3/4, so 1/L^S(x,eta) would be holomorphic for
-Re(x)>7999/10000. This would give all-finite-Hecke, and hence all-Dirichlet,
-nonvanishing for Re(x)>4/5. The contract is not proved. It includes the
+Re(x)>4/5. This would give all-finite-Hecke, and hence all-Dirichlet,
+nonvanishing there. A bound Z^(-1/10000) is a stronger sufficient version,
+with a fixed reserve. The subpower contract is not proved. It includes the
 entire nonzero-frequency sum, not just the displayed squarefree part.
 
 The direct estimate makes H6=-I6_0 plus an arbitrary-power error in this
@@ -276,7 +278,7 @@ its Mellin moments converge at every real exponent. All three terms have
 arbitrary-power decay at X=Z^a, 0<a<1. Thus (OPEN6) is equivalent to
 
 ```text
-|H6_eta^o(Z^(2/5),Z)| <<_(eta,S) Z^(-1/10000).           (OPEN6o)
+|H6_eta^o(Z^(2/5),Z)| <<_(eta,S,e) Z^e for every e>0.   (OPEN6o)
 ```
 
 On squarefree c the centered Kloosterman version is exactly
@@ -297,3 +299,89 @@ identify the remaining trace with that paper's controlled output. No
 estimate for the residual mean-zero covariance is asserted. The new input
 needed for a bound is now specified by (OPEN6o), with the full all-modulus
 definition above, rather than by subtracting an unspecified bad component.
+
+## 7. The local kernel is a positive resolvent average
+
+There is a stronger reason that the local numerator does not vanish. Let
+theta=chi_p and z be as in Section 2. For |z|<1, direct summation of the
+literal zero-extended character powers gives
+
+```text
+P_p(z)=1+(1/Q)*sum_(t!=1,-1) sum_(j>=1) [theta(t^2-1)*z]^j
+      =2/Q+(1/Q)*sum_(t!=1,-1) 1/[1-theta(t^2-1)*z].
+```
+
+For |u|<1, Re(1/(1-u))=1/2+(1-|u|^2)/(2*|1-u|^2)>1/2. Hence
+
+```text
+Re(P_p(z))>1/2+1/Q.
+```
+
+This proves local nonvanishing for every Re(x)>1/2, with no restriction on
+the target phase. It uses all six prime-power classes and the two character
+zeros; it is not a numerical root search.
+
+The global correction can be continued to the same half-plane by extracting
+three further inverse L-functions. Define
+
+```text
+psi2=eta^2*bar(alpha)*epsilon,
+psi4=eta^4*bar(alpha)^5*epsilon^2,
+psi5=eta^5*bar(alpha)^6.
+```
+
+These have nonzero angular order when eta is finite. With E2,E4,E5 denoting
+the corresponding numerator terms in Section 2, put
+
+```text
+Htilde_p=N_p/[(1-D)*(1-E2)*(1-E4)*(1-E5)],
+
+D6_eta(x)=L^S(6*x-3,eta^6*bar(alpha)^6)*Htilde_eta(x)
+ /[L^S(x,eta)*L^S(2*x-1/2,psi2)
+   *L^S(4*x-3/2,psi4)*L^S(5*x-2,psi5)].
+```
+
+After clearing the denominator, every defect monomial has decay exponent
+greater than one for Re(x)>1/2. The slowest are 3*x-1/2, 5*x-3/2 and
+6*x-2. The exact script checks all thirteen monomials. Thus Htilde converges
+normally there. Each of its local factors is nonzero by the positive
+resolvent formula, and its denominators have modulus less than one in their
+nonconstant terms. Htilde is therefore holomorphic and nonzero in that
+half-plane.
+
+This gives a meromorphic continuation of D6_eta to Re(x)>1/2. Its coefficient
+of 1/L^S(x,eta) has no zeros for Re(x)>2/3: the numerator L-function is
+absolutely convergent there, while each additional inverse L-function has
+poles but no zeros, since its angular character is nonprincipal. Consequently
+those new reciprocal factors cannot conceal a zero of the target. This is a
+coefficient analysis, not an improved zero-free region.
+
+An abstract zero-supremum argument can go further if a future trace estimate
+is proved for a larger family. The family
+
+```text
+nu=eta_finite*alpha^k, k<=0,
+```
+
+is closed under nu -> nu^6*bar(alpha)^6, whose angular order is 6*k-6.
+Its direct estimate and removed-mean estimate still hold: the source angular
+order is k-1, which is nonzero. Constants may depend on the fixed k.
+If (OPEN6o) were replaced throughout this family by the unproved bound
+
+```text
+H6_nu^o(Z^(2/5),Z) <<_(nu,e) Z^(theta-4/5+e), every e>0,
+```
+
+with one fixed theta>3/5, all those L-functions would be nonvanishing for
+Re(x)>theta. Indeed let beta be the supremum of their zero real parts.
+If beta>theta, choose a zero rho sufficiently close to beta so that
+6*Re(rho)-3>beta. At rho the completed-source character is still in the
+family, so its L-value in the numerator cannot vanish. The other extracted
+reciprocals cannot cancel the target pole, and Htilde is nonzero. This
+contradicts the holomorphy furnished by the trace bound. The inequality is
+possible because (6*beta-3)-beta=5*beta-3>0.
+
+This last argument requires the enlarged family explicitly. An estimate only
+for finite-order eta cannot be used with a supremum over angular twists.
+No such family trace estimate is proved here. In particular neither this
+bootstrap nor local positivity establishes the requested bound.
