@@ -122,6 +122,9 @@ to the noncube physical ratios. This partition is different from the high
 principal frequency product that supplies the reciprocal signal.
 The stronger small-core estimate covers norms through Z^(1/25) at total
 power 29/100+epsilon, leaving inducing conductors above Z^(1/50).
+The [overlap phase identity](cubic-overlap-row-map.md) changes the row to
+g*m/h and retains a smaller positive conductor margin after truncation;
+it does not supply the missing signed estimate.
 
 `scripts/verify_mellin_annihilator.py` checks the local iterated residue and the
 finite-difference algebra exactly. It does not check the imported high

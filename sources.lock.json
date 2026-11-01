@@ -214,6 +214,11 @@
       "path": "papers/shared-label-297a7ef.md",
       "url": "https://raw.githubusercontent.com/1337isnot1337/quasi-riemann/297a7efac59ea6f8f801b027d3f4f03872716a68/research/shared-label-cubic-identity.md",
       "sha256": "8c788b3a4cef972b8b4c01a7df41c1d0862f7bd8e32fb0006cfe2e3bc27f0cd6"
+    },
+    {
+      "path": "papers/cubic-high-9f30963.md",
+      "url": "https://raw.githubusercontent.com/1337isnot1337/quasi-riemann/9f309638642422757108c0690fb36b60f6810d69/research/cubic-direct-target-084.md",
+      "sha256": "fd93d298a664b6cee4a3d8287b249eb443ddf8ac8c8ffd81f9b6c4bf1608e117"
     }
   ]
 }

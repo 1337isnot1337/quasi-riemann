@@ -154,6 +154,9 @@ cubic cores larger than Z^(1/25). At good primes the primitive cubic
 conductor is rad(u), whose norm is at least sqrt(q_u); every remaining
 geometric ratio class consequently has cubic Kummer inducing conductor
 larger than Z^(1/50), up to the fixed bad-prime data. To use a theorem on
-a further transformed row family, check any changes to this parameter
-caused by overlap extractions. This elementary bound supplies no such
-source-to-consumer map and no estimate for the remaining signed sum.
+a further transformed row family, check changes to this parameter.
+The [exact overlap map](cubic-overlap-row-map.md) now identifies its first
+change as r'=g*m/h, with g=gcd(c,s) dividing h. On the standard truncated
+range this retains good primitive conductor above Z^(1/100-epsilon).
+Further transforms and all analytic coefficient/profile hypotheses still
+need checking. No estimate for the remaining signed sum is proved here.

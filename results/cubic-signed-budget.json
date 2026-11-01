@@ -66,7 +66,46 @@
     "small_core_sector_power": "29/100",
     "small_core_margin_below_target": "97/30000",
     "remaining_good_conductor_lower_power": "1/50",
+    "extracted_row_class": "g*m/h, g=gcd(c,s)",
+    "overlap_phase_quotient_before_cubic_reduction": "xa**3*xb**3",
+    "overlap_lift_valuation_fixtures": 12,
+    "completion_overlap_support_fixtures": 27,
+    "completion_overlap_support": "g*n^2 divides h",
+    "extracted_inverse_column_lower_power": "197/200",
+    "extracted_label_column_lower_power": "18/25",
+    "extracted_column_ratio_lower_power": "51/200",
+    "extracted_core_lower_power": "1/50",
+    "extracted_good_conductor_lower_power": "1/100",
     "noncube_complement_bound_proved": false
   },
-  "full_probe_direct_estimate_proved": false
+  "full_probe_direct_estimate_proved": false,
+  "full_signed_contract": {
+    "source": "research/cubic-signed-correlation-contract.md",
+    "summable_scalar_exponents": [
+      "g^(-2)",
+      "n^(-5/2)"
+    ],
+    "outside_full_correlation_power": "37/100",
+    "benchmarks": [
+      {
+        "signed_saving": "1/20",
+        "small_core_cutoff": "2/25",
+        "small_core_power": "19/60",
+        "full_direct_power": "8/25",
+        "extracted_conductor_lower_power": "3/100"
+      },
+      {
+        "signed_saving": "2/25",
+        "small_core_cutoff": "1/25",
+        "small_core_power": "29/100",
+        "full_direct_power": "29/100",
+        "extracted_conductor_lower_power": "1/100"
+      }
+    ],
+    "conditional_zero_free_thresholds": [
+      "13/15",
+      "21/25"
+    ],
+    "signed_contract_proved": false
+  }
 }

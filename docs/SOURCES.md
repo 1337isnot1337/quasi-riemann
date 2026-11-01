@@ -72,3 +72,6 @@ The shared-label probe definition is pinned at this repository's separate
 297a7ef checkpoint. The full physical cube-ratio estimate uses its one-Poisson
 normalization, elementary tame Gauss lifts and ideal counting; it imports no
 new moment theorem. Its source text is included in the external hash lock.
+The separate 9f30963 cubic high checkpoint is also hash pinned. The complete
+signed-correlation contract imports its written analytic continuation, while
+keeping the new direct estimate explicitly open.

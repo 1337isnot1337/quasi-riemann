@@ -74,6 +74,63 @@ def main():
     small_core_power = cube_selected+q(2, 3)*small_core_cutoff
     assert small_core_power == q(29, 100)
     assert q(8797, 30000)-small_core_power == q(97, 30000)
+    # Source/compensator cross phases change g^2*m/h to g*m/h.
+    for ea, eb in [(1, 0), (0, 1)]:
+        cross = 2*ea+eb
+        assert (2*(ea-eb)+cross-(ea-eb)) % 3 == 0
+    for old_core in range(3):
+        new_core = (old_core+1) % 3
+        assert new_core >= old_core-2
+    lift_cases = 0
+    for completion_valuation in range(6):
+        for extracted_valuation in [0, 1]:
+            assert 2+3*completion_valuation-extracted_valuation >= 1
+            lift_cases += 1
+    support_cases = 0
+    for nv in range(6):
+        for gv, fv in [(0, 0), (1, 0), (0, 1)]:
+            dv = 2*gv+3*nv
+            if dv == 0:
+                continue
+            for vv in range(1+(fv == 0)):
+                assert dv-vv >= 2*nv+gv
+                support_cases += 1
+    extracted_core_lower = small_core_cutoff-2*q(1, 100)
+    assert extracted_core_lower == q(1, 50)
+    Gg, Ga, Gb, xa, xb, Ra, Rb, An, mg, ma = s.symbols(
+        'Gg Ga Gb xa xb Ra Rb An mg ma', nonzero=True)
+    # alpha(g)^(-1)=mu(g)*G(g)^(-3), and likewise for a.
+    source_phase = ((Gg*Ga*xa**2)*(Gg*Gb*xb**2)**2
+                    *mg*ma/(Gg**3*Ga**3*An**3))
+    initial_row = Ra/Rb*xa**2/xb**2
+    target_phase = mg*ma/Ga*Gb/An**3*Ra/Rb*xa/xb
+    phase_quotient = s.cancel(source_phase*(Ga/Gb)*initial_row/target_phase)
+    assert phase_quotient == xa**3*xb**3
+    assert 1-q(3, 2)*q(1, 100) == q(197, 200)
+    assert q(73, 100)-q(1, 100) == q(18, 25)
+    assert 1-q(73, 100)-q(3, 2)*q(1, 100) == q(51, 200)
+    ng, na, nb, nn = s.symbols('ng na nb nn', positive=True)
+    denominator = s.sqrt(ng*na)*nn*(ng*na*nn**3)*(ng*nb)/s.sqrt(na*nb)
+    assert s.simplify(denominator-ng**q(5, 2)*na*s.sqrt(nb)*nn**4) == 0
+    # Re-expanding the lift: q_l times its k range H/q_l cancels exactly.
+    source_C = 1/(ng*nn**3)  # Z factor is recorded separately.
+    scalar = 1/(ng**q(5, 2)*nn**4*s.sqrt(source_C))
+    assert s.simplify(scalar-ng**(-2)*nn**q(-5, 2)) == 0
+    benchmarks = []
+    for saving, cutoff in [(q(1, 20), q(2, 25)), (q(2, 25), q(1, 25))]:
+        signed_power = q(37, 100)-saving
+        small_power = q(79, 300)+2*cutoff/3
+        direct = max(signed_power, small_power)
+        benchmarks.append({'signed_saving': str(saving), 'small_core_cutoff': str(cutoff),
+                           'small_core_power': str(small_power),
+                           'full_direct_power': str(direct),
+                           'extracted_conductor_lower_power': str(cutoff/2-q(1, 100))})
+    assert q(8, 25)+q(41, 75) == q(13, 15)
+    assert q(8, 25)-q(19, 60) == q(1, 300)
+    assert q(8797, 30000)-q(29, 100) == q(97, 30000)
+    full_outside_power = (a2-a)/2-b-q(1, 2)+(a+b)+(1-a2)
+    assert s.expand(full_outside_power-(1+a-a2)/2) == 0
+    assert full_outside_power.subs(selected) == q(37, 100)
 
     # Literal phase matching with one common cubic row power is impossible.
     assert not any(k % 3 == 1 and k % 3 == 2 for k in range(3))
@@ -110,9 +167,27 @@ def main():
             'small_core_sector_power': str(small_core_power),
             'small_core_margin_below_target': str(q(97, 30000)),
             'remaining_good_conductor_lower_power': str(small_core_cutoff/2),
+            'extracted_row_class': 'g*m/h, g=gcd(c,s)',
+            'overlap_phase_quotient_before_cubic_reduction': str(phase_quotient),
+            'overlap_lift_valuation_fixtures': lift_cases,
+            'completion_overlap_support_fixtures': support_cases,
+            'completion_overlap_support': 'g*n^2 divides h',
+            'extracted_inverse_column_lower_power': '197/200',
+            'extracted_label_column_lower_power': '18/25',
+            'extracted_column_ratio_lower_power': '51/200',
+            'extracted_core_lower_power': str(extracted_core_lower),
+            'extracted_good_conductor_lower_power': str(extracted_core_lower/2),
             'noncube_complement_bound_proved': False,
         },
         'full_probe_direct_estimate_proved': False,
+        'full_signed_contract': {
+            'source': 'research/cubic-signed-correlation-contract.md',
+            'summable_scalar_exponents': ['g^(-2)', 'n^(-5/2)'],
+            'outside_full_correlation_power': '37/100',
+            'benchmarks': benchmarks,
+            'conditional_zero_free_thresholds': ['13/15', '21/25'],
+            'signed_contract_proved': False,
+        },
     }
     path = Path(__file__).resolve().parents[1]/'results/cubic-signed-budget.json'
     if args.write:

@@ -9,6 +9,13 @@ exact obstruction for the inherited return/count model, including arbitrary
 admissible capped branches and a variable Mellin contour. It explains why a
 structural change is needed to pass the current cluster of candidates.
 
+The active cubic route now has a written full-probe reduction to one precise
+signed-correlation estimate. Small physical cubic cores are below budget, and
+the completion and overlap terms have summable weights after exact Gauss-lift
+expansion. A saving of 1/20 in the remaining correlation would give the
+conditional threshold 13/15. That signed estimate remains unproved; the
+arithmetic certificates and the stated sector bounds do not establish it.
+
 The Big O Speedrun page lists `0.8733819666133` as its leading human-verified
 threshold at the 2026-10-31 snapshot. Open tracker PRs #100, #101 and #102 approach
 `0.873381966613207519929...`. These are external results, not this project's work.
@@ -26,6 +33,8 @@ The exact pinned sources and open-PR heads are in [sources.lock.json](sources.lo
 - [A fixed-product cubic contrast that preserves the reciprocal signal](research/cubic-aspect-contrast.md)
 - [The signed-correlation gap after newer cubic Gauss norm estimates](research/cubic-signed-budget.md)
 - [Small physical cubic cores below the 0.84 direct target](research/cubic-principal-ratio-sector.md)
+- [The exact cubic row and conductor margin after overlap extraction](research/cubic-overlap-row-map.md)
+- [A complete signed-correlation contract for conditional 13/15 and 0.84 thresholds](research/cubic-signed-correlation-contract.md)
 - [An angular cubic-probe candidate and its changed signal](research/angular-cubic-probe.md)
 - [A coupled derivative for the exposed diagonal pole](research/coupled-mellin-annihilator.md)
 - [Physical differentiation and stability of the baseline low estimates](research/derivative-low-stability.md)

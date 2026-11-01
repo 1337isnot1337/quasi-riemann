@@ -124,8 +124,21 @@ same contact. See the source lock for exact heads and rational bounds.
     The same counting argument now covers every physical cubic core of norm
     at most Z^(1/25), at total power 29/100+epsilon. Its margin below the
     reserved target is 97/30000. The Kummer characters attached to the remaining
-    geometric ratios have conductors above Z^(1/50). Further transformed row
-    parameters must still be checked before applying an external estimate.
+    geometric ratios have conductors above Z^(1/50). The exact overlap phase
+    changes the row to g*m/h, where g=gcd(c,s) divides h. Its primitive
+    conductor remains above Z^(1/100-epsilon) after the usual truncation.
+    Real lift factors and all zero masks remain; no external norm estimate
+    has been mapped to this signed sum. See `research/cubic-overlap-row-map.md`.
+
+17. Expanding the real lifts before applying a signed estimate cancels each
+    lift size against its shorter frequency range. The remaining scalar weights
+    are g^(-2)*n^(-5/2), summable even after divisor choices. Thus one explicit
+    common-profile correlation contract SC_sigma controls the complete cubic
+    contrast with no extra completion exponent. Sigma=1/20 would give physical
+    power 8/25 and the conditional threshold 13/15; sigma=2/25 would give power
+    29/100 and the conditional 0.84 threshold. Neither signed estimate is proved.
+    The imported high argument remains a written proof. See
+    `research/cubic-signed-correlation-contract.md`.
 
 The exact certificates and scoped Lean compilation are reproducible. No new
 L-function theorem or independent-kernel replay is claimed. See
@@ -157,8 +170,13 @@ short-second-dual regime.
 For the radial 0.84 direct target, all physical cubic cores through Z^(1/25)
 are below budget by absolute values. The unresolved signed estimate is the
 remaining geometric ratio classes, whose attached Kummer conductors exceed
-Z^(1/50). A further transform must retain the original profiles, target and
-masks and verify any changes to those row parameters.
+Z^(1/50). The verified overlap extraction retains a Z^(1/100-epsilon)
+primitive-conductor margin. A further transform must retain the original
+profiles, target, real lifts and masks and verify additional parameter changes.
+The full correlation contract SC_(1/20), with the explicit joint contrast
+profile and original core cutoff, is the narrower next target. It includes
+all completions and overlaps through summable weights; proving only the
+completion-free coprime case would not establish that contract.
 
 A narrower analytic target is now the coefficient-sensitive regular primitive
 Kubota pairing for the actual Möbius/plain convolution. The fixed primitive pole
