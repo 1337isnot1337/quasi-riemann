@@ -151,3 +151,24 @@ Both conclusions are conditional. No published theorem has been shown to
 prove (SC_sigma) for this complete correlation. The exact checker verifies
 the normalization, support, convergent-weight exponents and table arithmetic;
 it does not prove the signed saving or the imported analytic continuation.
+
+## Two source-to-consumer controls
+
+A diagonal asymptotic for the long Mobius/Gauss norm alone does not bound
+this covariance. The positive Gram matrix `[[1,1],[1,1]]` has both diagonal
+quadratic forms exactly one, zero error for either diagonal test, and cross
+term one. Thus even two exact diagonal statements permit the full Cauchy
+cross term. This is a black-box countermodel, not an assertion about actual
+Hecke characters. Subtracting the known diagonal error exponent from a
+cross-correlation bound would require an additional theorem.
+
+The corrected-dispersion proposition in OpenAI's
+[first-moment source at 4eaee875](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/dispersion.tex)
+is a positive Gauss norm at one column scale. Its fixed-height corrected
+version requires roughness and Siegel--Walfisz cancellation; above its 0.40
+column fraction it also requires independent prime convolutions. Its
+explicit power improvement is averaged over large norm heights. Neither
+statement supplies this fixed-profile unequal-column signed covariance.
+The source's exceptional-character moments retain their prime-convolution
+class as well. Any decomposition of the present coefficients must prove
+those hypotheses and keep the original masks before importing that gain.

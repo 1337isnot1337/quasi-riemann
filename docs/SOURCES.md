@@ -110,3 +110,8 @@ for the previously suggested conjugate-dual Gauss configuration. The shared-labe
 kernel, completed overlap calculation and global representation are presented
 as this repository's written derivation. Their exact local and unit checks do
 not independently verify the analytic Poisson argument in a proof assistant.
+
+The corrected-dispersion comparison uses OpenAI's first-moment TeX at commit
+4eaee87548250b2682affda7d05d947c05554bae. Its paper, dispersion section and
+exceptional-moment section are separately hash pinned. Their coefficient
+classes and height averaging do not supply SC_sigma as currently stated.

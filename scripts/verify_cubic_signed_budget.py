@@ -131,6 +131,9 @@ def main():
     full_outside_power = (a2-a)/2-b-q(1, 2)+(a+b)+(1-a2)
     assert s.expand(full_outside_power-(1+a-a2)/2) == 0
     assert full_outside_power.subs(selected) == q(37, 100)
+    gram = s.Matrix([[1, 1], [1, 1]])
+    assert gram.eigenvals() == {0: 1, 2: 1}
+    assert gram[0, 0] == gram[1, 1] == gram[0, 1] == 1
 
     # Literal phase matching with one common cubic row power is impossible.
     assert not any(k % 3 == 1 and k % 3 == 2 for k in range(3))
@@ -187,6 +190,7 @@ def main():
             'benchmarks': benchmarks,
             'conditional_zero_free_thresholds': ['13/15', '21/25'],
             'signed_contract_proved': False,
+            'diagonal_norm_countermodel': [[1, 1], [1, 1]],
         },
     }
     path = Path(__file__).resolve().parents[1]/'results/cubic-signed-budget.json'

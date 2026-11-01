@@ -82,6 +82,16 @@ The arithmetic opportunity retained here is the support of one long squarefree
 inverse position; see [inverse-dominant-support.md](inverse-dominant-support.md).
 No novelty claim for mixed moments in general is intended.
 
+The OpenAI [first-moment source at 4eaee875](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/paper.tex)
+has a relevant corrected-dispersion mechanism with opposite Gauss factors.
+Its positive norm, roughness/Siegel--Walfisz conditions, independent prime
+convolutions and high-height averaging must all be kept. It is not a
+fixed-profile signed covariance estimate for the current Mobius/ordinary
+columns. The [complete correlation contract](cubic-signed-correlation-contract.md)
+records the precise distinction and a finite diagonal-norm countermodel.
+The checked paper, dispersion and exceptional-moment TeX sources are hash
+pinned; no new application of those analytic estimates is claimed.
+
 A fixed vanishing Mellin moment is not sufficient to remove a polar source
 uniformly at independent norm heights: twisting the profile translates the
 Mellin argument along a vertical line. An identically vanishing transform on
