@@ -122,3 +122,8 @@ normalization check. The ratio-character support mismatch is checked
 against Definition 3.2 and the conjugation against Definition 5.1 in the
 rendered source. This auxiliary nonvanishing statement does not supply
 the open quasi-Riemann trace estimate.
+
+The corrected-dispersion comparison uses OpenAI's first-moment TeX at commit
+4eaee87548250b2682affda7d05d947c05554bae. Its paper, dispersion section and
+exceptional-moment section are separately hash pinned. Their coefficient
+classes and height averaging do not supply SC_sigma as currently stated.

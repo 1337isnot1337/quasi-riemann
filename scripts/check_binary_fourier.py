@@ -64,6 +64,7 @@ def check_eisenstein_crt():
         return sum(prod(cubic(i, a)**orientation for i in range(2) if mask >> i & 1)
                    *cmath.exp(-2j*pi*((b*a) % n)/n) for a in range(n))/sqrt(n)
 
+    @lru_cache(None)
     def actual_gauss(c, s, h):
         z = multiply(generator(c), generator(s))
         n, (a, b) = norm(z), z
@@ -98,6 +99,35 @@ def check_eisenstein_crt():
         errors.append(abs(actual/expected-1))
     assert max(errors) < 1e-10
     print(f"Actual Eisenstein CRT diagnostic: 16 cases; maximum relative error {max(errors):.3g} < 1e-10.")
+
+    def symbol(mask, z):
+        return prod(cubic(i, (z[0]+z[1]*p[3]) % p[2])
+                    for i, p in enumerate(primes) if mask >> i & 1)
+
+    # The exact one-Poisson row is g*m/h. These are actual quotient-ring sums,
+    # with both the Ramanujan boundary and full-divisibility branches present.
+    row_errors = []
+    for c, s in product(range(4), repeat=2):
+        g, a, b = c & s, c & ~s, s & ~c
+        gz, cz = generator(g), generator(c)
+        ng = norm(gz)
+        alpha_c = (cz[0]+cz[1]*omega)/sqrt(norm(cz))
+        source = normalized_gauss(c, 1)*normalized_gauss(s, 2)**(-2)*alpha_c.conjugate()
+        for full_divisibility, multiplier, m in product([False, True], [1, 2], [(1, 0), (2, 0)]):
+            denominator = multiply(gz if full_divisibility else (1, 0), (multiplier, 0))
+            h = multiply(gz, denominator)
+            lift = (prod(p[2]*(p[2]-1) for i, p in enumerate(primes) if g >> i & 1)
+                    if full_divisibility else (-1)**g.bit_count()*ng)
+            row = (symbol(a, m)/symbol(a, denominator)
+                   *(symbol(b, m)/symbol(b, denominator)).conjugate())
+            actual = source*symbol(c, m)*symbol(s, m).conjugate()*actual_gauss(c, s, h)
+            expected = ((-1)**(g.bit_count()+a.bit_count())
+                        *normalized_gauss(a, 2)*normalized_gauss(b, 1)
+                        *sqrt(norm(generator(a))*norm(generator(b)))*lift*row)
+            row_errors.append(abs(actual/expected-1))
+    assert max(row_errors) < 1e-10
+    print(f"One-Poisson overlap row: {len(row_errors)} actual Eisenstein cases; "
+          f"maximum relative error {max(row_errors):.3g} < 1e-10.")
 
 
 def main():
