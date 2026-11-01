@@ -52,7 +52,7 @@ J_eta=Y^(-1)*sum_(s squarefree,good)
 ```
 
 Use B smooth, nonnegative, supported on 1<r<2 and not identically zero, and
-V(r)=(4*pi)^(-1/2)*exp(-(log r)^2/4), with M[V](v)=exp(v^2).
+`V(r)=(4*pi)^(-1/2)*exp(-(log r)^2/4)`, with `M[V](v)=exp(v^2)`.
 There is no ambiguity at m=0: its polynomial Gaussian value is zero.
 
 Poisson supplies alpha(h_i)^(-k_i)*alpha(A*s)^k_i in each average. The
