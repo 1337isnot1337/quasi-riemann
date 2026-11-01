@@ -222,6 +222,13 @@ correlation above. The prescribed signed Kubota sources in Papers 54 and
 fixed eta and all prime powers. None of those theorem-to-consumer maps is
 established here. That is the active analytic task.
 
+The [cubic Airy reformulation](cubic-airy-trace.md) maps the squarefree
+unit-frequency sector further to the classical polynomial x^3-3*x. Its
+literal coefficient is still mu(c)*eta(c) times a normalized Gauss sum at
+the same moving frequency. The linearized Kloosterman arguments are
+diagonal; neither Louvel's unweighted average nor Paper 15's bilinear norm
+estimates this weighted varying-modulus trace.
+
 Even a favorable factorization h=u*v does not put the current parameters
 inside the fixed-modulus short-window theorem. Kloosterman scaling turns its
 arguments into u^2 and v^2/4. If Nu and Nv are balanced and Nh is of order
